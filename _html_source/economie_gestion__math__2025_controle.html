@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr" dir="ltr"> <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CORRIGÉ BY BAC BY MED - Mathématiques Bac 2025 - Session Contrôle</title>
@@ -40,10 +39,6 @@
   .checklist li::before { content: "\2610 "; color: #c0392b; font-weight: bold; }
   .footer { text-align: center; font-size: 11px; color: #777; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
   .section-title { background: #1a3a6e; color: #fff; padding: 10px 15px; margin: 25px 0 15px; border-radius: 4px; font-size: 16px; }
-  html[dir="rtl"] body { font-family: 'Segoe UI', 'Tahoma', sans-serif; }
-  html[dir="rtl"] h2 { border-left: none; border-right: 5px solid #c0392b; padding-left: 0; padding-right: 12px; }
-  html[dir="rtl"] .piege, html[dir="rtl"] .pourquoi, html[dir="rtl"] .verification, html[dir="rtl"] .justification { border-left: none; border-right: 5px solid; }
-  html[dir="rtl"] ul, html[dir="rtl"] ol { margin: 10px 28px 10px 0; }
   @media print { body { background: #fff; padding: 0; } .page { box-shadow: none; } }
   @media (max-width: 600px) { body { padding: 8px; } .page { padding: 20px 15px; } h1 { font-size: 18px; letter-spacing: 3px; } }
 </style>
@@ -67,68 +62,68 @@ Document non officiel. Ce corrigé est rédigé par l'équipe <strong>bacbymed</
 </div>
 
 <div class="section-title">Exercice n°1 — Statistiques à deux variables (corrélation, régression) — 5 points</div>
-<p>$x_i$ : 3, 4, 5, 6, 8, 10 — $y_i$ : 19, 18, 14, 13, 9, 5 ($n=6$)</p>
+<p>x_i : 3, 4, 5, 6, 8, 10 — y_i : 19, 18, 14, 13, 9, 5 (n=6)</p>
 <h4>1) a) Point moyen G</h4>
-<p>$$\bar x = \dfrac{3+4+5+6+8+10}{6} = \dfrac{36}{6} = 6 \qquad \bar y = \dfrac{19+18+14+13+9+5}{6} = \dfrac{78}{6} = 13$$</p>
+<p>\bar x = (3+4+5+6+8+10) / (6) = (36) / (6) = 6 \qquad \bar y = (19+18+14+13+9+5) / (6) = (78) / (6) = 13</p>
 <h4>G(6 ; 13)</h4>
 <h4>b) Nuage de points</h4>
 <p>À placer sur le graphique fourni : (3,19), (4,18), (5,14), (6,13), (8,9), (10,5).</p>
 <h4>c) Justification d'un ajustement affine</h4>
-<p>Les points du nuage sont <strong>globalement alignés</strong> selon une tendance décroissante — ils suivent visuellement une droite. Cette allure justifie d'envisager un ajustement affine entre $x$ et $y$.</p>
+<p>Les points du nuage sont <strong>globalement alignés</strong> selon une tendance décroissante — ils suivent visuellement une droite. Cette allure justifie d'envisager un ajustement affine entre x et y.</p>
 <h4>2) Coefficient de corrélation linéaire</h4>
 <div class="pourquoi"><strong>Méthode.</strong> On passe par les sommes intermédiaires (« méthode des écarts au carré », plus sûre à la main que la formule brute) :</div>
-<p>$$\sum x_i^2 = 250, \quad \sum y_i^2 = 1156, \quad \sum x_iy_i = 399$$</p>
-<p>$$S_{xy} = \sum x_iy_i - n\bar x \bar y = 399 - 6×6×13 = 399-468 = -69$$<br>
-$$S_{xx} = \sum x_i^2 - n\bar x^2 = 250-6×36 = 34 \qquad S_{yy} = \sum y_i^2 - n\bar y^2 = 1156-6×169 = 142$$</p>
-<p>$$r = \dfrac{S_{xy}}{\sqrt{S_{xx}\times S_{yy}}} = \dfrac{-69}{\sqrt{34×142}} = \dfrac{-69}{\sqrt{4828}} \approx \dfrac{-69}{69{,}484} \approx \mathbf{-0{,}99}$$</p>
-<p><strong>Interprétation.</strong> $|r|=0{,}99$ est très proche de 1 : la corrélation linéaire entre $x$ et $y$ est <strong>très forte</strong> (et négative — plus il y a de guichets ouverts, plus l'attente diminue). L'ajustement affine est donc pleinement justifié.</p>
+<p>\sum x_i^2 = 250, \quad \sum y_i^2 = 1156, \quad \sum x_iy_i = 399</p>
+<p>S_xy = \sum x_iy_i - n\bar x \bar y = 399 - 6×6×13 = 399-468 = -69<br>
+S_xx = \sum x_i^2 - n\bar x^2 = 250-6×36 = 34 \qquad S_yy = \sum y_i^2 - n\bar y^2 = 1156-6×169 = 142</p>
+<p>r = \dfracS_xy\sqrtS_xx× S_yy = \dfrac-69√(34×142) = \dfrac-69√(4828) ≈ (-69) / (69,484) ≈ -0,99</p>
+<p><strong>Interprétation.</strong> |r|=0,99 est très proche de 1 : la corrélation linéaire entre x et y est <strong>très forte</strong> (et négative — plus il y a de guichets ouverts, plus l'attente diminue). L'ajustement affine est donc pleinement justifié.</p>
 <h4>3) a) Équation de la droite de régression (D) de y en x</h4>
-<p>$$a = \dfrac{S_{xy}}{S_{xx}} = \dfrac{-69}{34} \approx \mathbf{-2{,}0} \qquad b = \bar y - a\bar x = 13-(-2{,}0294×6) \approx \mathbf{25{,}2}$$</p>
+<p>a = \dfracS_xyS_xx = (-69) / (34) ≈ -2,0 \qquad b = \bar y - a\bar x = 13-(-2,0294×6) ≈ 25,2</p>
 <h4>(D) : y = −2,0x + 25,2</h4>
-<div class="piege"><strong>Piège.</strong> Ne pas arrondir $a$ trop tôt dans le calcul de $b$ : ici cela ne change rien au résultat final arrondi, mais dans d'autres sujets un arrondi prématuré peut décaler la dernière décimale. Par prudence, on garde toutes les décimales jusqu'au bout et on n'arrondit qu'au moment de présenter le résultat.</div>
+<div class="piege"><strong>Piège.</strong> Ne pas arrondir a trop tôt dans le calcul de b : ici cela ne change rien au résultat final arrondi, mais dans d'autres sujets un arrondi prématuré peut décaler la dernière décimale. Par prudence, on garde toutes les décimales jusqu'au bout et on n'arrondit qu'au moment de présenter le résultat.</div>
 <h4>b) Tracer (D)</h4>
-<p>La droite (D) passe par le point moyen $G(6;13)$ (propriété du cours : la droite de régression passe toujours par $G$) — cela permet de la tracer facilement à partir de deux points, par exemple $G(6;13)$ et le point $(0\,;\,25{,}2)$.</p>
+<p>La droite (D) passe par le point moyen G(6;13) (propriété du cours : la droite de régression passe toujours par G) — cela permet de la tracer facilement à partir de deux points, par exemple G(6;13) et le point (0 ; 25,2).</p>
 <h4>c) Estimation pour 12 guichets ouverts</h4>
-<p>$$y(12) = -2{,}0×12+25{,}2 = -24+25{,}2 = \mathbf{1{,}2\ minute}$$</p>
-<div class="pourquoi"><strong>Pourquoi cette estimation reste-t-elle raisonnable ?</strong> $x=12$ dépasse légèrement la plage des données observées (3 à 10), mais reste proche : l'extrapolation est risquée en général, mais acceptable ici vu la très forte corrélation (0,99) et la faible distance à l'intervalle d'origine.</div>
+<p>y(12) = -2,0×12+25,2 = -24+25,2 = 1,2 minute</p>
+<div class="pourquoi"><strong>Pourquoi cette estimation reste-t-elle raisonnable ?</strong> x=12 dépasse légèrement la plage des données observées (3 à 10), mais reste proche : l'extrapolation est risquée en général, mais acceptable ici vu la très forte corrélation (0,99) et la faible distance à l'intervalle d'origine.</div>
 <div class="section-title">Exercice n°2 — Matrices, système et coût de production — 5 points</div>
-<p>$$A = \begin{pmatrix} 1&amp;1&amp;1 \\ 4&amp;2&amp;1 \\ 9&amp;3&amp;1 \end{pmatrix} \qquad B = \begin{pmatrix} 0{,}5&amp;-1&amp;0{,}5 \\ -2{,}5&amp;4&amp;-1{,}5 \\ 3&amp;-3&amp;1 \end{pmatrix}$$</p>
+<p>A = \beginpmatrix 1&amp;1&amp;1 \ 4&amp;2&amp;1 \ 9&amp;3&amp;1 \endpmatrix \qquad B = \beginpmatrix 0,5&amp;-1&amp;0,5 \ -2,5&amp;4&amp;-1,5 \ 3&amp;-3&amp;1 \endpmatrix</p>
 <h4>1) B = A⁻¹</h4>
-<div class="pourquoi"><strong>Méthode.</strong> Puisque $B$ est déjà donnée, il suffit de vérifier $A\times B = I_3$ (pas besoin de calculer l'inverse par la méthode des cofacteurs).</div>
+<div class="pourquoi"><strong>Méthode.</strong> Puisque B est déjà donnée, il suffit de vérifier A× B = I_3 (pas besoin de calculer l'inverse par la méthode des cofacteurs).</div>
 <p>En multipliant ligne par colonne, chaque terme diagonal vaut 1 et chaque terme hors diagonale vaut 0 :</p>
-<p>$$A \times B = \begin{pmatrix} 1&amp;0&amp;0 \\ 0&amp;1&amp;0 \\ 0&amp;0&amp;1 \end{pmatrix} = I_3$$</p>
+<p>A × B = \beginpmatrix 1&amp;0&amp;0 \ 0&amp;1&amp;0 \ 0&amp;0&amp;1 \endpmatrix = I_3</p>
 <p>Donc <strong>B = A⁻¹</strong>.</p>
-<p><strong>2) Système (S) :</strong> $a+b+c=10$ ; $4a+2b+c=29$ ; $9a+3b+c=58$</p>
+<p><strong>2) Système (S) :</strong> a+b+c=10 ; 4a+2b+c=29 ; 9a+3b+c=58</p>
 <h4>a) Écriture matricielle</h4>
-<div class="pourquoi"><strong>Pourquoi ce système est-il « gratuit » après la question 1 ?</strong> Sa matrice des coefficients est exactement la matrice $A$ étudiée juste au-dessus — l'inverse déjà vérifiée va directement résoudre le système.</div>
-<p>$$AX = C \quad \text{avec} \quad X=\begin{pmatrix}a\\b\\c\end{pmatrix}, \quad C=\begin{pmatrix}10\\29\\58\end{pmatrix}$$</p>
+<div class="pourquoi"><strong>Pourquoi ce système est-il « gratuit » après la question 1 ?</strong> Sa matrice des coefficients est exactement la matrice A étudiée juste au-dessus — l'inverse déjà vérifiée va directement résoudre le système.</div>
+<p>AX = C \quad avec \quad X=\beginpmatrixa\\b\\c\endpmatrix, \quad C=\beginpmatrix10\\29\\58\endpmatrix</p>
 <h4>b) Résolution dans ℝ³</h4>
-<p>$X = A^{-1}C = B\times C$ :</p>
-<p>$$a = 0{,}5×10+(-1)×29+0{,}5×58 = 5-29+29 = \mathbf{5}$$<br>
-$$b = -2{,}5×10+4×29+(-1{,}5)×58 = -25+116-87 = \mathbf{4}$$<br>
-$$c = 3×10+(-3)×29+1×58 = 30-87+58 = \mathbf{1}$$</p>
-<p><em>Vérification :</em> $5+4+1=10$ ✓ ; $4×5+2×4+1=29$ ✓ ; $9×5+3×4+1=58$ ✓</p>
+<p>X = A^-1C = B× C :</p>
+<p>a = 0,5×10+(-1)×29+0,5×58 = 5-29+29 = 5<br>
+b = -2,5×10+4×29+(-1,5)×58 = -25+116-87 = 4<br>
+c = 3×10+(-3)×29+1×58 = 30-87+58 = 1</p>
+<p><em>Vérification :</em> 5+4+1=10 ✓ ; 4×5+2×4+1=29 ✓ ; 9×5+3×4+1=58 ✓</p>
 <h4>(a, b, c) = (5, 4, 1)</h4>
-<p><strong>3) Coût de production $C(x)=ax^3+bx^2+cx+100$</strong>, $x$ en dizaines de millions de bouteilles.</p>
+<p><strong>3) Coût de production C(x)=ax^3+bx^2+cx+100</strong>, x en dizaines de millions de bouteilles.</p>
 <div class="table-wrap"><table>
-<tr><th>$x$</th><th>1</th><th>2</th><th>3</th></tr>
-<tr><td>$C(x)$</td><td>110</td><td>158</td><td>274</td></tr>
+<tr><th>x</th><th>1</th><th>2</th><th>3</th></tr>
+<tr><td>C(x)</td><td>110</td><td>158</td><td>274</td></tr>
 </table></div>
-<h4>a) Montrer que $(a,b,c)$ est solution de (S)</h4>
-<p>$C(1)=a+b+c+100=110 \Rightarrow a+b+c=10$ ✓<br>
-$C(2)=8a+4b+2c+100=158 \Rightarrow 8a+4b+2c=58$, soit (÷2) : $4a+2b+c=29$ ✓<br>
-$C(3)=27a+9b+3c+100=274 \Rightarrow 27a+9b+3c=174$, soit (÷3) : $9a+3b+c=58$ ✓</p>
-<div class="piege"><strong>Piège.</strong> Ne pas oublier de diviser par 2 puis par 3 : sans cette simplification, les équations obtenues ne correspondent pas <em>littéralement</em> à $(S)$, même si elles sont mathématiquement équivalentes — la question demande de retrouver <em>exactement</em> le système donné.</div>
-<h4>b) Justifier $C(x) = 5x^3+4x^2+x+100$</h4>
-<p>En reportant $(a,b,c)=(5,4,1)$ trouvé en question 2 : <strong>$C(x)=5x^3+4x^2+x+100$</strong>.</p>
+<h4>a) Montrer que (a,b,c) est solution de (S)</h4>
+<p>C(1)=a+b+c+100=110 → a+b+c=10 ✓<br>
+C(2)=8a+4b+2c+100=158 → 8a+4b+2c=58, soit (÷2) : 4a+2b+c=29 ✓<br>
+C(3)=27a+9b+3c+100=274 → 27a+9b+3c=174, soit (÷3) : 9a+3b+c=58 ✓</p>
+<div class="piege"><strong>Piège.</strong> Ne pas oublier de diviser par 2 puis par 3 : sans cette simplification, les équations obtenues ne correspondent pas <em>littéralement</em> à (S), même si elles sont mathématiquement équivalentes — la question demande de retrouver <em>exactement</em> le système donné.</div>
+<h4>b) Justifier C(x) = 5x^3+4x^2+x+100</h4>
+<p>En reportant (a,b,c)=(5,4,1) trouvé en question 2 : <strong>C(x)=5x^3+4x^2+x+100</strong>.</p>
 <h4>4) Production 2024 = 40 millions de bouteilles</h4>
-<div class="pourquoi"><strong>Pourquoi $x=4$ ?</strong> $x$ est exprimé en <strong>dizaines de millions</strong> de bouteilles : 40 millions = 4 × 10 millions, donc $x=4$.</div>
+<div class="pourquoi"><strong>Pourquoi x=4 ?</strong> x est exprimé en <strong>dizaines de millions</strong> de bouteilles : 40 millions = 4 × 10 millions, donc x=4.</div>
 <h4>a) Coût total de production</h4>
-<p>$$C(4) = 5×64+4×16+4+100 = 320+64+4+100 = \mathbf{488\ millions\ de\ dinars}$$</p>
+<p>C(4) = 5×64+4×16+4+100 = 320+64+4+100 = 488 millions de dinars</p>
 <h4>b) Prix de vente d'une bouteille</h4>
 <div class="pourquoi"><strong>Méthode.</strong> Bénéfice = Recette − Coût, donc Recette = Coût + Bénéfice.</div>
-<p>$$\text{Recette totale} = 488+12 = 500 \text{ millions de dinars}$$</p>
-<p>$$\text{Prix unitaire} = \dfrac{500\,000\,000}{40\,000\,000} = \mathbf{12{,}5\ D\ par\ bouteille}$$</p>
+<p>Recette totale = 488+12 = 500 millions de dinars</p>
+<p>Prix unitaire = (500 000 000) / (40 000 000) = 12,5 D par bouteille</p>
 <div class="section-title">Exercice n°3 — Graphe probabiliste et suite de matrices — 5 points</div>
 <p><strong>Contexte.</strong> Septembre 2010 : 10 % des élèves au privé. Chaque année : 10 % des élèves de l'étatique passent au privé ; 40 % des élèves du privé reviennent à l'étatique.</p>
 <h4>1) a) Graphe probabiliste (G) complété</h4>
@@ -140,55 +135,55 @@ $C(3)=27a+9b+3c+100=274 \Rightarrow 27a+9b+3c=174$, soit (÷3) : $9a+3b+c=58$ �
 <li>Boucle sur B (rester privé) = <strong>0,6</strong></li>
 </ul>
 <h4>b) Matrice de transition M</h4>
-<p>$$M = \begin{pmatrix} 0{,}9 &amp; 0{,}1 \\ 0{,}4 &amp; 0{,}6 \end{pmatrix}$$</p>
+<p>M = \beginpmatrix 0,9 &amp; 0,1 \ 0,4 &amp; 0,6 \endpmatrix</p>
 <h4>2) a) État initial</h4>
 <p>En septembre 2010, 10 % au privé donc 90 % à l'étatique :</p>
-<p>$$p_0 = (a_0\ \ b_0) = (0{,}9\ \ 0{,}1)$$</p>
+<p>p_0 = (a_0 b_0) = (0,9 0,1)</p>
 <h4>b) État probabiliste en septembre 2013</h4>
-<div class="pourquoi"><strong>Pourquoi n = 3 ?</strong> 2013 = 2010 + 3, donc on utilise $M^3$ (n=3 années de transition).</div>
-<p>Avec $\left(\dfrac{1}{2}\right)^3 = \dfrac{1}{8}$ :</p>
-<p>$$M^3 = \begin{pmatrix} \dfrac{4}{5}+\dfrac{1}{5}×\dfrac{1}{8} &amp; \dfrac{1}{5}-\dfrac{1}{5}×\dfrac{1}{8} \\ \dfrac{4}{5}-\dfrac{4}{5}×\dfrac{1}{8} &amp; \dfrac{1}{5}+\dfrac{4}{5}×\dfrac{1}{8} \end{pmatrix} = \begin{pmatrix} 0{,}825 &amp; 0{,}175 \\ 0{,}7 &amp; 0{,}3 \end{pmatrix}$$</p>
-<p>$$p_3 = p_0 \times M^3 = (0{,}9\ \ 0{,}1) \times \begin{pmatrix} 0{,}825 &amp; 0{,}175 \\ 0{,}7 &amp; 0{,}3 \end{pmatrix}$$</p>
-<p>$$a_3 = 0{,}9×0{,}825+0{,}1×0{,}7 = 0{,}7425+0{,}07 = \mathbf{0{,}8125}$$<br>
-$$b_3 = 0{,}9×0{,}175+0{,}1×0{,}3 = 0{,}1575+0{,}03 = \mathbf{0{,}1875}$$</p>
-<p><em>Vérification :</em> $0{,}8125+0{,}1875=1$ ✓</p>
-<p><strong>En septembre 2013 : $p_3 = (0{,}8125\ \ 0{,}1875)$</strong>, soit 81,25 % des élèves à l'étatique et 18,75 % au privé.</p>
+<div class="pourquoi"><strong>Pourquoi n = 3 ?</strong> 2013 = 2010 + 3, donc on utilise M^3 (n=3 années de transition).</div>
+<p>Avec \left((1) / (2)\right)^3 = (1) / (8) :</p>
+<p>M^3 = \beginpmatrix (4) / (5)+(1) / (5)×(1) / (8) &amp; (1) / (5)-(1) / (5)×(1) / (8) \ (4) / (5)-(4) / (5)×(1) / (8) &amp; (1) / (5)+(4) / (5)×(1) / (8) \endpmatrix = \beginpmatrix 0,825 &amp; 0,175 \ 0,7 &amp; 0,3 \endpmatrix</p>
+<p>p_3 = p_0 × M^3 = (0,9 0,1) × \beginpmatrix 0,825 &amp; 0,175 \ 0,7 &amp; 0,3 \endpmatrix</p>
+<p>a_3 = 0,9×0,825+0,1×0,7 = 0,7425+0,07 = 0,8125<br>
+b_3 = 0,9×0,175+0,1×0,3 = 0,1575+0,03 = 0,1875</p>
+<p><em>Vérification :</em> 0,8125+0,1875=1 ✓</p>
+<p><strong>En septembre 2013 : p_3 = (0,8125 0,1875)</strong>, soit 81,25 % des élèves à l'étatique et 18,75 % au privé.</p>
 <h4>c) L'état stable p = (4/5, 1/5)</h4>
-<div class="justification"><strong>Justification.</strong> Un état $p$ est stable lorsqu'il vérifie $p \times M = p$ : une fois cet état atteint, une année de transition supplémentaire ne le change plus.</div>
-<p>$$p \times M = \left(\dfrac{4}{5}\ \ \dfrac{1}{5}\right) \times \begin{pmatrix} 0{,}9 &amp; 0{,}1 \\ 0{,}4 &amp; 0{,}6 \end{pmatrix} = \left(\dfrac{4}{5}×0{,}9+\dfrac{1}{5}×0{,}4\ ,\ \dfrac{4}{5}×0{,}1+\dfrac{1}{5}×0{,}6\right) = (0{,}8\ ;\ 0{,}2) = \left(\dfrac{4}{5}\ \ \dfrac{1}{5}\right) = p \checkmark$$</p>
-<div class="pourquoi"><strong>Pourquoi cela concorde avec $M^n$ donnée ?</strong> Quand $n\to+\infty$, $\left(\dfrac12\right)^n \to 0$ : toutes les lignes de $M^n$ convergent alors vers $\left(\dfrac45,\dfrac15\right)$ — c'est une seconde façon (par le calcul direct) de voir que le système « oublie » son état initial et tend vers cet état stable.</div>
+<div class="justification"><strong>Justification.</strong> Un état p est stable lorsqu'il vérifie p × M = p : une fois cet état atteint, une année de transition supplémentaire ne le change plus.</div>
+<p>p × M = \left((4) / (5) (1) / (5)\right) × \beginpmatrix 0,9 &amp; 0,1 \ 0,4 &amp; 0,6 \endpmatrix = \left((4) / (5)×0,9+(1) / (5)×0,4 , (4) / (5)×0,1+(1) / (5)×0,6\right) = (0,8 ; 0,2) = \left((4) / (5) (1) / (5)\right) = p \checkmark</p>
+<div class="pourquoi"><strong>Pourquoi cela concorde avec M^n donnée ?</strong> Quand n→+\infty, \left(\dfrac12\right)^n → 0 : toutes les lignes de M^n convergent alors vers \left(\dfrac45,\dfrac15\right) — c'est une seconde façon (par le calcul direct) de voir que le système « oublie » son état initial et tend vers cet état stable.</div>
 <div class="section-title">Exercice n°4 — Étude de fonction à partir d'un graphique — 5 points</div>
-<p>Courbe (C) de $f$, définie et dérivable sur ℝ, avec : tangentes horizontales en $A(1\,;\,\frac{4}{e}-1)$ et $B(-1\,;\,-1)$ ; branche parabolique de direction $(Oy)$ en $-\infty$ ; asymptote $\Delta: y=-1$ en $+\infty$ ; point $E(\alpha,0)$ sur (C).</p>
+<p>Courbe (C) de f, définie et dérivable sur ℝ, avec : tangentes horizontales en A(1 ; (4) / (e)-1) et B(-1 ; -1) ; branche parabolique de direction (Oy) en -\infty ; asymptote \Delta: y=-1 en +\infty ; point E(\alpha,0) sur (C).</p>
 <h4>1) a) Valeurs lues sur le graphique</h4>
-<div class="pourquoi"><strong>Méthode.</strong> Chaque donnée de l'énoncé se traduit directement en une valeur de $f$ ou $f'$ — c'est un exercice de traduction, pas de calcul.</div>
+<div class="pourquoi"><strong>Méthode.</strong> Chaque donnée de l'énoncé se traduit directement en une valeur de f ou f' — c'est un exercice de traduction, pas de calcul.</div>
 <ul>
-<li>$B(-1,-1)$ appartient à (C) → $f(-1) = \mathbf{-1}$</li>
-<li>$A\left(1,\frac{4}{e}-1\right)$ appartient à (C) → $f(1) = \mathbf{\dfrac{4}{e}-1}$</li>
-<li>$E(\alpha,0)$ appartient à (C) → $f(\alpha) = \mathbf{0}$</li>
-<li>Tangente horizontale en $B$ (donc en $x=-1$) → $f'(-1) = \mathbf{0}$</li>
+<li>B(-1,-1) appartient à (C) → f(-1) = -1</li>
+<li>A\left(1,(4) / (e)-1\right) appartient à (C) → f(1) = (4) / (e)-1</li>
+<li>E(\alpha,0) appartient à (C) → f(\alpha) = 0</li>
+<li>Tangente horizontale en B (donc en x=-1) → f'(-1) = 0</li>
 </ul>
 <h4>b) Limites aux infinis</h4>
 <ul>
-<li>Asymptote $\Delta: y=-1$ au voisinage de $+\infty$ → $\lim\limits_{x\to+\infty} f(x) = \mathbf{-1}$</li>
-<li>Branche parabolique de direction $(Oy)$ au voisinage de $-\infty$ → $\lim\limits_{x\to-\infty} f(x) = \mathbf{+\infty}$</li>
+<li>Asymptote \Delta: y=-1 au voisinage de +\infty → \lim\limits_x→+\infty f(x) = -1</li>
+<li>Branche parabolique de direction (Oy) au voisinage de -\infty → \lim\limits_x→-\infty f(x) = +\infty</li>
 </ul>
 <h4>2) f(x) = (x+1)²e^{-x} − 1</h4>
-<h4>a) Vérifier $e^{-\alpha} = \dfrac{1}{\alpha^2+2\alpha+1}$</h4>
-<div class="pourquoi"><strong>Pourquoi repartir de $f(\alpha)=0$ ?</strong> C'est la donnée-clé de l'énoncé (point E) : elle seule permet de faire apparaître $e^{-\alpha}$ isolé.</div>
-<p>$$f(\alpha)=0 \iff (\alpha+1)^2e^{-\alpha}-1=0 \iff (\alpha+1)^2e^{-\alpha}=1 \iff e^{-\alpha} = \dfrac{1}{(\alpha+1)^2} = \dfrac{1}{\alpha^2+2\alpha+1} \checkmark$$</p>
+<h4>a) Vérifier e^-\alpha = (1) / (\alpha^2+2\alpha+1)</h4>
+<div class="pourquoi"><strong>Pourquoi repartir de f(\alpha)=0 ?</strong> C'est la donnée-clé de l'énoncé (point E) : elle seule permet de faire apparaître e^-\alpha isolé.</div>
+<p>f(\alpha)=0 \iff (\alpha+1)^2e^-\alpha-1=0 \iff (\alpha+1)^2e^-\alpha=1 \iff e^-\alpha = (1) / ((\alpha+1)^2) = (1) / (\alpha^2+2\alpha+1) \checkmark</p>
 <h4>b) F(x) = (−x²−4x−5)e^{−x} − x est une primitive de f</h4>
-<p>$F = uv - x$ avec $u=-x^2-4x-5$ ($u'=-2x-4$), $v=e^{-x}$ ($v'=-e^{-x}$) :</p>
-<p>$$F'(x) = (-2x-4)e^{-x} + (-x^2-4x-5)(-e^{-x}) - 1 = e^{-x}\big[(-2x-4)+(x^2+4x+5)\big] - 1$$<br>
-$$= e^{-x}(x^2+2x+1) - 1 = (x+1)^2e^{-x}-1 = f(x) \checkmark$$</p>
+<p>F = uv - x avec u=-x^2-4x-5 (u'=-2x-4), v=e^-x (v'=-e^-x) :</p>
+<p>F'(x) = (-2x-4)e^-x + (-x^2-4x-5)(-e^-x) - 1 = e^-x\big[(-2x-4)+(x^2+4x+5)\big] - 1<br>
+= e^-x(x^2+2x+1) - 1 = (x+1)^2e^-x-1 = f(x) \checkmark</p>
 <h4>c) Aire A entre (C), l'axe des abscisses et les droites x=0, x=α</h4>
-<div class="pourquoi"><strong>Pourquoi $\displaystyle\int_0^\alpha f(t)\,dt$ directement (sans valeur absolue) ?</strong> D'après le graphique, la courbe reste au-dessus de l'axe des abscisses entre 0 et $\alpha$ (elle ne touche l'axe qu'en $E$) : $f\geq 0$ sur $[0,\alpha]$, donc l'aire est directement l'intégrale, sans changement de signe à gérer.</div>
-<p>$$\mathcal{A} = \int_0^\alpha f(t)\,dt = F(\alpha)-F(0)$$</p>
-<p>$$F(0) = (-5)e^0 - 0 = -5$$</p>
-<p>$$F(\alpha) = (-\alpha^2-4\alpha-5)e^{-\alpha} - \alpha = -\dfrac{\alpha^2+4\alpha+5}{\alpha^2+2\alpha+1} - \alpha \quad \text{(en remplaçant } e^{-\alpha} \text{ par le résultat de 2a)}$$</p>
-<p>$$\mathcal{A} = F(\alpha)-F(0) = -\dfrac{\alpha^2+4\alpha+5}{\alpha^2+2\alpha+1} - \alpha + 5$$</p>
-<p>En réduisant au même dénominateur $(\alpha^2+2\alpha+1)$ :</p>
-<p>$$\mathcal{A} = \dfrac{-(\alpha^2+4\alpha+5) - \alpha(\alpha^2+2\alpha+1) + 5(\alpha^2+2\alpha+1)}{\alpha^2+2\alpha+1} = \dfrac{-\alpha^3+2\alpha^2+5\alpha}{\alpha^2+2\alpha+1} = \mathbf{\dfrac{5\alpha+2\alpha^2-\alpha^3}{\alpha^2+2\alpha+1}\ (u.a.)} \checkmark$$</p>
-<div class="piege"><strong>Piège.</strong> Le développement algébrique ici est long et source d'erreurs de signe (plusieurs <span class="formule">−</span> à gérer en cascade). Une astuce : vérifier le résultat en factorisant le dénominateur, $\alpha^2+2\alpha+1=(\alpha+1)^2$ — si le développement du numérateur ne « retombe » pas sur la formule donnée par l'énoncé, c'est le signal qu'il faut relire chaque terme un par un plutôt que tout recompter.</div>
+<div class="pourquoi"><strong>Pourquoi \displaystyle\int_0^\alpha f(t) dt directement (sans valeur absolue) ?</strong> D'après le graphique, la courbe reste au-dessus de l'axe des abscisses entre 0 et \alpha (elle ne touche l'axe qu'en E) : f\geq 0 sur [0,\alpha], donc l'aire est directement l'intégrale, sans changement de signe à gérer.</div>
+<p>\mathcalA = \int_0^\alpha f(t) dt = F(\alpha)-F(0)</p>
+<p>F(0) = (-5)e^0 - 0 = -5</p>
+<p>F(\alpha) = (-\alpha^2-4\alpha-5)e^-\alpha - \alpha = -(\alpha^2+4\alpha+5) / (\alpha^2+2\alpha+1) - \alpha \quad (en remplaçant e^-\alpha par le résultat de 2a)</p>
+<p>\mathcalA = F(\alpha)-F(0) = -(\alpha^2+4\alpha+5) / (\alpha^2+2\alpha+1) - \alpha + 5</p>
+<p>En réduisant au même dénominateur (\alpha^2+2\alpha+1) :</p>
+<p>\mathcalA = (-(\alpha^2+4\alpha+5) - \alpha(\alpha^2+2\alpha+1) + 5(\alpha^2+2\alpha+1)) / (\alpha^2+2\alpha+1) = (-\alpha^3+2\alpha^2+5\alpha) / (\alpha^2+2\alpha+1) = (5\alpha+2\alpha^2-\alpha^3) / (\alpha^2+2\alpha+1) (u.a.) \checkmark</p>
+<div class="piege"><strong>Piège.</strong> Le développement algébrique ici est long et source d'erreurs de signe (plusieurs <span class="formule">−</span> à gérer en cascade). Une astuce : vérifier le résultat en factorisant le dénominateur, \alpha^2+2\alpha+1=(\alpha+1)^2 — si le développement du numérateur ne « retombe » pas sur la formule donnée par l'énoncé, c'est le signal qu'il faut relire chaque terme un par un plutôt que tout recompter.</div>
 <p><strong>Barème suggéré :</strong> Exercice 1 = 5 pts • Exercice 2 = 5 pts • Exercice 3 = 5 pts • Exercice 4 = 5 pts • Total = 20 pts</p>
 <p><strong>Gestion du temps (épreuve de 2 h) :</strong> Exercice 1 : 30 min • Exercice 2 : 30 min • Exercice 3 : 30 min • Exercice 4 : 25 min • relecture : 5 min.</p>
 <p><em>Corrigé proposé par bacbymed — document non officiel</em></p>

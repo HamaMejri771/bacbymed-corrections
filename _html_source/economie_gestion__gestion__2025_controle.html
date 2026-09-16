@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr" dir="ltr"> <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CORRIGÉ BY BAC BY MED - Gestion Bac 2025 - Session Contrôle</title>
@@ -70,13 +69,13 @@ Document non officiel. Ce corrigé est rédigé par l'équipe <strong>bacbymed</
 <div class="piege"><strong>Piège.</strong> Ne pas confondre <em>taux de marque</em> (marge / prix de vente) et <em>taux de marge</em> (marge / coût d'achat). Avec un taux de <em>marge</em> de 20 %, le coût d'achat serait 16,67 D et la vérification échouerait. C'est le mot exact de l'énoncé — « taux de marque » — qui donne la bonne formule.</div>
 <h4>2) a) Nombre optimal de commandes</h4>
 <p>Données : consommation annuelle D = 43 750 m ; coût d'achat p = 16 D ; taux de possession t = 20 % ; coût de passation Cl = 700 D.</p>
-<p>$$N^* = \sqrt{\dfrac{D \times p \times t}{2 \times Cl}} = \sqrt{\dfrac{43\,750 \times 16 \times 0{,}20}{2 \times 700}} = \sqrt{\dfrac{140\,000}{1\,400}} = \sqrt{100} = \mathbf{10\ commandes}$$</p>
+<p>N* = √((D × p × t) / (2 × Cl)) = √((43 750 × 16 × 0,20) / (2 × 700)) = √((140 000) / (1 400)) = √(100) = 10 commandes</p>
 <h4>b) Coût total d'approvisionnement optimal</h4>
 <div class="pourquoi"><strong>Pourquoi ?</strong> À l'optimum de Wilson, le coût de possession total est toujours égal au coût de passation total — c'est la propriété qui définit le point optimal (les deux courbes se croisent).</div>
 <p>Coût de passation total = 10 commandes × 700 D = 7 000 D<br>
 Coût de possession total (à l'optimum) = 7 000 D<br>
 <strong>Coût total = 7 000 + 7 000 = 14 000 D</strong></p>
-<p><em>Vérification directe :</em> $CT^* = \sqrt{2 \times D \times p \times t \times Cl} = \sqrt{2 \times 700\,000 \times 0{,}20 \times 700} = \sqrt{196\,000\,000} = 14\,000$ D ✓</p>
+<p><em>Vérification directe :</em> CT* = √(2 × D × p × t × Cl) = √(2 × 700 000 × 0,20 × 700) = √(196 000 000) = 14 000 D ✓</p>
 <h4>3) Conséquence chiffrée d'un stock de sécurité de 2 000 m</h4>
 <p>Un stock de sécurité est détenu en permanence : il s'ajoute au stock moyen et donc au coût de possession, mais ne change ni le coût de passation ni le nombre de commandes.</p>
 <p>Coût de possession supplémentaire = 2 000 × 16 × 20 % = <strong>6 400 D</strong></p>
@@ -91,13 +90,11 @@ Coût de possession total (à l'optimum) = 7 000 D<br>
 <strong>Montant net à encaisser = 33 000 − 660 = 32 340 D</strong></p>
 <div class="piege"><strong>Piège.</strong> L'escompte de <em>règlement</em> (accordé à un client qui paie plus tôt) n'a rien à voir avec l'escompte <em>commercial/bancaire</em> (remise d'un effet en banque avant échéance) utilisé en solution 2 — ce sont deux mécanismes différents malgré le nom commun.</div>
 <h4>b) Solution 2 — escompte de deux effets sur trois</h4>
-<p>&gt; ⚠️ <strong>Donnée manquante.</strong> Le tableau reçu (Annexe B) ne précise pas la condition d'escompte de l'effet <strong>E25</strong> (15 200 D, échéant dans 63 jours) — la cellule semble vide dans le scan. Sans cette donnée, les 3 combinaisons possibles {E23-E24}, {E23-E25}, {E24-E25} et leur coût ne peuvent pas être calculées de façon fiable.<br>
-&gt;<br>
-&gt; <strong>Ce qu'on peut déjà dire avec les 2 conditions connues :</strong><br>
-&gt; - <strong>E23</strong> : 14 700 D, taux d'escompte 12,50 %, 48 jours → Escompte = 14 700 × 12,5 % × 48/360 = <strong>245,000 D</strong><br>
-&gt; - <strong>E24</strong> : 17 800 D, 54 jours, commission fixe de 10,500 D HTVA (19 % de TVA) → Commission TTC = 10,5 × 1,19 = <strong>12,495 D</strong><br>
-&gt;<br>
-&gt; Dès que la condition d'E25 sera confirmée, la suite (combinaisons, coût de l'escompte, net d'escompte, comparaison avec la solution 1) pourra être terminée sur le même modèle.</p>
+<div class="pourquoi">⚠️ <strong>Donnée manquante.</strong> Le tableau reçu (Annexe B) ne précise pas la condition d'escompte de l'effet <strong>E25</strong> (15 200 D, échéant dans 63 jours) — la cellule semble vide dans le scan. Sans cette donnée, les 3 combinaisons possibles {E23-E24}, {E23-E25}, {E24-E25} et leur coût ne peuvent pas être calculées de façon fiable.<br>
+<strong>Ce qu'on peut déjà dire avec les 2 conditions connues :</strong><br>
+- <strong>E23</strong> : 14 700 D, taux d'escompte 12,50 %, 48 jours → Escompte = 14 700 × 12,5 % × 48/360 = <strong>245,000 D</strong><br>
+- <strong>E24</strong> : 17 800 D, 54 jours, commission fixe de 10,500 D HTVA (19 % de TVA) → Commission TTC = 10,5 × 1,19 = <strong>12,495 D</strong><br>
+Dès que la condition d'E25 sera confirmée, la suite (combinaisons, coût de l'escompte, net d'escompte, comparaison avec la solution 1) pourra être terminée sur le même modèle.</div>
 <div class="section-title">DEUXIÈME PARTIE</div>
 <h2>Dossier n°1 — Analyse de l'évolution du CA et contrôle des coûts — 4 points</h2>
 <h4>A. Évolution du chiffre d'affaires et position concurrentielle (Annexe n°1)</h4>
