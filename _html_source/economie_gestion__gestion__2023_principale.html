@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORRIGÉ BY BACBYMED - Gestion Bac 2023 - Session Principale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; color: #222; background: #f4f4f4; padding: 20px; }
+.page { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px 50px; box-shadow: 0 0 15px rgba(0,0,0,.1); }
+h1 { text-align: center; font-size: 24px; letter-spacing: 5px; color: #1a3a6e; border-bottom: 3px double #1a3a6e; padding-bottom: 14px; margin-bottom: 10px; white-space: nowrap; }
+h2 { font-size: 19px; color: #1a3a6e; margin: 26px 0 12px; border-left: 5px solid #c0392b; padding-left: 12px; break-after: avoid; }
+h3 { font-size: 16px; color: #2c3e50; margin: 18px 0 8px; break-after: avoid; }
+h4 { font-size: 14.5px; color: #c0392b; margin: 14px 0 6px; break-after: avoid; }
+p { margin: 6px 0; font-size: 14px; }
+ul, ol { margin: 6px 0 6px 24px; font-size: 14px; }
+li { margin: 2px 0; }
+.header-info { text-align: center; font-size: 14px; color: #555; margin-bottom: 16px; }
+.header-info strong { color: #1a3a6e; }
+.table-wrap { overflow-x: auto; break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+table th { background: #1a3a6e; color: #fff; padding: 6px; text-align: center; }
+table td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table td:first-child { text-align: left; }
+table tr:nth-child(even) { background: #f9f9f9; }
+.disclaimer { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; font-size: 12px; font-style: italic; margin: 18px 0; border-radius: 4px; }
+.disclaimer p { font-size: 12px; margin: 0; }
+.verification, .piege, .pourquoi, .justification, .methode, .remarque { padding: 10px 15px; margin: 12px 0; border-radius: 4px; break-inside: avoid; }
+.verification p, .piege p, .pourquoi p, .justification p, .methode p, .remarque p, .verification li, .piege li, .pourquoi li, .justification li, .methode li, .remarque li { font-size: 13px; }
+.verification { background: #d4edda; border-left: 5px solid #28a745; }
+.verification strong:first-child { color: #155724; }
+.piege { background: #f8d7da; border-left: 5px solid #dc3545; }
+.piege strong:first-child { color: #721c24; }
+.pourquoi { background: #d1ecf1; border-left: 5px solid #17a2b8; }
+.pourquoi strong:first-child { color: #0c5460; }
+.justification { background: #fdf6e3; border-left: 5px solid #f5a623; }
+.methode { background: #ede7f6; border-left: 5px solid #6f42c1; }
+.methode strong:first-child { color: #4a2a8a; }
+.remarque { background: #f2f2f2; border-left: 5px solid #888; }
+.katex { font-size: 1.05em; }
+.katex-display { margin: 8px 0; overflow-x: auto; overflow-y: hidden; }
+.figure { text-align: center; margin: 10px 0; break-inside: avoid; }
+.figure svg, .figure img { max-width: 100%; height: auto; }
+.vt td { min-width: 40px; }
+.formule { font-family: 'Courier New', monospace; background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.result-box { background: #e7f3ff; border: 2px solid #4a90e2; padding: 8px 10px; margin: 10px 0; border-radius: 6px; text-align: center; font-weight: bold; color: #1a3a6e; break-inside: avoid; }
+.result-box p { font-size: 14px; margin: 0; }
+.checklist { background: #fff; border: 2px solid #1a3a6e; padding: 12px 15px; margin: 18px 0; border-radius: 6px; break-inside: avoid; }
+.checklist ul { margin: 0; }
+.checklist li { list-style: none; padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 13px; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "☐ "; color: #c0392b; font-weight: bold; }
+.section-title { background: #1a3a6e; color: #fff; padding: 9px 15px; margin: 24px 0 12px; border-radius: 4px; font-size: 16px; break-after: avoid; }
+.section-title p { font-size: 16px; margin: 0; }
+.footer { text-align: center; font-size: 11px; color: #777; margin-top: 16px; padding-top: 8px; break-before: avoid; border-top: 1px solid #ddd; }
+.footer p { font-size: 11px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  .newpage { break-before: page; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>CORRIGÉ BY BACBYMED</h1>
+<div class="header-info">
+<strong>Gestion — Bac 2023 — Session Principale</strong><br>
+SECTION : ÉCONOMIE ET GESTION &nbsp;·&nbsp; DURÉE : 3 H 30 &nbsp;·&nbsp; COEFFICIENT : 3
+</div>
+<div class="table-wrap"><table>
+<tr><th>Épreuve</th><td>Gestion</td><th>Barème</th><td>20 points</td></tr>
+<tr><th>Session</th><td>Principale 2023</td><th>Structure</th><td>Partie 1 : 5 pts | Partie 2 : 15 pts</td></tr>
+</table></div>
+<div class="disclaimer">
+Document non officiel. Ce corrigé est rédigé par l'équipe <strong>BacByMed</strong> à titre pédagogique. Il ne s'agit ni du corrigé officiel du Ministère de l'Éducation, ni d'un barème officiel. En cas de divergence avec ton enseignant, c'est son explication qui fait foi.
+</div>
+
+<div class="section-title">
+<p>AVANT DE COMMENCER : barème suggéré et gestion du temps (3 h 30 = 210 min)</p>
+</div>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Thème</th>
+<th style="text-align: center;">Barème suggéré</th>
+<th style="text-align: center;">Temps conseillé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecture du sujet</td>
+<td>Repérer les annexes à rendre (n° 1 à 5)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 min</td>
+</tr>
+<tr class="even">
+<td>Exercice n° 1</td>
+<td>Cadence optimale d’approvisionnement</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="odd">
+<td>Exercice n° 2</td>
+<td>Politique de rémunération</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 1</td>
+<td>Analyse du marché et politique de prix</td>
+<td style="text-align: center;">6 pts</td>
+<td style="text-align: center;">60 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 2</td>
+<td>Élargissement de la gamme et distribution</td>
+<td style="text-align: center;">4 pts</td>
+<td style="text-align: center;">35 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 3</td>
+<td>Investissement et financement</td>
+<td style="text-align: center;">5 pts</td>
+<td style="text-align: center;">50 min</td>
+</tr>
+<tr class="odd">
+<td>Relecture</td>
+<td>Annexes complétées, unités, conclusions</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">15 min</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>20 pts</strong></td>
+<td style="text-align: center;"><strong>210 min</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="methode">
+<p><strong>Méthode.</strong> Le dossier n° 1 B est le plus long (trois annexes à compléter) : commence-le tôt. Les valeurs déjà imprimées dans les annexes (8 748 D ; 1 869 480 D ; 691 040 D ; 1,200 D ; 1,280 D) sont des <strong>contrôles gratuits</strong> : si ton calcul ne les retrouve pas, cherche l’erreur avant de continuer.</p>
+</div>
+<div class="section-title">
+<p>PREMIÈRE PARTIE (5 points)</p>
+</div>
+<h2 id="exercice-n-1-cadence-optimale-dapprovisionnement-société-mychips-25-points">Exercice n° 1 : Cadence optimale d’approvisionnement — société « Mychips » — 2,5 points</h2>
+<p><strong>Données.</strong> Consommation annuelle d’huile : 60 000 litres à 5 D le litre · coût de passation : 500 D par commande · coût de possession : 0,600 D par litre et par an · capacité actuelle de la cuve = quantité commandée = 5 000 litres · nouvelle cuve : capacité 10 000 litres pour un coût annuel supplémentaire de 1 000 D.</p>
+<h3 id="avec-le-rythme-actuel-commandes-de-5-000-litres">1) Avec le rythme actuel (commandes de 5 000 litres)</h3>
+<h4 id="a--nombre-annuel-de-commandes">a- Nombre annuel de commandes</h4>
+<p><span class="formule">N = consommation annuelle / quantité par commande = 60 000 / 5 000 = 12</span></p>
+<div class="result-box">
+<p>N = 12 commandes par an (une par mois)</p>
+</div>
+<h4 id="b--coûts-de-gestion-du-stock">b- Coûts de gestion du stock</h4>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût total de passation</td>
+<td>12 × 500</td>
+<td style="text-align: right;">6 000 D</td>
+</tr>
+<tr class="even">
+<td>Coût total de possession</td>
+<td>(5 000 / 2) × 0,600</td>
+<td style="text-align: right;">1 500 D</td>
+</tr>
+<tr class="odd">
+<td><strong>Coût total d’approvisionnement (gestion du stock)</strong></td>
+<td>6 000 + 1 500</td>
+<td style="text-align: right;"><strong>7 500 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="piege">
+<p><strong>Piège.</strong> Le coût de possession porte sur le <strong>stock moyen</strong> (Q / 2 = 2 500 litres), pas sur la quantité commandée. Et ici il est donné <strong>par litre</strong> : on ne multiplie pas par le prix de 5 D.</p>
+</div>
+<h4 id="c--ce-rythme-minimise-t-il-les-coûts">c- Ce rythme minimise-t-il les coûts ?</h4>
+<p><strong>Non.</strong> Le coût de gestion est minimal quand le coût de passation est égal au coût de possession. Ici 6 000 D ≠ 1 500 D : l’entreprise passe <strong>trop de commandes</strong> de trop petite taille.</p>
+<h3 id="sans-tenir-compte-de-la-capacité-actuelle">2) Sans tenir compte de la capacité actuelle</h3>
+<h4 id="a--nombre-optimal-de-commandes-et-quantité-par-commande">a- Nombre optimal de commandes et quantité par commande</h4>
+<p>À l’optimum : passation = possession, soit <span class="formule">N × 500 = (60 000 / 2N) × 0,600</span></p>
+<p><span class="formule">N² = (60 000 × 0,600) / (2 × 500) = 36 000 / 1 000 = 36 ⇒ N* = 6</span></p>
+<p><span class="formule">Q* = 60 000 / 6 = 10 000 litres</span></p>
+<div class="result-box">
+<p>N* = 6 commandes par an · Q* = 10 000 litres par commande</p>
+</div>
+<h4 id="b--coût-total-dapprovisionnement-à-loptimum">b- Coût total d’approvisionnement à l’optimum</h4>
+<p>Passation = 6 × 500 = <strong>3 000 D</strong> ; possession = (10 000 / 2) × 0,600 = <strong>3 000 D</strong>.</p>
+<div class="result-box">
+<p>Coût de gestion du stock optimal = 3 000 + 3 000 = 6 000 D</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> Les deux coûts sont égaux (3 000 D = 3 000 D) : c’est bien le minimum. Avec N = 5 : 2 500 + 3 600 = 6 100 D ; avec N = 7 : 3 500 + 2 571,429 = 6 071,429 D — les deux sont plus chers que 6 000 D.</p>
+</div>
+<h3 id="compatibilité-avec-la-capacité-de-stockage-actuelle">3) Compatibilité avec la capacité de stockage actuelle</h3>
+<p>La quantité optimale (<strong>10 000 litres</strong>) est le <strong>double</strong> de la capacité de la cuve (5 000 litres) : elle <strong>n’est pas compatible</strong> avec la capacité actuelle. Avec la cuve actuelle, l’entreprise ne peut pas appliquer la cadence optimale.</p>
+<h3 id="est-il-opportun-dinvestir-dans-une-nouvelle-cuve">4) Est-il opportun d’investir dans une nouvelle cuve ?</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th style="text-align: right;">Coût de gestion du stock</th>
+<th style="text-align: right;">Coût de la cuve</th>
+<th style="text-align: right;">Coût total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Actuelle (12 commandes de 5 000 l)</td>
+<td style="text-align: right;">7 500 D</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">7 500 D</td>
+</tr>
+<tr class="even">
+<td>Avec nouvelle cuve (6 commandes de 10 000 l)</td>
+<td style="text-align: right;">6 000 D</td>
+<td style="text-align: right;">1 000 D</td>
+<td style="text-align: right;"><strong>7 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Oui, il est opportun d’investir</strong> : malgré le coût annuel supplémentaire de 1 000 D, le coût total baisse de <strong>500 D par an</strong> (7 500 − 7 000). La nouvelle capacité (10 000 l) correspond exactement à la quantité optimale.</p>
+<div class="pourquoi">
+<p><strong>Pourquoi ne pas ajouter le coût d’achat ?</strong> Le coût d’achat de l’huile (60 000 × 5 = 300 000 D) est le même dans les deux situations : il ne change pas la décision. Si tu l’ajoutes, compare 307 500 D et 307 000 D : la conclusion reste identique.</p>
+</div>
+<h2 id="exercice-n-2-choix-dune-politique-de-rémunération-25-points">Exercice n° 2 : Choix d’une politique de rémunération — 2,5 points</h2>
+<p><strong>Données (annexe A).</strong> Nouvelle politique : recrutement externe pour réduire les coûts salariaux, rajeunir le personnel et arrêter la promotion interne facultative. Les nouveaux recrutés sont payés à un pourcentage du salaire brut moyen 2022 de leur catégorie.</p>
+<h3 id="salaire-brut-annuel-individuel-par-catégorie-en-2022">1) Salaire brut annuel individuel par catégorie en 2022</h3>
+<p><span class="formule">Salaire individuel moyen = salaire brut global de la catégorie / effectif</span></p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th style="text-align: right;">Salaire global 2022</th>
+<th style="text-align: center;">Effectif</th>
+<th style="text-align: right;"><strong>Salaire individuel 2022</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cadres</td>
+<td style="text-align: right;">120 000</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: right;"><strong>24 000 D</strong></td>
+</tr>
+<tr class="even">
+<td>Techniciens et agents de maîtrise (TAM)</td>
+<td style="text-align: right;">126 000</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;"><strong>14 000 D</strong></td>
+</tr>
+<tr class="odd">
+<td>Ouvriers qualifiés (OQ)</td>
+<td style="text-align: right;">192 000</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: right;"><strong>12 000 D</strong></td>
+</tr>
+<tr class="even">
+<td>Ouvriers spécialisés (OS)</td>
+<td style="text-align: right;">180 000</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: right;"><strong>9 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nombre-de-personnes-à-recruter-par-catégorie">2) Nombre de personnes à recruter par catégorie</h3>
+<p><span class="formule">À recruter = besoin début 2023 − (effectif au 31/12/2022 − départs)</span></p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th style="text-align: center;">Effectif</th>
+<th style="text-align: center;">Départs</th>
+<th style="text-align: center;">Restants</th>
+<th style="text-align: center;">Besoin</th>
+<th style="text-align: center;"><strong>À recruter</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cadres</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>0</strong></td>
+</tr>
+<tr class="even">
+<td>TAM</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr class="odd">
+<td>OQ</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr class="even">
+<td>OS</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="piege">
+<p><strong>Piège.</strong> Recruter seulement le nombre de départs (2, 4, 2) est faux : les départs sont remplacés <strong>et</strong> le besoin augmente. Pour les TAM : 2 remplacements + 1 poste nouveau = 3.</p>
+</div>
+<h3 id="annexe-n-1-salaire-de-lannée-2023">3) Annexe n° 1 : salaire de l’année 2023</h3>
+<p>Salaire d’un nouveau recruté : TAM = 80 % × 14 000 = 11 200 D ; OQ = 85 % × 12 000 = 10 200 D ; OS = 90 % × 9 000 = 8 100 D.</p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th style="text-align: right;">Salaire brut annuel des anciens</th>
+<th style="text-align: right;">Salaire brut annuel des nouveaux recrutés</th>
+<th style="text-align: right;">Salaire brut global annuel</th>
+<th style="text-align: right;">Salaire brut annuel individuel moyen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cadres</td>
+<td style="text-align: right;">5 × 24 000 = <strong>120 000</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>120 000</strong></td>
+<td style="text-align: right;"><strong>24 000</strong></td>
+</tr>
+<tr class="even">
+<td>TAM</td>
+<td style="text-align: right;">7 × 14 000 = <strong>98 000</strong></td>
+<td style="text-align: right;">3 × 11 200 = <strong>33 600</strong></td>
+<td style="text-align: right;"><strong>131 600</strong></td>
+<td style="text-align: right;"><strong>13 160</strong></td>
+</tr>
+<tr class="odd">
+<td>OQ</td>
+<td style="text-align: right;">12 × 12 000 = <strong>144 000</strong></td>
+<td style="text-align: right;">6 × 10 200 = <strong>61 200</strong></td>
+<td style="text-align: right;"><strong>205 200</strong></td>
+<td style="text-align: right;"><strong>11 400</strong></td>
+</tr>
+<tr class="even">
+<td>OS (donnée)</td>
+<td style="text-align: right;">162 000</td>
+<td style="text-align: right;">56 700</td>
+<td style="text-align: right;">218 700</td>
+<td style="text-align: right;">8 748</td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification avec la ligne imprimée (OS).</strong> Anciens : 18 × 9 000 = 162 000 ✓ ; nouveaux : 7 × 8 100 = 56 700 ✓ ; moyen : 218 700 / 25 = 8 748 ✓. Pour les autres catégories, on divise par le <strong>besoin</strong> (5, 10, 18), pas par l’ancien effectif.</p>
+</div>
+<h3 id="le-recrutement-externe-est-il-un-bon-choix">4) Le recrutement externe est-il un bon choix ?</h3>
+<p><strong>Oui, au regard des objectifs fixés.</strong></p>
+<ul>
+<li>Le salaire moyen <strong>baisse</strong> dans toutes les catégories qui recrutent : TAM 14 000 → 13 160 D (− 6 %) ; OQ 12 000 → 11 400 D (− 5 %) ; OS 9 000 → 8 748 D (− 2,8 %). Les cadres restent à 24 000 D (aucun recrutement).</li>
+<li>Le personnel est <strong>rajeuni</strong> et l’entreprise évite le surcoût des promotions internes.</li>
+</ul>
+<p><strong>Limites à signaler :</strong> la masse salariale totale augmente quand même (618 000 D → 675 500 D) parce que l’effectif passe de 50 à 58 ; la fin des promotions peut <strong>démotiver</strong> les anciens, et les recrues manquent d’expérience (coût d’intégration et de formation).</p>
+<div class="section-title">
+<p>DEUXIÈME PARTIE (15 points) — Société Tunisienne des boissons gazeuses</p>
+</div>
+<h2 id="dossier-n-1-analyse-du-marché-actuel-et-choix-dune-politique-de-prix-6-points">Dossier n° 1 : Analyse du marché actuel et choix d’une politique de prix — 6 points</h2>
+<h3 id="a.-analyse-de-lévolution-des-ventes">A. Analyse de l’évolution des ventes</h3>
+<h4 id="annexe-n-2-évolution-des-ventes-de-boissons-light">1) Annexe n° 2 : évolution des ventes de boissons light</h4>
+<p><span class="formule">Taux d’évolution = (valeur de l’année − valeur de l’année précédente) / valeur de l’année précédente × 100</span></p>
+<ul>
+<li>2020-2021 : volume (500 000 − 475 000) / 475 000 = <strong>5,26 %</strong> ; valeur (810 000 − 769 500) / 769 500 = <strong>5,26 %</strong></li>
+<li>2021-2022 : volume (560 000 − 500 000) / 500 000 = <strong>12 %</strong> ; valeur (896 000 − 810 000) / 810 000 = <strong>10,62 %</strong></li>
+</ul>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th style="text-align: center;">Volume 2020-2021</th>
+<th style="text-align: center;">Valeur 2020-2021</th>
+<th style="text-align: center;">Volume 2021-2022</th>
+<th style="text-align: center;">Valeur 2021-2022</th>
+<th style="text-align: center;">Concurrents 2020-2021</th>
+<th style="text-align: center;">Concurrents 2021-2022</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Boisson sucrée (donnée)</td>
+<td style="text-align: center;">3,45 %</td>
+<td style="text-align: center;">3,45 %</td>
+<td style="text-align: center;">8 %</td>
+<td style="text-align: center;">6,58 %</td>
+<td style="text-align: center;">8,5 %</td>
+<td style="text-align: center;">10 %</td>
+</tr>
+<tr class="even">
+<td>Boisson light</td>
+<td style="text-align: center;"><strong>5,26 %</strong></td>
+<td style="text-align: center;"><strong>5,26 %</strong></td>
+<td style="text-align: center;"><strong>12 %</strong></td>
+<td style="text-align: center;"><strong>10,62 %</strong></td>
+<td style="text-align: center;">13 %</td>
+<td style="text-align: center;">15 %</td>
+</tr>
+<tr class="odd">
+<td>Boisson pure naturelle</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 %</td>
+<td style="text-align: center;">12 %</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pourquoi-lévolution-en-quantité-diffère-t-elle-de-lévolution-en-valeur">2) Pourquoi l’évolution en quantité diffère-t-elle de l’évolution en valeur ?</h4>
+<p>Valeur = quantité × prix. Si les deux taux sont égaux (2020-2021), le prix n’a pas changé. Si la valeur progresse <strong>moins vite</strong> que la quantité (2021-2022), c’est que le <strong>prix de vente a baissé</strong>.</p>
+<h4 id="prix-de-vente-pratiqués-en-2021-et-2022">3) Prix de vente pratiqués en 2021 et 2022</h4>
+<p><span class="formule">Prix moyen = ventes en valeur / ventes en volume</span></p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Produit</th>
+<th style="text-align: right;">2021</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">Variation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Boisson sucrée</td>
+<td style="text-align: right;">2 280 000 / 1 500 000 = <strong>1,520 D</strong></td>
+<td style="text-align: right;">2 430 000 / 1 620 000 = <strong>1,500 D</strong></td>
+<td style="text-align: right;">− 0,020 D (− 1,32 %)</td>
+</tr>
+<tr class="even">
+<td>Boisson light</td>
+<td style="text-align: right;">810 000 / 500 000 = <strong>1,620 D</strong></td>
+<td style="text-align: right;">896 000 / 560 000 = <strong>1,600 D</strong></td>
+<td style="text-align: right;">− 0,020 D (− 1,23 %)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Constat.</strong> La société a <strong>baissé ses prix de 20 millimes</strong> en 2022 (les prix de 2020 étaient les mêmes qu’en 2021 : 1,520 D et 1,620 D). Cette baisse explique l’écart de la question 2.</p>
+<h4 id="tendances-nationales-du-marché">4) Tendances nationales du marché</h4>
+<ul>
+<li>Le marché des boissons gazeuses est <strong>en croissance dans tous les segments</strong>, et la croissance <strong>s’accélère</strong> : sucrée 8,5 % → 10 % ; light 13 % → 15 % ; pure naturelle 10 % → 12 %.</li>
+<li>Le segment <strong>light</strong> est le plus dynamique ; le segment <strong>pure naturelle</strong> progresse plus vite que le sucré : c’est une opportunité (voir dossier n° 2).</li>
+<li>Les ventes de la société progressent <strong>moins vite</strong> que celles des concurrents (sucrée 3,45 % puis 8 % contre 8,5 % puis 10 % ; light 5,26 % puis 12 % contre 13 % puis 15 %) : malgré la baisse de prix, <strong>elle perd des parts de marché</strong>.</li>
+</ul>
+<h4 id="recommandations">5) Recommandations</h4>
+<ul>
+<li><strong>Politique de produit</strong> : élargir la gamme vers le segment pure naturelle, en croissance (10 % puis 12 %).</li>
+<li><strong>Politique de distribution</strong> : être présent dans plus de points de vente (détaillants : épiceries, drugstores).</li>
+<li><strong>Politique de communication</strong> : publicité et promotion des ventes pour soutenir la marque.</li>
+<li><strong>Politique de prix</strong> : se positionner par rapport aux prix des concurrents (question B-5).</li>
+</ul>
+<h3 id="b.-choix-dune-politique-de-prix-et-perspective-de-croissance">B. Choix d’une politique de prix et perspective de croissance</h3>
+<div class="methode">
+<p><strong>Méthode.</strong> Calcul des coûts complets : coût de production (annexe n° 3) → CMUP des produits finis (stock initial + production) → coût de revient des quantités <strong>vendues</strong> (annexe n° 4) → résultat analytique (annexe n° 5).</p>
+</div>
+<h4 id="annexe-n-3-coût-de-production-et-cmup">1) Annexe n° 3 : coût de production et CMUP</h4>
+<p>Calculs : bouteilles vides à 0,100 D l’unité ; heures de MOD de conditionnement à 4 D (33 000 h et 11 000 h) ; charges indirectes de préparation = litres de SODA obtenus × 0,125 ; de conditionnement = heures de MOD × 7.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Sucrée Qté</th>
+<th style="text-align: right;">Sucrée C.U</th>
+<th style="text-align: right;">Sucrée Montant</th>
+<th style="text-align: right;">Light Qté</th>
+<th style="text-align: right;">Light C.U</th>
+<th style="text-align: right;">Light Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût de production du SODA liquide</td>
+<td style="text-align: right;">1 650 000</td>
+<td style="text-align: right;">0,630</td>
+<td style="text-align: right;">1 039 500</td>
+<td style="text-align: right;">550 000</td>
+<td style="text-align: right;">0,630</td>
+<td style="text-align: right;">346 500</td>
+</tr>
+<tr class="even">
+<td>Sucre blanc</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">66 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="odd">
+<td>Sucre allégé</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">66 000</td>
+</tr>
+<tr class="even">
+<td>Bouteilles vides</td>
+<td style="text-align: right;"><strong>1 650 000</strong></td>
+<td style="text-align: right;"><strong>0,100</strong></td>
+<td style="text-align: right;"><strong>165 000</strong></td>
+<td style="text-align: right;"><strong>550 000</strong></td>
+<td style="text-align: right;"><strong>0,100</strong></td>
+<td style="text-align: right;"><strong>55 000</strong></td>
+</tr>
+<tr class="odd">
+<td>MOD préparation</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">66 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">22 000</td>
+</tr>
+<tr class="even">
+<td>MOD conditionnement</td>
+<td style="text-align: right;">33 000</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;"><strong>132 000</strong></td>
+<td style="text-align: right;"><strong>11 000</strong></td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;"><strong>44 000</strong></td>
+</tr>
+<tr class="odd">
+<td>Charges indirectes préparation</td>
+<td style="text-align: right;"><strong>1 650 000</strong></td>
+<td style="text-align: right;"><strong>0,125</strong></td>
+<td style="text-align: right;"><strong>206 250</strong></td>
+<td style="text-align: right;"><strong>550 000</strong></td>
+<td style="text-align: right;"><strong>0,125</strong></td>
+<td style="text-align: right;"><strong>68 750</strong></td>
+</tr>
+<tr class="even">
+<td>Charges indirectes conditionnement</td>
+<td style="text-align: right;"><strong>33 000</strong></td>
+<td style="text-align: right;"><strong>7,000</strong></td>
+<td style="text-align: right;"><strong>231 000</strong></td>
+<td style="text-align: right;">11 000</td>
+<td style="text-align: right;"><strong>7,000</strong></td>
+<td style="text-align: right;"><strong>77 000</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Coût de production</strong></td>
+<td style="text-align: right;"><strong>1 650 000</strong></td>
+<td style="text-align: right;"><strong>1,155</strong></td>
+<td style="text-align: right;"><strong>1 905 750</strong></td>
+<td style="text-align: right;"><strong>550 000</strong></td>
+<td style="text-align: right;"><strong>1,235</strong></td>
+<td style="text-align: right;"><strong>679 250</strong></td>
+</tr>
+<tr class="even">
+<td>Stock initial</td>
+<td style="text-align: right;">50 000</td>
+<td style="text-align: right;">1,121</td>
+<td style="text-align: right;"><strong>56 050</strong></td>
+<td style="text-align: right;">10 000</td>
+<td style="text-align: right;">1,179</td>
+<td style="text-align: right;"><strong>11 790</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>CMUP</strong></td>
+<td style="text-align: right;"><strong>1 700 000</strong></td>
+<td style="text-align: right;"><strong>1,154</strong></td>
+<td style="text-align: right;"><strong>1 961 800</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>1,234</strong></td>
+<td style="text-align: right;"><strong>691 040</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification des unités d’œuvre.</strong> Litres : 1 650 000 + 550 000 = 2 200 000 ✓ (nombre d’UO de la préparation). Heures de conditionnement : 33 000 + 11 000 = 44 000 ✓. Charges réparties : 206 250 + 68 750 = 275 000 ✓ ; 231 000 + 77 000 = 308 000 ✓.</p>
+</div>
+<div class="piege">
+<p><strong>Piège.</strong> Les ateliers Approvisionnement et Mélange sont <strong>déjà inclus</strong> dans le coût du SODA liquide (0,630 D le litre) : les ajouter une seconde fois serait une double imputation. On n’ajoute que les centres situés <strong>après</strong> : préparation et conditionnement.</p>
+</div>
+<h4 id="annexe-n-4-coût-de-revient">2) Annexe n° 4 : coût de revient</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Sucrée Qté</th>
+<th style="text-align: right;">Sucrée C.U</th>
+<th style="text-align: right;">Sucrée Montant</th>
+<th style="text-align: right;">Light Qté</th>
+<th style="text-align: right;">Light C.U</th>
+<th style="text-align: right;">Light Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût de production des produits vendus</td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;"><strong>1,154</strong></td>
+<td style="text-align: right;">1 869 480</td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>1,234</strong></td>
+<td style="text-align: right;">691 040</td>
+</tr>
+<tr class="even">
+<td>Charges indirectes de distribution</td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;"><strong>0,046</strong></td>
+<td style="text-align: right;"><strong>74 520</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>0,046</strong></td>
+<td style="text-align: right;"><strong>25 760</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Coût de revient</strong></td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;"><strong>1,200</strong></td>
+<td style="text-align: right;"><strong>1 944 000</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>1,280</strong></td>
+<td style="text-align: right;"><strong>716 800</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification.</strong> 1 620 000 × 1,154 = 1 869 480 ✓ et 560 000 × 1,234 = 691 040 ✓ (montants imprimés) ; coûts de revient unitaires 1,200 et 1,280 ✓ (imprimés dans l’annexe n° 5). Bouteilles vendues : 1 620 000 + 560 000 = 2 180 000 = nombre d’UO de la distribution ✓.</p>
+</div>
+<h4 id="annexe-n-5-résultat-analytique">3) Annexe n° 5 : résultat analytique</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Sucrée Qté</th>
+<th style="text-align: right;">Sucrée C.U</th>
+<th style="text-align: right;">Sucrée Montant</th>
+<th style="text-align: right;">Light Qté</th>
+<th style="text-align: right;">Light C.U</th>
+<th style="text-align: right;">Light Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires</td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;"><strong>1,500</strong></td>
+<td style="text-align: right;"><strong>2 430 000</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>1,600</strong></td>
+<td style="text-align: right;"><strong>896 000</strong></td>
+</tr>
+<tr class="even">
+<td>Coût de revient</td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;"><strong>1 944 000</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;">1,280</td>
+<td style="text-align: right;"><strong>716 800</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat analytique</strong></td>
+<td style="text-align: right;"><strong>1 620 000</strong></td>
+<td style="text-align: right;"><strong>0,300</strong></td>
+<td style="text-align: right;"><strong>486 000</strong></td>
+<td style="text-align: right;"><strong>560 000</strong></td>
+<td style="text-align: right;"><strong>0,320</strong></td>
+<td style="text-align: right;"><strong>179 200</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Résultat analytique global : 486 000 + 179 200 = <strong>665 200 D</strong> (bénéfice sur les deux produits).</p>
+<h4 id="marge-bénéficiaire-minimale-de-20">4) Marge bénéficiaire minimale de 20 %</h4>
+<p>La marge bénéficiaire se rapporte au <strong>prix de vente</strong> : le résultat doit être au moins 20 % du prix, donc le coût de revient en représente 80 %.</p>
+<p><span class="formule">Prix de vente = coût de revient / (1 − 0,20) = coût de revient / 0,80</span></p>
+<ul>
+<li>Sucrée : 1,200 / 0,80 = <strong>1,500 D</strong></li>
+<li>Light : 1,280 / 0,80 = <strong>1,600 D</strong></li>
+</ul>
+<p><strong>Constat.</strong> Ces prix sont <strong>exactement les prix pratiqués en 2022</strong> : la société réalise déjà une marge de 20 % du prix de vente (486 000 / 2 430 000 = 20 % ; 179 200 / 896 000 = 20 %). Le problème n’est donc pas la marge mais la <strong>faible progression des ventes</strong> face à des concurrents moins chers.</p>
+<div class="remarque">
+<p><strong>Remarque.</strong> Si ton enseignant calcule la marge sur le <strong>coût de revient</strong> (coût × 1,20), on trouve 1,440 D et 1,536 D : les prix actuels sont alors supérieurs (marge de 25 % du coût). La conclusion reste la même : les prix actuels assurent au moins la marge minimale exigée.</p>
+</div>
+<h4 id="alignement-sur-le-prix-moyen-des-concurrents-en-2023">5) Alignement sur le prix moyen des concurrents en 2023</h4>
+<h5 id="a--prévisions-des-ventes-en-volume">a- Prévisions des ventes en volume</h5>
+<ul>
+<li>Sucrée : 1 620 000 × 1,10 = <strong>1 782 000 bouteilles</strong></li>
+<li>Light : 560 000 × 1,15 = <strong>644 000 bouteilles</strong></li>
+</ul>
+<h5 id="b--chiffre-daffaires-prévisionnel-2023">b- Chiffre d’affaires prévisionnel 2023</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Produit</th>
+<th style="text-align: right;">Quantité</th>
+<th style="text-align: right;">Prix</th>
+<th style="text-align: right;">Chiffre d’affaires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Boisson sucrée</td>
+<td style="text-align: right;">1 782 000</td>
+<td style="text-align: right;">1,470</td>
+<td style="text-align: right;">2 619 540</td>
+</tr>
+<tr class="even">
+<td>Boisson light</td>
+<td style="text-align: right;">644 000</td>
+<td style="text-align: right;">1,570</td>
+<td style="text-align: right;">1 011 080</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2 426 000</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>3 630 620 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="c--pertinence-de-ce-choix">c- Pertinence de ce choix</h5>
+<p>Le chiffre d’affaires passe de 3 326 000 D (2022) à <strong>3 630 620 D</strong>, soit <strong>+ 304 620 D (+ 9,16 %)</strong>, pour une baisse de prix limitée (− 2 % et − 1,88 %). Le choix est <strong>pertinent</strong> : la société devient compétitive par rapport aux concurrents et gagne des volumes.</p>
+<div class="pourquoi">
+<p><strong>Pourquoi rester prudent ?</strong> Si le coût de revient unitaire restait à 1,200 et 1,280 D, le résultat serait de 1 782 000 × 0,270 + 644 000 × 0,290 = <strong>667 900 D</strong> (contre 665 200 D) : il se maintient, mais la marge passe à 18,4 % du prix, sous l’objectif de 20 %. En pratique, la hausse des quantités répartit les charges fixes sur plus de bouteilles et fait baisser le coût unitaire : la marge réelle devrait être meilleure.</p>
+</div>
+<h5 id="d--la-société-peut-elle-produire-ces-quantités">d- La société peut-elle produire ces quantités ?</h5>
+<p><span class="formule">Quantité totale = 1 782 000 + 644 000 = 2 426 000 bouteilles &lt; capacité de 4 000 000 bouteilles</span></p>
+<p><strong>Oui</strong>, la capacité n’est utilisée qu’à 60,65 %. Même en ajoutant les 300 000 bouteilles de boissons pures naturelles du dossier n° 2, on atteint 2 726 000 bouteilles (68,15 % de la capacité). De plus, le stock final 2022 de boissons sucrées (50 000 + 1 650 000 − 1 620 000 = 80 000 bouteilles) réduit encore la production nécessaire.</p>
+<h2 id="dossier-n-2-élargissement-de-la-gamme-et-choix-dune-politique-de-distribution-4-points">Dossier n° 2 : Élargissement de la gamme et choix d’une politique de distribution — 4 points</h2>
+<h3 id="a.-élargissement-de-la-gamme-boissons-gazeuses-pures-naturelles">A. Élargissement de la gamme : boissons gazeuses pures naturelles</h3>
+<h4 id="charges-variables-annuelles-300-000-bouteilles">1) Charges variables annuelles (300 000 bouteilles)</h4>
+<p>Les charges qui varient d’un trimestre à l’autre <strong>proportionnellement aux quantités</strong> sont variables : matières premières (0,900 D par bouteille), bouteilles et étiquettes (0,120 D), main-d’œuvre (0,200 D), autres charges de production et de distribution de la 4ᵉ ligne (0,210 D).</p>
+<div class="result-box">
+<p>Charges variables = 270 000 + 36 000 + 60 000 + 63 000 = 429 000 D (1,430 D par bouteille)</p>
+</div>
+<h4 id="charges-fixes-2023">2) Charges fixes 2023</h4>
+<p>Les charges <strong>identiques chaque trimestre</strong> sont fixes : charges financières, dotations aux amortissements, autres charges de 11 025 D par trimestre.</p>
+<div class="result-box">
+<p>Charges fixes = 20 000 + 36 000 + 44 100 = 100 100 D</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> 429 000 + 100 100 = 529 100 D = total des charges de l’annexe D ✓. Test de proportionnalité : 58 500 / 65 000 = 72 000 / 80 000 = 0,900 ✓.</p>
+</div>
+<h4 id="tableau-de-résultat-différentiel">3) Tableau de résultat différentiel</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+<th style="text-align: right;">% du CA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires</td>
+<td>300 000 × 2,200</td>
+<td style="text-align: right;">660 000</td>
+<td style="text-align: right;">100 %</td>
+</tr>
+<tr class="even">
+<td>− Coût variable</td>
+<td>300 000 × 1,430</td>
+<td style="text-align: right;">429 000</td>
+<td style="text-align: right;">65 %</td>
+</tr>
+<tr class="odd">
+<td><strong>= Marge sur coût variable</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>231 000</strong></td>
+<td style="text-align: right;"><strong>35 %</strong></td>
+</tr>
+<tr class="even">
+<td>− Coût fixe</td>
+<td></td>
+<td style="text-align: right;">100 100</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td><strong>= Résultat</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>130 900</strong></td>
+<td style="text-align: right;">19,83 %</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="seuil-de-rentabilité">4) Seuil de rentabilité</h4>
+<p><span class="formule">SR en valeur = coût fixe / taux de MCV = 100 100 / 0,35 = 286 000 D</span></p>
+<p><span class="formule">SR en quantité = 286 000 / 2,200 = 130 000 bouteilles</span></p>
+<div class="verification">
+<p><strong>Vérification.</strong> Au seuil : MCV = 130 000 × (2,200 − 1,430) = 130 000 × 0,770 = 100 100 D = coût fixe ✓ (résultat nul).</p>
+</div>
+<h4 id="interprétation-pour-m.-ali">5) Interprétation pour M. Ali</h4>
+<ul>
+<li>Le nouveau produit dégage un <strong>bénéfice de 130 900 D</strong> (près de 20 % du CA).</li>
+<li>Le seuil de rentabilité (130 000 bouteilles) ne représente que <strong>43,33 %</strong> des ventes prévues ; la marge de sécurité est de 660 000 − 286 000 = <strong>374 000 D</strong> (indice de sécurité 56,67 %) : le risque est faible.</li>
+<li>Les ventes étant <strong>saisonnières</strong>, on raisonne sur les ventes cumulées : 65 000 à la fin du 1ᵉʳ trimestre, 145 000 à la fin du 2ᵉ. Le seuil est atteint <strong>au cours du 2ᵉ trimestre</strong>, vers le <strong>14 juin 2023</strong> (3 mois + 65 000 / 80 000 × 3 = 5,44 mois).</li>
+<li>Le prix aux intermédiaires (2,200 D) laisse une marge confortable par rapport au prix accepté par les consommateurs (3,000 à 3,200 D).</li>
+</ul>
+<p><strong>Conclusion : le lancement des boissons pures naturelles est recommandé.</strong></p>
+<div class="piege">
+<p><strong>Piège.</strong> Avec des ventes irrégulières, ne pas calculer la date par la règle linéaire (286 000 / 660 000 × 12 = 5,2 mois, soit le 6 juin) : il faut utiliser les quantités cumulées trimestre par trimestre.</p>
+</div>
+<h3 id="b.-choix-dune-politique-de-distribution">B. Choix d’une politique de distribution</h3>
+<h4 id="avantages-dune-distribution-directe-aux-détaillants">1) Avantages d’une distribution directe aux détaillants</h4>
+<ul>
+<li>Moins d’intermédiaires : <strong>marge accordée plus faible</strong> (12 % au lieu de 20 %).</li>
+<li><strong>Contact direct</strong> avec les points de vente : meilleure connaissance des besoins, informations rapides sur les ventes.</li>
+<li>Meilleure <strong>maîtrise</strong> du prix final, de la présentation et de la disponibilité des produits.</li>
+<li>Présence dans les <strong>épiceries de proximité</strong>, là où se font de nombreux achats de boissons.</li>
+</ul>
+<h4 id="économie-de-marge-du-canal-court">2) Économie de marge du canal court</h4>
+<p>CA réalisé avec les détaillants : <span class="formule">5 016 744 × 20 % = 1 003 348,800 D</span></p>
+<p>Sans le canal court, ce CA passerait par des intermédiaires à 20 % ; avec les détaillants, la marge n’est que de 12 %.</p>
+<div class="result-box">
+<p>Économie de marge = 1 003 348,800 × (20 % − 12 %) = 80 267,904 D</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> Marge à 20 % : 200 669,760 D ; marge à 12 % : 120 401,856 D ; différence 80 267,904 D ✓.</p>
+</div>
+<h4 id="intérêt-dune-distribution-multicanale">3) Intérêt d’une distribution multicanale</h4>
+<ul>
+<li><strong>Toucher plus de clients</strong> : grandes surfaces, grossistes et commerces de proximité couvrent des segments différents.</li>
+<li><strong>Augmenter les ventes</strong> et la part de marché, au moment où la gamme s’élargit.</li>
+<li><strong>Réduire la dépendance</strong> envers un seul canal et répartir les risques.</li>
+<li>Profiter de la marge plus faible du canal court pour <strong>améliorer la rentabilité</strong>.</li>
+</ul>
+<h2 id="dossier-n-3-investissement-et-financement-5-points">Dossier n° 3 : Investissement et financement — 5 points</h2>
+<h3 id="a.-investissement-deux-camions-de-livraison">A. Investissement : deux camions de livraison</h3>
+<h4 id="vérification-de-la-caf">1) Vérification de la CAF</h4>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Résultat du canal court avant charges supplémentaires</td>
+<td style="text-align: right;">220 000</td>
+</tr>
+<tr class="even">
+<td>− Charges supplémentaires de distribution (amortissement compris)</td>
+<td style="text-align: right;">150 000</td>
+</tr>
+<tr class="odd">
+<td>= Résultat avant impôt</td>
+<td style="text-align: right;">70 000</td>
+</tr>
+<tr class="even">
+<td>− Impôt sur les bénéfices (15 %)</td>
+<td style="text-align: right;">10 500</td>
+</tr>
+<tr class="odd">
+<td>= Résultat net</td>
+<td style="text-align: right;">59 500</td>
+</tr>
+<tr class="even">
+<td>+ Dotation aux amortissements (200 000 / 5)</td>
+<td style="text-align: right;">40 000</td>
+</tr>
+<tr class="odd">
+<td><strong>= CAF annuelle</strong></td>
+<td style="text-align: right;"><strong>99 500</strong> ✓</td>
+</tr>
+</tbody>
+</table></div>
+<div class="pourquoi">
+<p><strong>Pourquoi rajouter l’amortissement ?</strong> Il a été déduit dans les 150 000 D de charges, mais ce n’est pas une sortie d’argent : la CAF le réintègre.</p>
+</div>
+<h4 id="valeur-actuelle-nette-taux-12-caf-constantes">2) Valeur actuelle nette (taux 12 %, CAF constantes)</h4>
+<p><span class="formule">VAN = CAF × (1 − (1,12)⁻⁵) / 0,12 − investissement = 99 500 × 3,604776 − 200 000</span></p>
+<div class="result-box">
+<p>VAN = 358 675,212 − 200 000 = 158 675,212 D</p>
+</div>
+<h4 id="délai-de-récupération-du-capital-investi-drci">3) Délai de récupération du capital investi (DRCI)</h4>
+<p>Avec des CAF constantes : <span class="formule">DRCI = 200 000 / 99 500 = 2,0100 ans</span></p>
+<p>0,0100 année × 12 = 0,12 mois, soit 0,12 × 30 ≈ 3,6 jours, arrondis à 4 jours.</p>
+<div class="result-box">
+<p>DRCI ≈ 2 ans et 4 jours</p>
+</div>
+<div class="remarque">
+<p><strong>Remarque.</strong> Si ton enseignant exige le DRCI sur les <strong>CAF actualisées</strong> (cumul : 88 839,272 ; 168 160,074 ; 238 982,185), le capital est récupéré pendant la 3ᵉ année : 2 ans + (200 000 − 168 160,074) / 70 822,110 = 2,45 ans, soit environ <strong>2 ans 5 mois et 12 jours</strong>. La conclusion ne change pas.</p>
+</div>
+<h4 id="opportunité-du-canal-court">4) Opportunité du canal court</h4>
+<p>La VAN est <strong>positive</strong> (158 675,212 D) et le capital est récupéré en un peu plus de 2 ans, bien avant la fin du projet (5 ans) : l’investissement est <strong>rentable et peu risqué</strong>. <strong>Il est opportun d’adopter le canal court</strong> de distribution aux détaillants.</p>
+<h3 id="b.-financement">B. Financement</h3>
+<h4 id="montant-de-lautofinancement">1) Montant de l’autofinancement</h4>
+<p>Emprunt = 200 000 × 80 % = 160 000 D.</p>
+<div class="result-box">
+<p>Autofinancement = 200 000 × 20 % = 40 000 D</p>
+</div>
+<h4 id="tableau-damortissement-de-lemprunt-amortissements-constants">2) Tableau d’amortissement de l’emprunt (amortissements constants)</h4>
+<p>Amortissement constant = 160 000 / 5 = 32 000 D ; intérêt = capital restant dû en début de période × 10 %.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;">Période</th>
+<th style="text-align: right;">Capital début de période</th>
+<th style="text-align: right;">Intérêts</th>
+<th style="text-align: right;">Amortissement</th>
+<th style="text-align: right;">Annuité</th>
+<th style="text-align: right;">Capital fin de période</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1 (2023)</td>
+<td style="text-align: right;">160 000</td>
+<td style="text-align: right;">16 000</td>
+<td style="text-align: right;">32 000</td>
+<td style="text-align: right;">48 000</td>
+<td style="text-align: right;">128 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">…</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5 (2027)</td>
+<td style="text-align: right;">32 000</td>
+<td style="text-align: right;">3 200</td>
+<td style="text-align: right;">32 000</td>
+<td style="text-align: right;">35 200</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<div class="piege">
+<p><strong>Piège.</strong> Avec des amortissements constants, c’est l’<strong>amortissement</strong> qui est constant, pas l’annuité : les annuités diminuent (48 000 ; 44 800 ; 41 600 ; 38 400 ; 35 200).</p>
+</div>
+<h4 id="tva-exigible-sur-les-véhicules">3) TVA exigible sur les véhicules</h4>
+<div class="result-box">
+<p>TVA = 200 000 × 19 % = 38 000 D</p>
+</div>
+<h4 id="agio-total-ht-de-lescompte-02012023">4) Agio total HT de l’escompte (02/01/2023)</h4>
+<p><span class="formule">Escompte = valeur nominale × taux × (jours + 2 jours de banque) / 36 000</span></p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Effet</th>
+<th style="text-align: right;">Valeur nominale</th>
+<th style="text-align: center;">Jours retenus</th>
+<th style="text-align: right;">Escompte</th>
+<th style="text-align: right;">Commission HT</th>
+<th style="text-align: right;">Agio HT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>n° 1221</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: center;">52 + 2 = 54</td>
+<td style="text-align: right;">20 000 × 12 × 54 / 36 000 = <strong>360</strong></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">372</td>
+</tr>
+<tr class="even">
+<td>n° 1222</td>
+<td style="text-align: right;">19 800</td>
+<td style="text-align: center;">48 + 2 = 50</td>
+<td style="text-align: right;">19 800 × 12 × 50 / 36 000 = <strong>330</strong></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">342</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>39 800</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"><strong>690</strong></td>
+<td style="text-align: right;"><strong>24</strong></td>
+<td style="text-align: right;"><strong>714</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Agio total HT = 714 D</p>
+</div>
+<h4 id="net-descompte-et-conclusion">5) Net d’escompte et conclusion</h4>
+<p>TVA sur les commissions = 24 × 19 % = 4,560 D ; agio TTC = 714 + 4,560 = 718,560 D.</p>
+<p><span class="formule">Net d’escompte = 39 800 − 718,560 = 39 081,440 D</span></p>
+<p><strong>Conclusion.</strong> Le net d’escompte (39 081,440 D) est <strong>supérieur</strong> à la TVA à financer (38 000 D) : l’escompte des deux effets <strong>couvre</strong> le besoin, avec un excédent de 1 081,440 D.</p>
+<div class="piege">
+<p><strong>Piège.</strong> La TVA ne s’applique qu’aux <strong>commissions</strong>, jamais à l’escompte (les intérêts).</p>
+</div>
+<h4 id="coût-du-découvert-bancaire-45-jours">6) Coût du découvert bancaire (45 jours)</h4>
+<p>Intérêts : <span class="formule">38 000 × 14 × 45 / 36 000 = 665 D</span></p>
+<p>Commission : 45 jours = 1 mois et une fraction de mois, soit <strong>2 mois</strong> facturés : 2 × 30 = 60 D HT.</p>
+<div class="result-box">
+<p>Agio HT du découvert = 665 + 60 = 725 D</p>
+</div>
+<h4 id="proposition-la-plus-intéressante">7) Proposition la plus intéressante</h4>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th style="text-align: right;">Escompte (proposition 1)</th>
+<th style="text-align: right;">Découvert (proposition 2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Agio HT</td>
+<td style="text-align: right;"><strong>714 D</strong></td>
+<td style="text-align: right;">725 D</td>
+</tr>
+<tr class="even">
+<td>Agio TTC</td>
+<td style="text-align: right;"><strong>718,560 D</strong></td>
+<td style="text-align: right;">736,400 D</td>
+</tr>
+<tr class="odd">
+<td>Couverture du besoin de 38 000 D</td>
+<td style="text-align: right;">Oui (39 081,440 D)</td>
+<td style="text-align: right;">Oui (38 000 D)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>L’escompte des effets (proposition n° 1)</strong> est plus intéressant : il coûte <strong>11 D de moins</strong> (HT) et couvre entièrement la TVA sur les véhicules.</p>
+<div class="checklist">
+<ul>
+<li>Annexes n° 1 à 5 complétées et rendues avec la copie (nom et numéro d’inscription écrits).</li>
+<li>Les valeurs imprimées retrouvées : 8 748 ; 1 869 480 ; 691 040 ; 1,200 ; 1,280.</li>
+<li>Chaque calcul posé (formule → application numérique → résultat avec l’unité D).</li>
+<li>Chaque question « Concluez / Que constatez-vous ? » terminée par une phrase de décision.</li>
+<li>Montants en dinars avec 3 décimales quand il y a des millimes (39 081,440 D).</li>
+</ul>
+</div>
+
+<div class="footer">
+CORRIGÉ BY BACBYMED — Gestion 2023 (Principale) — document non officiel.<br>
+Tu as vu une erreur ? Signale-la dans l'application, on corrige vite.
+</div>
+</div>
+</body>
+</html>

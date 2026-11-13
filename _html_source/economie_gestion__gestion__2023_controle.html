@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORRIGÉ BY BACBYMED - Gestion Bac 2023 - Session Contrôle</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; color: #222; background: #f4f4f4; padding: 20px; }
+.page { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px 50px; box-shadow: 0 0 15px rgba(0,0,0,.1); }
+h1 { text-align: center; font-size: 24px; letter-spacing: 5px; color: #1a3a6e; border-bottom: 3px double #1a3a6e; padding-bottom: 14px; margin-bottom: 10px; white-space: nowrap; }
+h2 { font-size: 19px; color: #1a3a6e; margin: 26px 0 12px; border-left: 5px solid #c0392b; padding-left: 12px; break-after: avoid; }
+h3 { font-size: 16px; color: #2c3e50; margin: 18px 0 8px; break-after: avoid; }
+h4 { font-size: 14.5px; color: #c0392b; margin: 14px 0 6px; break-after: avoid; }
+p { margin: 6px 0; font-size: 14px; }
+ul, ol { margin: 6px 0 6px 24px; font-size: 14px; }
+li { margin: 2px 0; }
+.header-info { text-align: center; font-size: 14px; color: #555; margin-bottom: 16px; }
+.header-info strong { color: #1a3a6e; }
+.table-wrap { overflow-x: auto; break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+table th { background: #1a3a6e; color: #fff; padding: 6px; text-align: center; }
+table td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table td:first-child { text-align: left; }
+table tr:nth-child(even) { background: #f9f9f9; }
+.disclaimer { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; font-size: 12px; font-style: italic; margin: 18px 0; border-radius: 4px; }
+.disclaimer p { font-size: 12px; margin: 0; }
+.verification, .piege, .pourquoi, .justification, .methode, .remarque { padding: 10px 15px; margin: 12px 0; border-radius: 4px; break-inside: avoid; }
+.verification p, .piege p, .pourquoi p, .justification p, .methode p, .remarque p, .verification li, .piege li, .pourquoi li, .justification li, .methode li, .remarque li { font-size: 13px; }
+.verification { background: #d4edda; border-left: 5px solid #28a745; }
+.verification strong:first-child { color: #155724; }
+.piege { background: #f8d7da; border-left: 5px solid #dc3545; }
+.piege strong:first-child { color: #721c24; }
+.pourquoi { background: #d1ecf1; border-left: 5px solid #17a2b8; }
+.pourquoi strong:first-child { color: #0c5460; }
+.justification { background: #fdf6e3; border-left: 5px solid #f5a623; }
+.methode { background: #ede7f6; border-left: 5px solid #6f42c1; }
+.methode strong:first-child { color: #4a2a8a; }
+.remarque { background: #f2f2f2; border-left: 5px solid #888; }
+.katex { font-size: 1.05em; }
+.katex-display { margin: 8px 0; overflow-x: auto; overflow-y: hidden; }
+.figure { text-align: center; margin: 10px 0; break-inside: avoid; }
+.figure svg, .figure img { max-width: 100%; height: auto; }
+.vt td { min-width: 40px; }
+.formule { font-family: 'Courier New', monospace; background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.result-box { background: #e7f3ff; border: 2px solid #4a90e2; padding: 8px 10px; margin: 10px 0; border-radius: 6px; text-align: center; font-weight: bold; color: #1a3a6e; break-inside: avoid; }
+.result-box p { font-size: 14px; margin: 0; }
+.checklist { background: #fff; border: 2px solid #1a3a6e; padding: 12px 15px; margin: 18px 0; border-radius: 6px; break-inside: avoid; }
+.checklist ul { margin: 0; }
+.checklist li { list-style: none; padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 13px; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "☐ "; color: #c0392b; font-weight: bold; }
+.section-title { background: #1a3a6e; color: #fff; padding: 9px 15px; margin: 24px 0 12px; border-radius: 4px; font-size: 16px; break-after: avoid; }
+.section-title p { font-size: 16px; margin: 0; }
+.footer { text-align: center; font-size: 11px; color: #777; margin-top: 16px; padding-top: 8px; break-before: avoid; border-top: 1px solid #ddd; }
+.footer p { font-size: 11px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  .newpage { break-before: page; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>CORRIGÉ BY BACBYMED</h1>
+<div class="header-info">
+<strong>Gestion — Bac 2023 — Session Contrôle</strong><br>
+SECTION : ÉCONOMIE ET GESTION &nbsp;·&nbsp; DURÉE : 3 H 30 &nbsp;·&nbsp; COEFFICIENT : 3
+</div>
+<div class="table-wrap"><table>
+<tr><th>Épreuve</th><td>Gestion</td><th>Barème</th><td>20 points</td></tr>
+<tr><th>Session</th><td>Contrôle 2023</td><th>Structure</th><td>Partie 1 : 5 pts | Partie 2 : 15 pts</td></tr>
+</table></div>
+<div class="disclaimer">
+Document non officiel. Ce corrigé est rédigé par l'équipe <strong>BacByMed</strong> à titre pédagogique. Il ne s'agit ni du corrigé officiel du Ministère de l'Éducation, ni d'un barème officiel. En cas de divergence avec ton enseignant, c'est son explication qui fait foi.
+</div>
+
+<div class="section-title">
+<p>AVANT DE COMMENCER : barème suggéré et gestion du temps (3 h 30 = 210 min)</p>
+</div>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Thème</th>
+<th style="text-align: center;">Barème suggéré</th>
+<th style="text-align: center;">Temps conseillé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecture du sujet</td>
+<td>Repérer les annexes à rendre (n° 1 à 4)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 min</td>
+</tr>
+<tr class="even">
+<td>Exercice n° 1</td>
+<td>Gestion de l’approvisionnement (rotation des stocks)</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="odd">
+<td>Exercice n° 2</td>
+<td>Gestion de la trésorerie (placement, découvert)</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 1</td>
+<td>Analyse du marché de lessives</td>
+<td style="text-align: center;">3,5 pts</td>
+<td style="text-align: center;">30 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 2</td>
+<td>Lancement de la lessive en capsules (prix, investissement, financement)</td>
+<td style="text-align: center;">8,5 pts</td>
+<td style="text-align: center;">90 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 3</td>
+<td>Recrutement d’un chauffeur</td>
+<td style="text-align: center;">3 pts</td>
+<td style="text-align: center;">25 min</td>
+</tr>
+<tr class="odd">
+<td>Relecture</td>
+<td>Annexes complétées, unités, conclusions</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">15 min</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>20 pts</strong></td>
+<td style="text-align: center;"><strong>210 min</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="methode">
+<p><strong>Méthode.</strong> Le dossier n° 2 vaut près de la moitié de la note : garde-lui au moins 1 h 30. Les annexes donnent des <strong>contrôles</strong> : pourcentages 2021 (21,05 % ; 36,84 % ; 42,11 %), ligne 95,200 D de l’annexe n° 2 (122 ; 168 ; 290 ; 210), lignes 1 à 4 du tableau d’emprunt.</p>
+</div>
+<div class="section-title">
+<p>PREMIÈRE PARTIE (5 points)</p>
+</div>
+<h2 id="exercice-n-1-gestion-de-lapprovisionnement-société-confort-plus-25-points">Exercice n° 1 : Gestion de l’approvisionnement — société « Confort plus » — 2,5 points</h2>
+<p><strong>Données (2ᵉ semestre 2022).</strong> Stock au 01/07 : 70 climatiseurs · achats : 200 · stock au 31/12 : 100 · prix d’achat : 920 D HT · prix de vente : 1 200 D HT · taux de marque : 20 % · concurrents : 1 100 D HT et 1 mois de stockage.</p>
+<h3 id="ventes-en-volume-et-en-valeur">1) Ventes en volume et en valeur</h3>
+<p><span class="formule">Ventes = stock initial + achats − stock final = 70 + 200 − 100 = 170 climatiseurs</span></p>
+<div class="result-box">
+<p>Ventes : 170 climatiseurs, soit 170 × 1 200 = 204 000 D HT</p>
+</div>
+<h3 id="coût-dachat-unitaire">2) Coût d’achat unitaire</h3>
+<p>Le taux de marque est calculé sur le <strong>prix de vente</strong> : marge = 20 % × 1 200 = 240 D.</p>
+<div class="result-box">
+<p>Coût d’achat unitaire = 1 200 × (1 − 0,20) = 960 D</p>
+</div>
+<h3 id="frais-dapprovisionnement-par-unité">3) Frais d’approvisionnement par unité</h3>
+<div class="result-box">
+<p>Frais d’approvisionnement = 960 − 920 = 40 D par climatiseur</p>
+</div>
+<h3 id="stock-moyen-en-quantité">4) Stock moyen en quantité</h3>
+<p><span class="formule">Stock moyen = (stock initial + stock final) / 2 = (70 + 100) / 2 = 85 climatiseurs</span></p>
+<h3 id="rotation-et-durée-moyenne-de-stockage">5) Rotation et durée moyenne de stockage</h3>
+<p><span class="formule">Rotation = ventes / stock moyen = 170 / 85 = 2 fois par semestre</span></p>
+<div class="result-box">
+<p>Durée moyenne de stockage = 6 mois / 2 = 3 mois (90 jours)</p>
+</div>
+<p><strong>Commentaire.</strong> Un climatiseur reste en moyenne <strong>3 mois</strong> en stock, contre <strong>1 mois</strong> chez les concurrents : le stock tourne <strong>trois fois moins vite</strong>. Le stock est trop important par rapport aux ventes : il immobilise de l’argent, coûte cher à conserver et encombre le magasin.</p>
+<h3 id="solutions-pour-accélérer-la-rotation-et-être-compétitif">6) Solutions pour accélérer la rotation et être compétitif</h3>
+<ul>
+<li><strong>Baisser le prix de vente</strong> : 1 200 D contre 1 100 D chez les concurrents ; les clients achètent ailleurs.</li>
+<li><strong>Réduire les quantités achetées</strong> et commander plus souvent, au rythme des ventes.</li>
+<li><strong>Promotion des ventes</strong> (remises, facilités de paiement) et publicité pour écouler le stock.</li>
+<li>Négocier un prix d’achat plus bas ou réduire les frais d’approvisionnement (40 D) pour garder une marge malgré la baisse de prix.</li>
+</ul>
+<h2 id="exercice-n-2-gestion-de-la-trésorerie-entreprise-moins-prix-25-points">Exercice n° 2 : Gestion de la trésorerie — entreprise « Moins prix » — 2,5 points</h2>
+<p><strong>Données.</strong> Excédent de trésorerie : 220 000 D · trésorerie minimale : 20 000 D · dettes exigibles le 01/08/2023 : 70 000 D · placement : 90 jours à 7 % · découvert : 60 jours à 12 % + commission de 50 D HT par mois ou fraction de mois.</p>
+<h3 id="excédent-restant">1) Excédent restant</h3>
+<div class="result-box">
+<p>Excédent restant = 220 000 − 20 000 = 200 000 D</p>
+</div>
+<h3 id="première-possibilité-tout-placer-et-payer-les-dettes-par-découvert">2) Première possibilité : tout placer et payer les dettes par découvert</h3>
+<h4 id="a--intérêts-du-placement">a- Intérêts du placement</h4>
+<p><span class="formule">200 000 × 7 × 90 / 36 000 = 3 500 D</span></p>
+<h4 id="b--coût-du-découvert">b- Coût du découvert</h4>
+<ul>
+<li>Intérêts : 70 000 × 12 × 60 / 36 000 = <strong>1 400 D</strong></li>
+<li>Commissions : 60 jours = 2 mois, soit 2 × 50 = <strong>100 D HT</strong></li>
+</ul>
+<div class="result-box">
+<p>Coût du découvert = 1 400 + 100 = 1 500 D HT (1 519 D TTC)</p>
+</div>
+<h4 id="c--revenu-net-de-la-1ʳᵉ-possibilité">c- Revenu net de la 1ʳᵉ possibilité</h4>
+<div class="result-box">
+<p>Revenu net = 3 500 − 1 500 = 2 000 D</p>
+</div>
+<h3 id="deuxième-possibilité-garder-70-000-d-et-placer-le-reste">3) Deuxième possibilité : garder 70 000 D et placer le reste</h3>
+<p>Montant placé = 200 000 − 70 000 = 130 000 D.</p>
+<div class="result-box">
+<p>Revenu = 130 000 × 7 × 90 / 36 000 = 2 275 D</p>
+</div>
+<h3 id="possibilité-à-adopter">4) Possibilité à adopter</h3>
+<p><strong>La 2ᵉ possibilité</strong> : elle rapporte 2 275 D contre 2 000 D, soit <strong>275 D de plus</strong>. Placer de l’argent à 7 % tout en empruntant à 12 % (plus la commission) n’est pas rentable.</p>
+<div class="piege">
+<p><strong>Piège.</strong> Si l’on tient compte de la TVA sur les commissions (19 %), le revenu net de la 1ʳᵉ possibilité tombe à 1 981 D : la conclusion est la même. La TVA ne porte jamais sur les intérêts.</p>
+</div>
+<div class="section-title">
+<p>DEUXIÈME PARTIE (15 points) — Société « La propreté »</p>
+</div>
+<h2 id="dossier-n-1-analyse-du-marché-de-lessives-35-points">Dossier n° 1 : Analyse du marché de lessives — 3,5 points</h2>
+<h3 id="et-2-annexe-n-1-pourcentage-des-ventes-et-taux-dévolution">1) et 2) Annexe n° 1 : pourcentage des ventes et taux d’évolution</h3>
+<p>CA total 2022 = 900 000 + 1 767 500 + 2 240 000 = <strong>4 907 500 D</strong> (4 750 000 D en 2021).</p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th style="text-align: center;">% 2021</th>
+<th style="text-align: center;">% 2022</th>
+<th style="text-align: center;">Évolution société</th>
+<th style="text-align: center;">Évolution secteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lessive à la main</td>
+<td style="text-align: center;">21,05 %</td>
+<td style="text-align: center;"><strong>18,34 %</strong> (1)</td>
+<td style="text-align: center;"><strong>− 10 %</strong> (4)</td>
+<td style="text-align: center;">− 12 %</td>
+</tr>
+<tr class="even">
+<td>Lessive liquide standard</td>
+<td style="text-align: center;">36,84 %</td>
+<td style="text-align: center;"><strong>36,02 %</strong> (2)</td>
+<td style="text-align: center;"><strong>+ 1 %</strong> (5)</td>
+<td style="text-align: center;">1 %</td>
+</tr>
+<tr class="odd">
+<td>Lessive liquide concentrée</td>
+<td style="text-align: center;">42,11 %</td>
+<td style="text-align: center;"><strong>45,64 %</strong> (3)</td>
+<td style="text-align: center;"><strong>+ 12 %</strong> (6)</td>
+<td style="text-align: center;">10 %</td>
+</tr>
+</tbody>
+</table></div>
+<p>Détails : (1) 900 000 / 4 907 500 ; (2) 1 767 500 / 4 907 500 ; (3) 2 240 000 / 4 907 500 ; (4) (900 000 − 1 000 000) / 1 000 000 ; (5) (1 767 500 − 1 750 000) / 1 750 000 ; (6) (2 240 000 − 2 000 000) / 2 000 000.</p>
+<div class="verification">
+<p><strong>Vérification.</strong> 18,34 + 36,02 + 45,64 = 100 % ✓.</p>
+</div>
+<h3 id="comparaison-avec-le-secteur-et-cycle-de-vie">3) Comparaison avec le secteur et cycle de vie</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th style="text-align: center;">Société / secteur</th>
+<th>Commentaire</th>
+<th>Phase du cycle de vie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lessive à la main</td>
+<td style="text-align: center;">− 10 % / − 12 %</td>
+<td>Recul, mais moins fort que le marché : la société gagne un peu de part de marché</td>
+<td><strong>Déclin</strong></td>
+</tr>
+<tr class="even">
+<td>Liquide standard</td>
+<td style="text-align: center;">+ 1 % / + 1 %</td>
+<td>Évolution identique au marché, faible croissance</td>
+<td><strong>Maturité</strong></td>
+</tr>
+<tr class="odd">
+<td>Liquide concentrée</td>
+<td style="text-align: center;">+ 12 % / + 10 %</td>
+<td>Croissance plus rapide que le marché : gain de part de marché</td>
+<td><strong>Croissance</strong></td>
+</tr>
+<tr class="even">
+<td>Capsules</td>
+<td style="text-align: center;">— / + 15 %</td>
+<td>Segment le plus dynamique, où la société est <strong>absente</strong></td>
+<td><strong>Lancement / début de croissance</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="pourquoi-les-segments-évoluent-ils-différemment">4) Pourquoi les segments évoluent-ils différemment ?</h3>
+<ul>
+<li><strong>Évolution des besoins et des habitudes</strong> des consommateurs : généralisation des machines à laver, recherche de praticité (doses prêtes, produits concentrés).</li>
+<li><strong>Apparition de nouveaux produits</strong> (capsules) qui remplacent les anciens.</li>
+<li><strong>Concurrence</strong> de plus en plus intense sur les segments classiques.</li>
+<li>Chaque segment est à une <strong>phase différente</strong> de son cycle de vie.</li>
+</ul>
+<h3 id="avis-sur-la-gamme-et-recommandations">5) Avis sur la gamme et recommandations</h3>
+<p>La gamme est <strong>déséquilibrée</strong> : 18 % du CA viennent d’un produit en déclin et la société est absente du segment le plus dynamique (capsules, + 15 %). Son CA global ne progresse que de 3,32 %.</p>
+<p><strong>Recommandations :</strong></p>
+<ul>
+<li><strong>Élargir la gamme</strong> en lançant la lessive en capsules (dossier n° 2).</li>
+<li><strong>Développer</strong> la lessive concentrée, produit « vedette » en croissance.</li>
+<li><strong>Rajeunir ou abandonner progressivement</strong> la lessive à la main.</li>
+<li>Soutenir les produits par la communication et la distribution.</li>
+</ul>
+<h2 id="dossier-n-2-lancement-de-la-lessive-en-capsules-85-points">Dossier n° 2 : Lancement de la lessive en capsules — 8,5 points</h2>
+<h3 id="a.-prix-psychologique-et-résultat">A. Prix psychologique et résultat</h3>
+<h4 id="deux-raisons-de-diversifier-la-gamme">1) Deux raisons de diversifier la gamme</h4>
+<ul>
+<li><strong>Relancer la croissance</strong> de la société en entrant sur un segment en forte progression (+ 15 %).</li>
+<li><strong>Répartir les risques</strong> et compenser le déclin de la lessive à la main.</li>
+<li>Être présente sur <strong>tous les segments</strong> du marché et améliorer sa rentabilité et son image.</li>
+</ul>
+<h4 id="annexe-n-2-prix-psychologique-dun-lot-de-100-capsules">2) Annexe n° 2 : prix psychologique d’un lot de 100 capsules</h4>
+<p>C = cumul croissant de B (de haut en bas) ; E = cumul décroissant de D (somme de la ligne et des lignes en dessous) ; F = C + E ; G = 500 − F.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Prix TTC</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">D</th>
+<th style="text-align: center;">E</th>
+<th style="text-align: center;">F</th>
+<th style="text-align: center;">G</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">85,680</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">112</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;"><strong>500</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">88,060</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;"><strong>388</strong></td>
+<td style="text-align: center;"><strong>388</strong></td>
+<td style="text-align: center;"><strong>112</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">90,440</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"><strong>25</strong></td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;"><strong>300</strong></td>
+<td style="text-align: center;"><strong>325</strong></td>
+<td style="text-align: center;"><strong>175</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">92,820</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;"><strong>70</strong></td>
+<td style="text-align: center;">57</td>
+<td style="text-align: center;"><strong>225</strong></td>
+<td style="text-align: center;"><strong>295</strong></td>
+<td style="text-align: center;"><strong>205</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">95,200</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">122</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;">168</td>
+<td style="text-align: center;">290</td>
+<td style="text-align: center;">210</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">97,580</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;"><strong>177</strong></td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;"><strong>123</strong></td>
+<td style="text-align: center;"><strong>300</strong></td>
+<td style="text-align: center;"><strong>200</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">99,960</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;"><strong>242</strong></td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;"><strong>80</strong></td>
+<td style="text-align: center;"><strong>322</strong></td>
+<td style="text-align: center;"><strong>178</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">102,340</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;"><strong>320</strong></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"><strong>43</strong></td>
+<td style="text-align: center;"><strong>363</strong></td>
+<td style="text-align: center;"><strong>137</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">104,720</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;"><strong>405</strong></td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;"><strong>418</strong></td>
+<td style="text-align: center;"><strong>82</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">107,100</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>500</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="prix-dacceptabilité">3) Prix d’acceptabilité</h4>
+<p>Le nombre d’acheteurs potentiels est <strong>maximal (210)</strong> pour le prix de <strong>95,200 D TTC</strong> : c’est le prix psychologique.</p>
+<div class="result-box">
+<p>Prix psychologique d’un lot de 100 capsules = 95,200 D TTC</p>
+</div>
+<h4 id="a--prix-psychologique-hors-tva">4) a- Prix psychologique hors TVA</h4>
+<div class="result-box">
+<p>95,200 / 1,19 = 80 D HTVA</p>
+</div>
+<h4 id="b--marge-et-taux-de-marque-du-distributeur">4) b- Marge et taux de marque du distributeur</h4>
+<ul>
+<li>Marge du distributeur = 80 − 60 = <strong>20 D</strong></li>
+<li>Taux de marque = marge / prix de vente = 20 / 80 = <strong>25 %</strong></li>
+</ul>
+<h4 id="seuil-de-rentabilité">5) Seuil de rentabilité</h4>
+<p>MCV unitaire = 60 − 35 = 25 D (taux de MCV = 25 / 60).</p>
+<div class="result-box">
+<p>SR = 150 000 / 25 = 6 000 lots, soit 6 000 × 60 = 360 000 D</p>
+</div>
+<h4 id="bénéfice-pour-10-000-lots">6) Bénéfice pour 10 000 lots</h4>
+<p><span class="formule">Résultat = 10 000 × 25 − 150 000 = 250 000 − 150 000 = 100 000 D</span></p>
+<h4 id="caractéristique-de-cette-phase">7) Caractéristique de cette phase</h4>
+<p>C’est la <strong>phase de lancement</strong> du produit : volume encore limité, charges fixes importantes (près de 60 % de la MCV servent à les couvrir), bénéfice modeste. Le seuil (6 000 lots) représente 60 % des ventes prévues : le risque reste réel. Il faudra développer les ventes pour passer en phase de croissance.</p>
+<h3 id="b.-investissement">B. Investissement</h3>
+<h4 id="caf-annuelles">1) CAF annuelles</h4>
+<p>CAF de l’année n = CAF cumulée n − CAF cumulée n − 1.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Année</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CAF cumulée</td>
+<td style="text-align: right;">185 000</td>
+<td style="text-align: right;">391 250</td>
+<td style="text-align: right;">618 750</td>
+<td style="text-align: right;">856 875</td>
+<td style="text-align: right;">1 105 625</td>
+</tr>
+<tr class="even">
+<td><strong>CAF annuelle</strong></td>
+<td style="text-align: right;"><strong>185 000</strong></td>
+<td style="text-align: right;"><strong>206 250</strong></td>
+<td style="text-align: right;"><strong>227 500</strong></td>
+<td style="text-align: right;"><strong>238 125</strong></td>
+<td style="text-align: right;"><strong>248 750</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="van">2) VAN</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Année</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CAF annuelle</td>
+<td style="text-align: right;">185 000</td>
+<td style="text-align: right;">206 250</td>
+<td style="text-align: right;">227 500</td>
+<td style="text-align: right;">238 125</td>
+<td style="text-align: right;">248 750</td>
+</tr>
+<tr class="even">
+<td>Coefficient (12 %)</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="odd">
+<td>CAF actualisée</td>
+<td style="text-align: right;">165 178,545</td>
+<td style="text-align: right;">164 421,263</td>
+<td style="text-align: right;">161 929,950</td>
+<td style="text-align: right;">151 332,724</td>
+<td style="text-align: right;">141 147,466</td>
+</tr>
+</tbody>
+</table></div>
+<p>Somme des CAF actualisées = <strong>784 009,948 D</strong>.</p>
+<div class="result-box">
+<p>VAN = 784 009,948 − 500 000 = 284 009,948 D &gt; 0 : le projet est rentable</p>
+</div>
+<h4 id="drci">3) DRCI</h4>
+<p>Avec les CAF cumulées : 391 250 D à la fin de l’année 2 ; il reste 500 000 − 391 250 = 108 750 D à récupérer pendant l’année 3 (CAF 227 500 D).</p>
+<p><span class="formule">DRCI = 2 ans + 108 750 / 227 500 × 12 mois = 2 ans + 5,736 mois</span></p>
+<div class="result-box">
+<p>DRCI ≈ 2 ans, 5 mois et 23 jours</p>
+</div>
+<div class="remarque">
+<p><strong>Remarque.</strong> Si ton enseignant exige le DRCI sur les <strong>CAF actualisées</strong> (cumul : 491 529,757 D à la fin de l’année 3), on trouve 3 ans + 8 470,243 / 151 332,724 ≈ <strong>3 ans et 20 jours</strong>. La conclusion reste la même.</p>
+</div>
+<h4 id="la-société-a-t-elle-intérêt-à-lancer-les-capsules">4) La société a-t-elle intérêt à lancer les capsules ?</h4>
+<p><strong>Oui.</strong> La VAN est positive (284 009,948 D), le capital est récupéré bien avant la fin du projet (5 ans), le produit dégage un bénéfice dès la première année et il se situe sur le segment le plus dynamique du marché (+ 15 %).</p>
+<h3 id="c.-financement">C. Financement</h3>
+<h4 id="financement-des-25-restants-125-000-d">1) Financement des 25 % restants (125 000 D)</h4>
+<ul>
+<li><strong>Autofinancement</strong> : fonds propres, réserves, trésorerie disponible.</li>
+<li><strong>Augmentation du capital</strong> par apport en numéraire des associés.</li>
+<li>Éventuellement la <strong>cession</strong> d’immobilisations devenues inutiles.</li>
+</ul>
+<h4 id="a--taux-dintérêt">2) a- Taux d’intérêt</h4>
+<p>Emprunt = 75 % × 500 000 = 375 000 D.</p>
+<div class="result-box">
+<p>Taux = 37 500 / 375 000 = 10 %</p>
+</div>
+<h4 id="b--justification-de-la-2ᵉ-ligne">2) b- Justification de la 2ᵉ ligne</h4>
+<ul>
+<li>Intérêts = 300 000 × 10 % = <strong>30 000 D</strong></li>
+<li>Amortissement (constant) = 375 000 / 5 = <strong>75 000 D</strong></li>
+<li>Capital restant dû en fin de période = 300 000 − 75 000 = <strong>225 000 D</strong></li>
+</ul>
+<h4 id="annexe-n-3-complétée">3) Annexe n° 3 complétée</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;">Période</th>
+<th style="text-align: right;">Capital début</th>
+<th style="text-align: right;">Intérêts</th>
+<th style="text-align: right;">Amortissements</th>
+<th style="text-align: right;">Annuités</th>
+<th style="text-align: right;">Capital fin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">375 000</td>
+<td style="text-align: right;">37 500</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">112 500</td>
+<td style="text-align: right;">300 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">300 000</td>
+<td style="text-align: right;">30 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">105 000</td>
+<td style="text-align: right;">225 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">225 000</td>
+<td style="text-align: right;">22 500</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">97 500</td>
+<td style="text-align: right;">150 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">150 000</td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">90 000</td>
+<td style="text-align: right;">75 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: right;"><strong>75 000</strong></td>
+<td style="text-align: right;"><strong>7 500</strong></td>
+<td style="text-align: right;"><strong>75 000</strong></td>
+<td style="text-align: right;"><strong>82 500</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>112 500</strong></td>
+<td style="text-align: right;"><strong>375 000</strong></td>
+<td style="text-align: right;"><strong>487 500</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="et-5-annexe-n-4-flux-nets-actualisés-et-coût-net-de-financement">4) et 5) Annexe n° 4 : flux nets actualisés et coût net de financement</h4>
+<p>Économie d’impôt sur l’amortissement du bien = (500 000 / 5) × 15 % = <strong>15 000 D</strong> par an ; sur les intérêts = 15 % des intérêts.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût de l’investissement</td>
+<td style="text-align: right;">500 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Remboursement du principal</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">75 000</td>
+</tr>
+<tr class="odd">
+<td>Paiement des intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">37 500</td>
+<td style="text-align: right;">30 000</td>
+<td style="text-align: right;">22 500</td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">7 500</td>
+</tr>
+<tr class="even">
+<td><strong>Total des décaissements</strong></td>
+<td style="text-align: right;"><strong>500 000</strong></td>
+<td style="text-align: right;"><strong>112 500</strong></td>
+<td style="text-align: right;"><strong>105 000</strong></td>
+<td style="text-align: right;"><strong>97 500</strong></td>
+<td style="text-align: right;"><strong>90 000</strong></td>
+<td style="text-align: right;"><strong>82 500</strong></td>
+</tr>
+<tr class="odd">
+<td>Montant de l’emprunt</td>
+<td style="text-align: right;">375 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Valeur résiduelle</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Économie d’impôt sur les amortissements</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">15 000</td>
+<td style="text-align: right;">15 000</td>
+</tr>
+<tr class="even">
+<td>Économie d’impôt sur les intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5 625</td>
+<td style="text-align: right;">4 500</td>
+<td style="text-align: right;">3 375</td>
+<td style="text-align: right;">2 250</td>
+<td style="text-align: right;">1 125</td>
+</tr>
+<tr class="odd">
+<td><strong>Total des encaissements</strong></td>
+<td style="text-align: right;"><strong>375 000</strong></td>
+<td style="text-align: right;"><strong>20 625</strong></td>
+<td style="text-align: right;"><strong>19 500</strong></td>
+<td style="text-align: right;"><strong>18 375</strong></td>
+<td style="text-align: right;"><strong>17 250</strong></td>
+<td style="text-align: right;"><strong>16 125</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets de trésorerie</strong></td>
+<td style="text-align: right;"><strong>− 125 000</strong></td>
+<td style="text-align: right;"><strong>− 91 875</strong></td>
+<td style="text-align: right;"><strong>− 85 500</strong></td>
+<td style="text-align: right;"><strong>− 79 125</strong></td>
+<td style="text-align: right;"><strong>− 72 750</strong></td>
+<td style="text-align: right;"><strong>− 66 375</strong></td>
+</tr>
+<tr class="odd">
+<td>Coefficient (12 %)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets actualisés</strong></td>
+<td style="text-align: right;"><strong>− 125 000</strong></td>
+<td style="text-align: right;"><strong>− 82 031</strong></td>
+<td style="text-align: right;"><strong>− 68 160</strong></td>
+<td style="text-align: right;"><strong>− 56 319</strong></td>
+<td style="text-align: right;"><strong>− 46 233</strong></td>
+<td style="text-align: right;"><strong>− 37 662</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Coût net de financement = 415 405 D</p>
+</div>
+<div class="remarque">
+<p><strong>Remarque sur l’arrondi.</strong> Les flux actualisés sont arrondis au dinar inférieur <strong>en valeur absolue</strong> (91 875 × 0,892857 = 82 031,237 → 82 031). En arrondissant les nombres négatifs vers le bas (− 82 032…), on trouve 415 410 D : la décision ne change pas.</p>
+</div>
+<h4 id="mode-de-financement-conseillé">6) Mode de financement conseillé</h4>
+<p>Emprunt (avec 25 % de fonds propres) : <strong>415 405 D</strong> ; crédit-bail : <strong>460 000 D</strong>. On conseille le <strong>financement partiel par emprunt</strong>, moins coûteux de <strong>44 595 D</strong>.</p>
+<h2 id="dossier-n-3-recrutement-dun-chauffeur-3-points">Dossier n° 3 : Recrutement d’un chauffeur — 3 points</h2>
+<h3 id="mode-de-recrutement">1) Mode de recrutement</h3>
+<p><strong>Recrutement externe</strong>, réalisé par la société <strong>par ses propres moyens</strong> (annonce dans la presse et entretiens menés par le gérant, sans cabinet de recrutement).</p>
+<h3 id="coût-du-recrutement">2) Coût du recrutement</h3>
+<div class="result-box">
+<p>Coût = annonce 500 + entretiens 900 = 1 400 D</p>
+</div>
+<h3 id="salaire-net-mensuel-exigé-par-le-premier-candidat">3) Salaire net mensuel exigé par le premier candidat</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Salaire brut</td>
+<td></td>
+<td style="text-align: right;">1 500,000</td>
+</tr>
+<tr class="even">
+<td>− Cotisation ouvrière CNSS</td>
+<td>1 500 × 9,18 %</td>
+<td style="text-align: right;">137,700</td>
+</tr>
+<tr class="odd">
+<td>= Salaire imposable</td>
+<td></td>
+<td style="text-align: right;">1 362,300</td>
+</tr>
+<tr class="even">
+<td>− IRPP et CSS</td>
+<td></td>
+<td style="text-align: right;">222,700</td>
+</tr>
+<tr class="odd">
+<td><strong>= Salaire net</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>1 139,600 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="masse-salariale-annuelle-du-premier-candidat">4) Masse salariale annuelle du premier candidat</h3>
+<p>Charges patronales = 16,57 % + 1 % + 1 % = 18,57 %.</p>
+<div class="result-box">
+<p>Masse salariale annuelle = 1 500 × 12 × 1,1857 = 21 342,600 D</p>
+</div>
+<h3 id="la-société-peut-elle-recruter-le-premier-candidat">5) La société peut-elle recruter le premier candidat ?</h3>
+<p><strong>Oui</strong> : sa masse salariale annuelle (21 342,600 D) <strong>ne dépasse pas</strong> le plafond de 22 000 D fixé par le gérant (marge de 657,400 D). Le premier candidat peut être recruté.</p>
+<div class="piege">
+<p><strong>Piège.</strong> La masse salariale se calcule sur le salaire <strong>brut</strong> (pas sur le net), augmenté des charges <strong>patronales</strong> (CNSS 16,57 %, TFP, FOPROLOS). La cotisation ouvrière (9,18 %) est déjà comprise dans le brut. Le coût du recrutement (1 400 D) est une dépense ponctuelle : il ne fait pas partie de la masse salariale.</p>
+</div>
+<div class="checklist">
+<ul>
+<li>Annexes n° 1 à 4 complétées et rendues avec la copie (nom et numéro d’inscription écrits).</li>
+<li>Taux de marque toujours calculé sur le prix de vente (exercice 1 et dossier 2 A).</li>
+<li>Ligne de contrôle de l’annexe n° 2 retrouvée (95,200 D : 122 ; 168 ; 290 ; 210).</li>
+<li>Flux actualisés arrondis au dinar inférieur, comme demandé.</li>
+<li>Chaque question « Commentez / Justifiez / Quel mode ? » terminée par une phrase de décision.</li>
+</ul>
+</div>
+
+<div class="footer">
+CORRIGÉ BY BACBYMED — Gestion 2023 (Contrôle) — document non officiel.<br>
+Tu as vu une erreur ? Signale-la dans l'application, on corrige vite.
+</div>
+</div>
+</body>
+</html>

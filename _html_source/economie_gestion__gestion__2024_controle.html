@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORRIGÉ BY BACBYMED - Gestion Bac 2024 - Session Contrôle</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; color: #222; background: #f4f4f4; padding: 20px; }
+.page { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px 50px; box-shadow: 0 0 15px rgba(0,0,0,.1); }
+h1 { text-align: center; font-size: 24px; letter-spacing: 5px; color: #1a3a6e; border-bottom: 3px double #1a3a6e; padding-bottom: 14px; margin-bottom: 10px; white-space: nowrap; }
+h2 { font-size: 19px; color: #1a3a6e; margin: 26px 0 12px; border-left: 5px solid #c0392b; padding-left: 12px; break-after: avoid; }
+h3 { font-size: 16px; color: #2c3e50; margin: 18px 0 8px; break-after: avoid; }
+h4 { font-size: 14.5px; color: #c0392b; margin: 14px 0 6px; break-after: avoid; }
+p { margin: 6px 0; font-size: 14px; }
+ul, ol { margin: 6px 0 6px 24px; font-size: 14px; }
+li { margin: 2px 0; }
+.header-info { text-align: center; font-size: 14px; color: #555; margin-bottom: 16px; }
+.header-info strong { color: #1a3a6e; }
+.table-wrap { overflow-x: auto; break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+table th { background: #1a3a6e; color: #fff; padding: 6px; text-align: center; }
+table td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table td:first-child { text-align: left; }
+table tr:nth-child(even) { background: #f9f9f9; }
+.disclaimer { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; font-size: 12px; font-style: italic; margin: 18px 0; border-radius: 4px; }
+.disclaimer p { font-size: 12px; margin: 0; }
+.verification, .piege, .pourquoi, .justification, .methode, .remarque { padding: 10px 15px; margin: 12px 0; border-radius: 4px; break-inside: avoid; }
+.verification p, .piege p, .pourquoi p, .justification p, .methode p, .remarque p, .verification li, .piege li, .pourquoi li, .justification li, .methode li, .remarque li { font-size: 13px; }
+.verification { background: #d4edda; border-left: 5px solid #28a745; }
+.verification strong:first-child { color: #155724; }
+.piege { background: #f8d7da; border-left: 5px solid #dc3545; }
+.piege strong:first-child { color: #721c24; }
+.pourquoi { background: #d1ecf1; border-left: 5px solid #17a2b8; }
+.pourquoi strong:first-child { color: #0c5460; }
+.justification { background: #fdf6e3; border-left: 5px solid #f5a623; }
+.methode { background: #ede7f6; border-left: 5px solid #6f42c1; }
+.methode strong:first-child { color: #4a2a8a; }
+.remarque { background: #f2f2f2; border-left: 5px solid #888; }
+.katex { font-size: 1.05em; }
+.katex-display { margin: 8px 0; overflow-x: auto; overflow-y: hidden; }
+.figure { text-align: center; margin: 10px 0; break-inside: avoid; }
+.figure svg, .figure img { max-width: 100%; height: auto; }
+.vt td { min-width: 40px; }
+.formule { font-family: 'Courier New', monospace; background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.result-box { background: #e7f3ff; border: 2px solid #4a90e2; padding: 8px 10px; margin: 10px 0; border-radius: 6px; text-align: center; font-weight: bold; color: #1a3a6e; break-inside: avoid; }
+.result-box p { font-size: 14px; margin: 0; }
+.checklist { background: #fff; border: 2px solid #1a3a6e; padding: 12px 15px; margin: 18px 0; border-radius: 6px; break-inside: avoid; }
+.checklist ul { margin: 0; }
+.checklist li { list-style: none; padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 13px; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "☐ "; color: #c0392b; font-weight: bold; }
+.section-title { background: #1a3a6e; color: #fff; padding: 9px 15px; margin: 24px 0 12px; border-radius: 4px; font-size: 16px; break-after: avoid; }
+.section-title p { font-size: 16px; margin: 0; }
+.footer { text-align: center; font-size: 11px; color: #777; margin-top: 16px; padding-top: 8px; break-before: avoid; border-top: 1px solid #ddd; }
+.footer p { font-size: 11px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  .newpage { break-before: page; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>CORRIGÉ BY BACBYMED</h1>
+<div class="header-info">
+<strong>Gestion — Bac 2024 — Session Contrôle</strong><br>
+SECTION : ÉCONOMIE ET GESTION &nbsp;·&nbsp; DURÉE : 3 H 30 &nbsp;·&nbsp; COEFFICIENT : 3
+</div>
+<div class="table-wrap"><table>
+<tr><th>Épreuve</th><td>Gestion</td><th>Barème</th><td>20 points</td></tr>
+<tr><th>Session</th><td>Contrôle 2024</td><th>Structure</th><td>Partie 1 : 5 pts | Partie 2 : 15 pts</td></tr>
+</table></div>
+<div class="disclaimer">
+Document non officiel. Ce corrigé est rédigé par l'équipe <strong>BacByMed</strong> à titre pédagogique. Il ne s'agit ni du corrigé officiel du Ministère de l'Éducation, ni d'un barème officiel. En cas de divergence avec ton enseignant, c'est son explication qui fait foi.
+</div>
+
+<div class="section-title">
+<p>AVANT DE COMMENCER : barème suggéré et gestion du temps (3 h 30 = 210 min)</p>
+</div>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Thème</th>
+<th style="text-align: center;">Barème suggéré</th>
+<th style="text-align: center;">Temps conseillé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecture du sujet</td>
+<td>Repérer les annexes à rendre (n° 1 à 9)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 min</td>
+</tr>
+<tr class="even">
+<td>Exercice n° 1</td>
+<td>Gestion commerciale (seuil de rentabilité)</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="odd">
+<td>Exercice n° 2</td>
+<td>Gestion des ressources humaines</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">25 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 1</td>
+<td>Plein emploi et rentabilité des deux articles</td>
+<td style="text-align: center;">6 pts</td>
+<td style="text-align: center;">60 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 2</td>
+<td>Optimisation de l’approvisionnement</td>
+<td style="text-align: center;">3 pts</td>
+<td style="text-align: center;">25 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 3</td>
+<td>Choix d’investissement</td>
+<td style="text-align: center;">3,5 pts</td>
+<td style="text-align: center;">30 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 4</td>
+<td>Financement de l’investissement</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">25 min</td>
+</tr>
+<tr class="even">
+<td>Relecture</td>
+<td>Annexes complétées, unités, conclusions</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">15 min</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>20 pts</strong></td>
+<td style="text-align: center;"><strong>210 min</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="methode">
+<p><strong>Méthode.</strong> Le sujet donne beaucoup de <strong>résultats de contrôle</strong> : prix facturé de 100 D, masse salariale 2023, totaux de l’annexe n° 2 (91 salariés ; 1 165 680 D), totaux secondaires de l’annexe n° 3 (9 000 ; 6 000 ; 18 000 ; 5 720), quantités 6 000 et 5 000, amortissement de 25 600 D, VAN de « L », DRCI de « S ». Si ton calcul ne les retrouve pas, cherche l’erreur avant d’avancer.</p>
+</div>
+<div class="section-title">
+<p>PREMIÈRE PARTIE (5 points)</p>
+</div>
+<h2 id="exercice-n-1-gestion-commerciale-entreprise-excellence-25-points">Exercice n° 1 : Gestion commerciale — entreprise « EXCELLENCE » — 2,5 points</h2>
+<p><strong>Données.</strong> Tables en plastique vendues aux grandes surfaces · MCV unitaire : 50 D · 7 200 tables fabriquées et vendues par an · coût fixe annuel : 108 000 D · taux de marque des grandes surfaces : 20 % · prix public : 125 D HTVA · activité régulière.</p>
+<div class="methode">
+<p><strong>Méthode.</strong> La question 1 a besoin du prix facturé de la question 2 (pour trouver le coût variable) : commence par la question 2 au brouillon.</p>
+</div>
+<h3 id="prix-de-vente-minimal-pour-lentreprise">1) Prix de vente minimal pour l’entreprise</h3>
+<p>Le prix minimal (prix plancher) est celui qui couvre <strong>tout le coût de revient</strong> unitaire, donc qui donne un résultat nul.</p>
+<ul>
+<li>Coût variable unitaire = prix facturé − MCV unitaire = 100 − 50 = <strong>50 D</strong></li>
+<li>Coût fixe unitaire = 108 000 / 7 200 = <strong>15 D</strong></li>
+</ul>
+<div class="result-box">
+<p>Prix de vente minimal = 50 + 15 = 65 D HTVA</p>
+</div>
+<h3 id="vérification-du-prix-facturé-aux-grandes-surfaces">2) Vérification du prix facturé aux grandes surfaces</h3>
+<p>Le taux de marque se calcule sur le <strong>prix de vente</strong> de la grande surface :</p>
+<p><span class="formule">Prix facturé = prix public × (1 − taux de marque) = 125 × (1 − 0,20) = 100 D HTVA ✓</span></p>
+<div class="piege">
+<p><strong>Piège.</strong> Taux de marque ≠ taux de marge. Le taux de marque se calcule sur le <strong>prix de vente</strong> ; le taux de marge sur le coût d’achat. Diviser 125 par 1,20 (≈ 104,167 D) serait donc faux ici.</p>
+</div>
+<h3 id="seuil-de-rentabilité-point-mort-et-marge-de-sécurité">3) Seuil de rentabilité, point mort et marge de sécurité</h3>
+<p>CA = 7 200 × 100 = <strong>720 000 D</strong> ; taux de MCV = 50 / 100 = <strong>50 %</strong>.</p>
+<h4 id="a--seuil-de-rentabilité-en-valeur">a- Seuil de rentabilité en valeur</h4>
+<p><span class="formule">SR = coût fixe / taux de MCV = 108 000 / 0,50 = 216 000 D (soit 2 160 tables)</span></p>
+<h4 id="b--date-du-point-mort-activité-régulière">b- Date du point mort (activité régulière)</h4>
+<p><span class="formule">Point mort = SR / CA × 12 = 216 000 / 720 000 × 12 = 3,6 mois</span></p>
+<p>3 mois complets, puis 0,6 × 30 = 18 jours dans le 4ᵉ mois.</p>
+<div class="result-box">
+<p>Point mort : le 18 avril 2023</p>
+</div>
+<h4 id="c--marge-de-sécurité">c- Marge de sécurité</h4>
+<div class="result-box">
+<p>Marge de sécurité = CA − SR = 720 000 − 216 000 = 504 000 D</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> Résultat = 7 200 × 50 − 108 000 = 252 000 D, et marge de sécurité × taux de MCV = 504 000 × 0,50 = 252 000 D ✓.</p>
+</div>
+<h3 id="commentaire">4) Commentaire</h3>
+<ul>
+<li>Le seuil est atteint <strong>tôt</strong> (18 avril) : à partir de cette date, chaque table vendue rapporte 50 D de bénéfice.</li>
+<li>La marge de sécurité représente <strong>70 %</strong> du CA (504 000 / 720 000) : les ventes pourraient baisser de 70 % avant que l’entreprise ne subisse des pertes. L’activité est <strong>rentable et peu risquée</strong>.</li>
+<li>Le prix facturé (100 D) est bien supérieur au prix minimal (65 D) : l’entreprise dispose d’une marge de manœuvre sur ses prix.</li>
+</ul>
+<h2 id="exercice-n-2-gestion-des-ressources-humaines-entreprise-mounira-25-points">Exercice n° 2 : Gestion des ressources humaines — entreprise « MOUNIRA » — 2,5 points</h2>
+<p><strong>Données.</strong> Effectifs 2023 : cadres 5, TAM 10, OQ 12, OS 50 ; salaires bruts annuels moyens : 26 400 ; 20 400 ; 13 200 ; 10 560 D. Début 2024 : promotions (6 OS → OQ ; 3 OQ → TAM ; 2 TAM → cadres), départs à la retraite (2 ; 3 ; 2 ; 5) et recrutements externes (2 ; 4 ; 5 ; 15). Nouveau recruté : 80 % du salaire moyen 2023 de sa catégorie. Charges : CNSS 16,57 %, TFP 1 %, FOPROLOS 1 %.</p>
+<h3 id="a--annexe-n-1-effectifs-prévisionnels-au-31122024">1) a- Annexe n° 1 : effectifs prévisionnels au 31/12/2024</h3>
+<p><span class="formule">Effectif final = effectif initial − départs + recrutements + promotions reçues − promotions vers le haut</span></p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: center;">Cadres</th>
+<th style="text-align: center;">TAM</th>
+<th style="text-align: center;">Ouvriers qualifiés</th>
+<th style="text-align: center;">Ouvriers spécialisés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Effectif au 31/12/2023</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="even">
+<td>Départs à la retraite</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr class="odd">
+<td>Recrutement externe</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
+</tr>
+<tr class="even">
+<td>Promotion de la catégorie inférieure</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+</tr>
+<tr class="odd">
+<td>Promotion vers la catégorie supérieure</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Effectif au 31/12/2024</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: center;"><strong>54</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification.</strong> Total : 7 + 12 + 18 + 54 = 91 salariés (imprimé dans l’annexe n° 2) ✓. Les promotions ne changent pas l’effectif total : 77 − 12 départs + 26 recrutements = 91 ✓.</p>
+</div>
+<h3 id="b--annexe-n-2-salaire-brut-annuel-global-2024">1) b- Annexe n° 2 : salaire brut annuel global 2024</h3>
+<p>Anciens (après départs et promotions) : cadres 5 − 2 + 2 = <strong>5</strong> ; TAM 10 − 3 + 3 − 2 = <strong>8</strong> ; OQ 12 − 2 + 6 − 3 = <strong>13</strong> ; OS 50 − 5 − 6 = <strong>39</strong>. Chacun est payé au salaire moyen de sa <strong>nouvelle</strong> catégorie.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: center;">Effectif</th>
+<th style="text-align: right;">Salaire individuel</th>
+<th style="text-align: right;">Salaire global</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Anciens — cadres</td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: right;">26 400</td>
+<td style="text-align: right;"><strong>132 000</strong></td>
+</tr>
+<tr class="even">
+<td>Anciens — TAM</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">20 400</td>
+<td style="text-align: right;">163 200</td>
+</tr>
+<tr class="odd">
+<td>Anciens — OQ</td>
+<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: right;">13 200</td>
+<td style="text-align: right;"><strong>171 600</strong></td>
+</tr>
+<tr class="even">
+<td>Anciens — OS</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: right;">10 560</td>
+<td style="text-align: right;">411 840</td>
+</tr>
+<tr class="odd">
+<td>Nouveaux — cadres (80 % × 26 400)</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">21 120</td>
+<td style="text-align: right;">42 240</td>
+</tr>
+<tr class="even">
+<td>Nouveaux — TAM (80 % × 20 400)</td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>16 320</strong></td>
+<td style="text-align: right;"><strong>65 280</strong></td>
+</tr>
+<tr class="odd">
+<td>Nouveaux — OQ (80 % × 13 200)</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: right;">10 560</td>
+<td style="text-align: right;">52 800</td>
+</tr>
+<tr class="even">
+<td>Nouveaux — OS (80 % × 10 560)</td>
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: right;"><strong>8 448</strong></td>
+<td style="text-align: right;"><strong>126 720</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;"><strong>91</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>1 165 680</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>(Les valeurs en gras sont celles à compléter ; les autres sont imprimées dans l’annexe.)</p>
+<h3 id="c--masse-salariale-globale-2024">1) c- Masse salariale globale 2024</h3>
+<p>Taux des charges patronales = 16,57 % + 1 % + 1 % = 18,57 %.</p>
+<div class="result-box">
+<p>Masse salariale 2024 = 1 165 680 × 1,1857 = 1 382 146,776 D</p>
+</div>
+<div class="verification">
+<p><strong>Vérification avec 2023.</strong> Brut 2023 = 5 × 26 400 + 10 × 20 400 + 12 × 13 200 + 50 × 10 560 = 1 022 400 D ; × 1,1857 = 1 212 259,680 D, exactement la masse salariale donnée ✓ (la TFP est bien à 1 %).</p>
+</div>
+<h3 id="taux-dévolution-et-commentaire">2) Taux d’évolution et commentaire</h3>
+<p><span class="formule">Taux = (1 382 146,776 − 1 212 259,680) / 1 212 259,680 × 100 ≈ 14,01 %</span></p>
+<p><strong>Commentaire.</strong> La masse salariale augmente fortement (<strong>+ 14,01 %</strong>, soit + 169 887,096 D) alors qu’aucune augmentation de salaire n’est prévue. La cause est la <strong>hausse de l’effectif</strong> (77 → 91 salariés : 26 recrutements pour 12 départs) et les promotions vers des catégories mieux payées. Le salaire réduit des recrues (80 %) ne suffit pas à compenser. L’entreprise doit s’assurer que la production supplémentaire justifie ce coût.</p>
+<div class="section-title">
+<p>DEUXIÈME PARTIE (15 points) — Société « TAHAR &amp; Cie » (prêt-à-porter)</p>
+</div>
+<h2 id="dossier-n-1-étude-de-la-rentabilité-des-deux-articles-6-points">Dossier n° 1 : Étude de la rentabilité des deux articles — 6 points</h2>
+<h3 id="a.-quantité-optimale-à-fabriquer">A. Quantité optimale à fabriquer</h3>
+<h4 id="contraintes-des-deux-ateliers">1) Contraintes des deux ateliers</h4>
+<p>Soit x le nombre mensuel de pantalons et y le nombre de vestes. Les capacités sont converties en minutes : Coupe 2 000 h = 120 000 min ; Confection 4 500 h = 270 000 min.</p>
+<p><span class="formule">Coupe : 10x + 12y ≤ 120 000 · Confection : 20x + 30y ≤ 270 000 · x ≥ 0 ; y ≥ 0</span></p>
+<h4 id="quantités-du-plein-emploi">2) Quantités du plein emploi</h4>
+<p>Au plein emploi, les deux contraintes sont des égalités. On multiplie la première par 2 : 20x + 24y = 240 000. Par différence avec la seconde : 6y = 30 000.</p>
+<div class="result-box">
+<p>y = 5 000 vestes ; 10x = 120 000 − 60 000 ⇒ x = 6 000 pantalons</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> Coupe : 10 × 6 000 + 12 × 5 000 = 120 000 min = 2 000 h ✓ ; Confection : 20 × 6 000 + 30 × 5 000 = 270 000 min = 4 500 h ✓.</p>
+</div>
+<div class="piege">
+<p><strong>Piège.</strong> Mélanger minutes et heures : soit tout en minutes (120 000 et 270 000), soit tout en heures (x/6 + y/5 ≤ 2 000 ; x/3 + y/2 ≤ 4 500).</p>
+</div>
+<h3 id="b.-étude-de-la-rentabilité">B. Étude de la rentabilité</h3>
+<h4 id="totaux-des-sections-auxiliaires-prestations-réciproques">1) Totaux des sections auxiliaires (prestations réciproques)</h4>
+<p>Chaque clé totalise 10 parts. L’administration reçoit 1/10 de l’entretien ; l’entretien reçoit 2/10 de l’administration :</p>
+<p><span class="formule">A = 12 500 + 0,1 E · E = 7 300 + 0,2 A</span></p>
+<p><span class="formule">A = 12 500 + 0,1 (7 300 + 0,2 A) = 13 230 + 0,02 A ⇒ 0,98 A = 13 230</span></p>
+<div class="result-box">
+<p>Administration = 13 500 D ; Entretien = 7 300 + 0,2 × 13 500 = 10 000 D</p>
+</div>
+<h4 id="a--annexe-n-3-répartition-des-charges-indirectes">2) a- Annexe n° 3 : répartition des charges indirectes</h4>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Approvisionnement</th>
+<th style="text-align: right;">Coupe</th>
+<th style="text-align: right;">Confection</th>
+<th style="text-align: right;">Distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Totaux primaires</td>
+<td style="text-align: right;">5 650</td>
+<td style="text-align: right;">2 650</td>
+<td style="text-align: right;">7 250</td>
+<td style="text-align: right;">3 370</td>
+</tr>
+<tr class="even">
+<td>Administration (13 500 : 1/1/5/1 sur 10)</td>
+<td style="text-align: right;">1 350</td>
+<td style="text-align: right;">1 350</td>
+<td style="text-align: right;">6 750</td>
+<td style="text-align: right;">1 350</td>
+</tr>
+<tr class="odd">
+<td>Entretien (10 000 : 2/2/4/1 sur 10)</td>
+<td style="text-align: right;">2 000</td>
+<td style="text-align: right;">2 000</td>
+<td style="text-align: right;">4 000</td>
+<td style="text-align: right;">1 000</td>
+</tr>
+<tr class="even">
+<td><strong>Totaux après répartition secondaire</strong></td>
+<td style="text-align: right;">9 000</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">18 000</td>
+<td style="text-align: right;">5 720</td>
+</tr>
+<tr class="odd">
+<td>Nature de l’unité d’œuvre</td>
+<td style="text-align: right;">1 m de tissu acheté</td>
+<td style="text-align: right;">HMOD</td>
+<td style="text-align: right;">HMOD</td>
+<td style="text-align: right;">1 article vendu</td>
+</tr>
+<tr class="even">
+<td>Nombre d’unités d’œuvre</td>
+<td style="text-align: right;">18 000</td>
+<td style="text-align: right;"><strong>2 000</strong></td>
+<td style="text-align: right;"><strong>4 500</strong></td>
+<td style="text-align: right;"><strong>11 000</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Coût de l’unité d’œuvre</strong></td>
+<td style="text-align: right;"><strong>0,500</strong></td>
+<td style="text-align: right;"><strong>3,000</strong></td>
+<td style="text-align: right;"><strong>4,000</strong></td>
+<td style="text-align: right;">0,520</td>
+</tr>
+</tbody>
+</table></div>
+<p>Unités d’œuvre : tissu = 1,5 × 6 000 + 1,8 × 5 000 = 18 000 m ; Coupe = (10 × 6 000 + 12 × 5 000) / 60 = 2 000 h ; Confection = (20 × 6 000 + 30 × 5 000) / 60 = 4 500 h ; articles vendus = 6 000 + 5 000 = 11 000.</p>
+<div class="verification">
+<p><strong>Vérification.</strong> Total après répartition : 9 000 + 6 000 + 18 000 + 5 720 = 38 720 D = total des charges primaires (12 500 + 7 300 + 5 650 + 2 650 + 7 250 + 3 370) ✓ : rien n’a été perdu ni compté deux fois.</p>
+</div>
+<p>Coût d’achat du mètre de tissu = 24 + 0,500 = <strong>24,500 D</strong> (imprimé dans l’annexe n° 4 ✓).</p>
+<h4 id="b--annexe-n-4-coûts-de-production">2) b- Annexe n° 4 : coûts de production</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">P Qté</th>
+<th style="text-align: right;">P C.U</th>
+<th style="text-align: right;">P Montant</th>
+<th style="text-align: right;">V Qté</th>
+<th style="text-align: right;">V C.U</th>
+<th style="text-align: right;">V Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tissu consommé</td>
+<td style="text-align: right;">9 000</td>
+<td style="text-align: right;">24,500</td>
+<td style="text-align: right;">220 500</td>
+<td style="text-align: right;">9 000</td>
+<td style="text-align: right;">24,500</td>
+<td style="text-align: right;">220 500</td>
+</tr>
+<tr class="even">
+<td>Fournitures diverses</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">12,000</td>
+<td style="text-align: right;">72 000</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">100 000</td>
+</tr>
+<tr class="odd">
+<td>MOD Atelier Coupe</td>
+<td style="text-align: right;">1 000 h</td>
+<td style="text-align: right;">6,300</td>
+<td style="text-align: right;">6 300</td>
+<td style="text-align: right;">1 000 h</td>
+<td style="text-align: right;">6,300</td>
+<td style="text-align: right;">6 300</td>
+</tr>
+<tr class="even">
+<td>MOD Atelier Confection</td>
+<td style="text-align: right;">2 000 h</td>
+<td style="text-align: right;">7,100</td>
+<td style="text-align: right;">14 200</td>
+<td style="text-align: right;">2 500 h</td>
+<td style="text-align: right;">7,100</td>
+<td style="text-align: right;">17 750</td>
+</tr>
+<tr class="odd">
+<td>Autres frais de production</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">11,000</td>
+<td style="text-align: right;">66 000</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">15,490</td>
+<td style="text-align: right;">77 450</td>
+</tr>
+<tr class="even">
+<td>Charges indirectes Coupe</td>
+<td style="text-align: right;">1 000 h</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">3 000</td>
+<td style="text-align: right;">1 000 h</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">3 000</td>
+</tr>
+<tr class="odd">
+<td>Charges indirectes Confection</td>
+<td style="text-align: right;">2 000 h</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">8 000</td>
+<td style="text-align: right;">2 500 h</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">10 000</td>
+</tr>
+<tr class="even">
+<td><strong>Coût de production</strong></td>
+<td style="text-align: right;"><strong>6 000</strong></td>
+<td style="text-align: right;"><strong>65,000</strong></td>
+<td style="text-align: right;"><strong>390 000</strong></td>
+<td style="text-align: right;"><strong>5 000</strong></td>
+<td style="text-align: right;"><strong>87,000</strong></td>
+<td style="text-align: right;"><strong>435 000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Heures : P Coupe = 6 000 × 10 / 60 = 1 000 h ; P Confection = 6 000 × 20 / 60 = 2 000 h ; V Coupe = 5 000 × 12 / 60 = 1 000 h ; V Confection = 5 000 × 30 / 60 = 2 500 h.</p>
+<h4 id="c--annexes-n-5-et-6-coûts-de-revient-et-résultats-analytiques">2) c- Annexes n° 5 et 6 : coûts de revient et résultats analytiques</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">P Qté</th>
+<th style="text-align: right;">P C.U</th>
+<th style="text-align: right;">P Montant</th>
+<th style="text-align: right;">V Qté</th>
+<th style="text-align: right;">V C.U</th>
+<th style="text-align: right;">V Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût de production</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">65,000</td>
+<td style="text-align: right;">390 000</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">87,000</td>
+<td style="text-align: right;">435 000</td>
+</tr>
+<tr class="even">
+<td>Frais directs de distribution</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">18 000</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">15 000</td>
+</tr>
+<tr class="odd">
+<td>Charges indirectes de distribution</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">0,520</td>
+<td style="text-align: right;">3 120</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">0,520</td>
+<td style="text-align: right;">2 600</td>
+</tr>
+<tr class="even">
+<td><strong>Coût de revient</strong></td>
+<td style="text-align: right;"><strong>6 000</strong></td>
+<td style="text-align: right;"><strong>68,520</strong></td>
+<td style="text-align: right;"><strong>411 120</strong></td>
+<td style="text-align: right;"><strong>5 000</strong></td>
+<td style="text-align: right;"><strong>90,520</strong></td>
+<td style="text-align: right;"><strong>452 600</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">P Qté</th>
+<th style="text-align: right;">P C.U</th>
+<th style="text-align: right;">P Montant</th>
+<th style="text-align: right;">V Qté</th>
+<th style="text-align: right;">V C.U</th>
+<th style="text-align: right;">V Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">91,360</td>
+<td style="text-align: right;">548 160</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">124,000</td>
+<td style="text-align: right;">620 000</td>
+</tr>
+<tr class="even">
+<td>Coût de revient</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;">68,520</td>
+<td style="text-align: right;">411 120</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">90,520</td>
+<td style="text-align: right;">452 600</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat analytique</strong></td>
+<td style="text-align: right;"><strong>6 000</strong></td>
+<td style="text-align: right;"><strong>22,840</strong></td>
+<td style="text-align: right;"><strong>137 040</strong></td>
+<td style="text-align: right;"><strong>5 000</strong></td>
+<td style="text-align: right;"><strong>33,480</strong></td>
+<td style="text-align: right;"><strong>167 400</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="taux-de-rentabilité">3) Taux de rentabilité</h4>
+<p><span class="formule">Taux de rentabilité = résultat analytique / chiffre d’affaires × 100</span></p>
+<ul>
+<li>Pantalon : 137 040 / 548 160 × 100 = <strong>25 %</strong></li>
+<li>Veste : 167 400 / 620 000 × 100 = <strong>27 %</strong></li>
+</ul>
+<h4 id="lobjectif-de-24-est-il-atteint">4) L’objectif de 24 % est-il atteint ?</h4>
+<p><strong>Oui, pour les deux articles</strong> : 25 % &gt; 24 % et 27 % &gt; 24 %. La veste est la plus rentable ; le pantalon dépasse l’objectif de justesse (1 point).</p>
+<h2 id="dossier-n-2-optimisation-de-la-gestion-de-lapprovisionnement-3-points">Dossier n° 2 : Optimisation de la gestion de l’approvisionnement — 3 points</h2>
+<p><strong>Données.</strong> Achats annuels de tissu : 5 184 000 D · 2 commandes par trimestre · taux de possession : 10 % de la valeur du stock moyen · coût de passation : 1 800 D par commande.</p>
+<h3 id="situation-actuelle">1) Situation actuelle</h3>
+<h4 id="a--nombre-annuel-de-commandes">a- Nombre annuel de commandes</h4>
+<div class="result-box">
+<p>N = 2 × 4 = 8 commandes par an</p>
+</div>
+<h4 id="b--coût-total-de-passation">b- Coût total de passation</h4>
+<p><span class="formule">8 × 1 800 = 14 400 D</span></p>
+<h4 id="c--coût-total-de-possession">c- Coût total de possession</h4>
+<p><span class="formule">Stock moyen = 5 184 000 / (2 × 8) = 324 000 D · Possession = 324 000 × 10 % = 32 400 D</span></p>
+<h3 id="constat">2) Constat</h3>
+<p>Le coût de possession (32 400 D) est <strong>plus de deux fois</strong> le coût de passation (14 400 D). La politique actuelle <strong>n’est pas optimale</strong> : l’entreprise commande trop peu souvent, en trop grosses quantités, et son stock moyen est trop élevé. Il faut <strong>augmenter</strong> le nombre de commandes.</p>
+<h3 id="modèle-de-wilson">3) Modèle de Wilson</h3>
+<h4 id="a--nombre-optimal-de-commandes">a- Nombre optimal de commandes</h4>
+<p><span class="formule">N* = √(achats annuels × taux de possession / (2 × coût de passation)) = √(5 184 000 × 0,10 / 3 600) = √144 = 12</span></p>
+<div class="result-box">
+<p>N* = 12 commandes par an (une par mois) ; montant par commande = 5 184 000 / 12 = 432 000 D</p>
+</div>
+<h4 id="b--coût-total-dapprovisionnement-gestion-des-stocks">b- Coût total d’approvisionnement (gestion des stocks)</h4>
+<p>Passation = 12 × 1 800 = 21 600 D ; possession = (432 000 / 2) × 10 % = 21 600 D.</p>
+<div class="result-box">
+<p>Coût de gestion des stocks = 21 600 + 21 600 = 43 200 D</p>
+</div>
+<h4 id="c--économie-réalisée">c- Économie réalisée</h4>
+<p>Coût actuel = 14 400 + 32 400 = 46 800 D.</p>
+<div class="result-box">
+<p>Économie = 46 800 − 43 200 = 3 600 D par an</p>
+</div>
+<div class="verification">
+<p><strong>Vérification.</strong> À l’optimum, passation = possession (21 600 D = 21 600 D) ✓.</p>
+</div>
+<h2 id="dossier-n-3-choix-dinvestissement-35-points">Dossier n° 3 : Choix d’investissement — 3,5 points</h2>
+<h3 id="coût-réel-dacquisition">1) Coût réel d’acquisition</h3>
+<p>Le coût réel d’un équipement = prix d’acquisition HT + frais d’installation HT (la TVA est récupérable).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Unité</th>
+<th style="text-align: right;">Prix HT</th>
+<th style="text-align: right;">Frais d’installation HT</th>
+<th style="text-align: right;"><strong>Coût réel</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>« L »</td>
+<td style="text-align: right;">100 000</td>
+<td style="text-align: right;">6 000</td>
+<td style="text-align: right;"><strong>106 000 D</strong></td>
+</tr>
+<tr class="even">
+<td>« S »</td>
+<td style="text-align: right;">120 000</td>
+<td style="text-align: right;">8 000</td>
+<td style="text-align: right;"><strong>128 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification.</strong> VAN de « L » = 40 000 × 3,604776 − 106 000 = 38 191,040 D, exactement la valeur donnée ✓ : les frais d’installation font bien partie du coût.</p>
+</div>
+<h3 id="unité-s">2) Unité « S »</h3>
+<h4 id="a--amortissement-annuel">a- Amortissement annuel</h4>
+<p><span class="formule">128 000 / 5 = 25 600 D ✓</span></p>
+<h4 id="b--annexe-n-7-caf-actualisées">b- Annexe n° 7 : CAF actualisées</h4>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026</th>
+<th style="text-align: right;">2027</th>
+<th style="text-align: right;">2028</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bénéfices nets</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">35 000</td>
+<td style="text-align: right;">32 000</td>
+<td style="text-align: right;">30 000</td>
+<td style="text-align: right;">29 000</td>
+</tr>
+<tr class="even">
+<td>+ Dotations aux amortissements</td>
+<td style="text-align: right;"><strong>25 600</strong></td>
+<td style="text-align: right;"><strong>25 600</strong></td>
+<td style="text-align: right;"><strong>25 600</strong></td>
+<td style="text-align: right;"><strong>25 600</strong></td>
+<td style="text-align: right;"><strong>25 600</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>CAF annuelle</strong></td>
+<td style="text-align: right;"><strong>65 600</strong></td>
+<td style="text-align: right;"><strong>60 600</strong></td>
+<td style="text-align: right;"><strong>57 600</strong></td>
+<td style="text-align: right;"><strong>55 600</strong></td>
+<td style="text-align: right;"><strong>54 600</strong></td>
+</tr>
+<tr class="even">
+<td>Coefficient d’actualisation</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="odd">
+<td><strong>CAF actualisées</strong></td>
+<td style="text-align: right;"><strong>58 571,419</strong></td>
+<td style="text-align: right;"><strong>48 309,956</strong></td>
+<td style="text-align: right;"><strong>40 998,528</strong></td>
+<td style="text-align: right;"><strong>35 334,801</strong></td>
+<td style="text-align: right;"><strong>30 981,514</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Total des CAF actualisées = <strong>214 196,218 D</strong>.</p>
+<h4 id="c--van-de-s">c- VAN de « S »</h4>
+<div class="result-box">
+<p>VAN = 214 196,218 − 128 000 = 86 196,218 D</p>
+</div>
+<h3 id="drci-de-lunité-l">3) DRCI de l’unité « L »</h3>
+<p><span class="formule">DRCI = coût de l’investissement / CAF constante = 106 000 / 40 000 = 2,65 ans</span></p>
+<p>0,65 × 12 = 7,8 mois ; 0,8 × 30 = 24 jours.</p>
+<div class="result-box">
+<p>DRCI « L » = 2 ans 7 mois et 24 jours</p>
+</div>
+<div class="verification">
+<p><strong>Contrôle de la méthode avec « S ».</strong> CAF cumulées non actualisées : 65 600 puis 126 200 ; il reste 128 000 − 126 200 = 1 800 D à récupérer en 2026 : 1 800 / 57 600 × 360 = 11,25 jours, soit <strong>2 ans et 12 jours</strong> — la valeur donnée ✓. Le sujet calcule donc le DRCI sur les CAF <strong>non actualisées</strong>, et on fait de même pour « L ».</p>
+</div>
+<h3 id="choix-de-lunité">4) Choix de l’unité</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Critère exigé</th>
+<th style="text-align: center;">Unité « L »</th>
+<th style="text-align: center;">Unité « S »</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VAN &gt; 60 000 D</td>
+<td style="text-align: center;">38 191,040 D ✗</td>
+<td style="text-align: center;">86 196,218 D ✓</td>
+</tr>
+<tr class="even">
+<td>DRCI &lt; 2 ans 6 mois</td>
+<td style="text-align: center;">2 ans 7 mois 24 jours ✗</td>
+<td style="text-align: center;">2 ans 12 jours ✓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>On choisit l’unité « S »</strong> : elle respecte les deux conditions, alors que « L » n’en respecte aucune.</p>
+<h2 id="dossier-n-4-financement-de-linvestissement-25-points">Dossier n° 4 : Financement de l’investissement — 2,5 points</h2>
+<p><strong>Données.</strong> Coût HT de l’unité « S » : 128 000 D. 1ᵉʳ mode : emprunt de 100 000 D remboursable par 5 fractions égales + intérêts à 11 % du capital restant dû, le reste (28 000 D) sur fonds propres. 2ᵉ mode : crédit-bail, coût net 111 330 D. Impôt 15 % ; actualisation 12 %.</p>
+<h3 id="annexe-n-8-tableau-de-remboursement-de-lemprunt">1) Annexe n° 8 : tableau de remboursement de l’emprunt</h3>
+<p>Amortissement constant (1) = 100 000 / 5 = <strong>20 000 D</strong>.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;">n</th>
+<th style="text-align: right;">Capital début de période</th>
+<th style="text-align: right;">Intérêts (11 %)</th>
+<th style="text-align: right;">Amortissements</th>
+<th style="text-align: right;">Annuités</th>
+<th style="text-align: right;">Capital fin de période</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">100 000</td>
+<td style="text-align: right;">11 000</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">31 000</td>
+<td style="text-align: right;">80 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">80 000</td>
+<td style="text-align: right;">8 800</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">28 800</td>
+<td style="text-align: right;">60 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">6 600</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">26 600</td>
+<td style="text-align: right;">40 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">4 400</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">24 400</td>
+<td style="text-align: right;">20 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">2 200</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">22 200</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="annexe-n-9-coût-net-de-financement-du-1ᵉʳ-mode">2) Annexe n° 9 : coût net de financement du 1ᵉʳ mode</h3>
+<p>Économies d’impôt : sur les amortissements du bien = 25 600 × 15 % = <strong>3 840 D</strong> par an ; sur les intérêts = 15 % des intérêts de l’année.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût d’acquisition HT</td>
+<td style="text-align: right;">128 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Paiement des intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">11 000</td>
+<td style="text-align: right;">8 800</td>
+<td style="text-align: right;">6 600</td>
+<td style="text-align: right;">4 400</td>
+<td style="text-align: right;">2 200</td>
+</tr>
+<tr class="odd">
+<td>Remboursement du principal</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">20 000</td>
+</tr>
+<tr class="even">
+<td><strong>Totaux des décaissements</strong></td>
+<td style="text-align: right;"><strong>128 000</strong></td>
+<td style="text-align: right;"><strong>31 000</strong></td>
+<td style="text-align: right;"><strong>28 800</strong></td>
+<td style="text-align: right;"><strong>26 600</strong></td>
+<td style="text-align: right;"><strong>24 400</strong></td>
+<td style="text-align: right;"><strong>22 200</strong></td>
+</tr>
+<tr class="odd">
+<td>Montant de l’emprunt</td>
+<td style="text-align: right;">100 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Valeur résiduelle</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Économies d’impôt sur les amortissements</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">3 840</td>
+<td style="text-align: right;">3 840</td>
+<td style="text-align: right;">3 840</td>
+<td style="text-align: right;">3 840</td>
+<td style="text-align: right;">3 840</td>
+</tr>
+<tr class="even">
+<td>Économies d’impôt sur les intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1 650</td>
+<td style="text-align: right;">1 320</td>
+<td style="text-align: right;">990</td>
+<td style="text-align: right;">660</td>
+<td style="text-align: right;">330</td>
+</tr>
+<tr class="odd">
+<td><strong>Totaux des encaissements</strong></td>
+<td style="text-align: right;"><strong>100 000</strong></td>
+<td style="text-align: right;"><strong>5 490</strong></td>
+<td style="text-align: right;"><strong>5 160</strong></td>
+<td style="text-align: right;"><strong>4 830</strong></td>
+<td style="text-align: right;"><strong>4 500</strong></td>
+<td style="text-align: right;"><strong>4 170</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets de trésorerie</strong></td>
+<td style="text-align: right;"><strong>− 28 000</strong></td>
+<td style="text-align: right;"><strong>− 25 510</strong></td>
+<td style="text-align: right;"><strong>− 23 640</strong></td>
+<td style="text-align: right;"><strong>− 21 770</strong></td>
+<td style="text-align: right;"><strong>− 19 900</strong></td>
+<td style="text-align: right;"><strong>− 18 030</strong></td>
+</tr>
+<tr class="odd">
+<td>Coefficient (12 %)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets actualisés</strong></td>
+<td style="text-align: right;"><strong>− 28 000</strong></td>
+<td style="text-align: right;"><strong>− 22 776,782</strong></td>
+<td style="text-align: right;"><strong>− 18 845,666</strong></td>
+<td style="text-align: right;"><strong>− 15 495,450</strong></td>
+<td style="text-align: right;"><strong>− 12 646,808</strong></td>
+<td style="text-align: right;"><strong>− 10 230,708</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Coût net de financement du 1ᵉʳ mode = − 107 995,414 D (soit un coût de 107 995,414 D)</p>
+</div>
+<div class="piege">
+<p><strong>Piège.</strong> L’annexe demande 3 chiffres après la virgule <strong>sans arrondi</strong> : 25 510 × 0,892857 = 22 776,782 07 → on écrit 22 776,782 (troncature). Et l’économie d’impôt porte sur l’amortissement <strong>du bien</strong> (25 600 D), pas sur le remboursement de l’emprunt (20 000 D).</p>
+</div>
+<h3 id="mode-de-financement-à-retenir">3) Mode de financement à retenir</h3>
+<p>Financement mixte : <strong>107 995,414 D</strong> ; crédit-bail : <strong>111 330 D</strong>. Le <strong>financement mixte</strong> (emprunt + fonds propres) est le moins coûteux : il fait économiser 3 334,586 D. <strong>La société doit retenir le 1ᵉʳ mode.</strong></p>
+<div class="checklist">
+<ul>
+<li>Annexes n° 1 à 9 complétées et rendues avec la copie (nom et numéro d’inscription écrits).</li>
+<li>Les valeurs imprimées retrouvées : 91 salariés ; 1 165 680 D ; 9 000 / 6 000 / 18 000 / 5 720 ; 0,520 ; 24,500 ; 6 000 et 5 000.</li>
+<li>Les heures et les minutes jamais mélangées (dossier n° 1 A).</li>
+<li>Le DRCI calculé comme dans le sujet (CAF non actualisées) et les flux de l’annexe n° 9 tronqués à 3 décimales.</li>
+<li>Chaque question « Commentez / Justifiez / Quel mode ? » terminée par une phrase de décision.</li>
+</ul>
+</div>
+
+<div class="footer">
+CORRIGÉ BY BACBYMED — Gestion 2024 (Contrôle) — document non officiel.<br>
+Tu as vu une erreur ? Signale-la dans l'application, on corrige vite.
+</div>
+</div>
+</body>
+</html>

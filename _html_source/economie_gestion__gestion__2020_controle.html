@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORRIGÉ BY BACBYMED - Gestion Bac 2020 - Session Contrôle</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; color: #222; background: #f4f4f4; padding: 20px; }
+.page { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px 50px; box-shadow: 0 0 15px rgba(0,0,0,.1); }
+h1 { text-align: center; font-size: 24px; letter-spacing: 5px; color: #1a3a6e; border-bottom: 3px double #1a3a6e; padding-bottom: 14px; margin-bottom: 10px; white-space: nowrap; }
+h2 { font-size: 19px; color: #1a3a6e; margin: 26px 0 12px; border-left: 5px solid #c0392b; padding-left: 12px; break-after: avoid; }
+h3 { font-size: 16px; color: #2c3e50; margin: 18px 0 8px; break-after: avoid; }
+h4 { font-size: 14.5px; color: #c0392b; margin: 14px 0 6px; break-after: avoid; }
+p { margin: 6px 0; font-size: 14px; }
+ul, ol { margin: 6px 0 6px 24px; font-size: 14px; }
+li { margin: 2px 0; }
+.header-info { text-align: center; font-size: 14px; color: #555; margin-bottom: 16px; }
+.header-info strong { color: #1a3a6e; }
+.table-wrap { overflow-x: auto; break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+table th { background: #1a3a6e; color: #fff; padding: 6px; text-align: center; }
+table td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table td:first-child { text-align: left; }
+table tr:nth-child(even) { background: #f9f9f9; }
+.disclaimer { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; font-size: 12px; font-style: italic; margin: 18px 0; border-radius: 4px; }
+.disclaimer p { font-size: 12px; margin: 0; }
+.verification, .piege, .pourquoi, .justification, .methode, .remarque { padding: 10px 15px; margin: 12px 0; border-radius: 4px; break-inside: avoid; }
+.verification p, .piege p, .pourquoi p, .justification p, .methode p, .remarque p, .verification li, .piege li, .pourquoi li, .justification li, .methode li, .remarque li { font-size: 13px; }
+.verification { background: #d4edda; border-left: 5px solid #28a745; }
+.verification strong:first-child { color: #155724; }
+.piege { background: #f8d7da; border-left: 5px solid #dc3545; }
+.piege strong:first-child { color: #721c24; }
+.pourquoi { background: #d1ecf1; border-left: 5px solid #17a2b8; }
+.pourquoi strong:first-child { color: #0c5460; }
+.justification { background: #fdf6e3; border-left: 5px solid #f5a623; }
+.methode { background: #ede7f6; border-left: 5px solid #6f42c1; }
+.methode strong:first-child { color: #4a2a8a; }
+.remarque { background: #f2f2f2; border-left: 5px solid #888; }
+.katex { font-size: 1.05em; }
+.katex-display { margin: 8px 0; overflow-x: auto; overflow-y: hidden; }
+.figure { text-align: center; margin: 10px 0; break-inside: avoid; }
+.figure svg, .figure img { max-width: 100%; height: auto; }
+.vt td { min-width: 40px; }
+.formule { font-family: 'Courier New', monospace; background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.result-box { background: #e7f3ff; border: 2px solid #4a90e2; padding: 8px 10px; margin: 10px 0; border-radius: 6px; text-align: center; font-weight: bold; color: #1a3a6e; break-inside: avoid; }
+.result-box p { font-size: 14px; margin: 0; }
+.checklist { background: #fff; border: 2px solid #1a3a6e; padding: 12px 15px; margin: 18px 0; border-radius: 6px; break-inside: avoid; }
+.checklist ul { margin: 0; }
+.checklist li { list-style: none; padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 13px; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "☐ "; color: #c0392b; font-weight: bold; }
+.section-title { background: #1a3a6e; color: #fff; padding: 9px 15px; margin: 24px 0 12px; border-radius: 4px; font-size: 16px; break-after: avoid; }
+.section-title p { font-size: 16px; margin: 0; }
+.footer { text-align: center; font-size: 11px; color: #777; margin-top: 16px; padding-top: 8px; break-before: avoid; border-top: 1px solid #ddd; }
+.footer p { font-size: 11px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  .newpage { break-before: page; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>CORRIGÉ BY BACBYMED</h1>
+<div class="header-info">
+<strong>Gestion — Bac 2020 — Session Contrôle</strong><br>
+SECTION : ÉCONOMIE ET GESTION &nbsp;·&nbsp; DURÉE : 3 H 30 &nbsp;·&nbsp; COEFFICIENT : 3
+</div>
+<div class="table-wrap"><table>
+<tr><th>Épreuve</th><td>Gestion</td><th>Barème</th><td>20 points</td></tr>
+<tr><th>Session</th><td>Contrôle 2020</td><th>Structure</th><td>Partie 1 : 5 pts | Partie 2 : 15 pts</td></tr>
+</table></div>
+<div class="disclaimer">
+Document non officiel. Ce corrigé est rédigé par l'équipe <strong>BacByMed</strong> à titre pédagogique. Il ne s'agit ni du corrigé officiel du Ministère de l'Éducation, ni d'un barème officiel. En cas de divergence avec ton enseignant, c'est son explication qui fait foi.
+</div>
+
+<div class="section-title">
+<p>AVANT DE COMMENCER : barème suggéré et gestion du temps (3 h 30 = 210 min)</p>
+</div>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Thème</th>
+<th style="text-align: center;">Barème suggéré</th>
+<th style="text-align: center;">Temps conseillé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecture du sujet</td>
+<td>Repérer les annexes à rendre (n° 1 à 8)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 min</td>
+</tr>
+<tr class="even">
+<td>Exercice n° 1</td>
+<td>Gestion des stocks</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="odd">
+<td>Exercice n° 2</td>
+<td>Gestion de la masse salariale</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 1</td>
+<td>Évolution du CA et rentabilité des deux gammes</td>
+<td style="text-align: center;">4 pts</td>
+<td style="text-align: center;">35 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 2</td>
+<td>Choix d’une action commerciale</td>
+<td style="text-align: center;">4 pts</td>
+<td style="text-align: center;">35 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 3</td>
+<td>Lancement de la gamme « Enduit »</td>
+<td style="text-align: center;">3,5 pts</td>
+<td style="text-align: center;">30 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 4</td>
+<td>Amélioration de la trésorerie</td>
+<td style="text-align: center;">3,5 pts</td>
+<td style="text-align: center;">45 min</td>
+</tr>
+<tr class="even">
+<td>Relecture</td>
+<td>Annexes complétées, unités, conclusions</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">15 min</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>20 pts</strong></td>
+<td style="text-align: center;"><strong>210 min</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="methode">
+<p><strong>Méthode.</strong> Les annexes à rendre contiennent des <strong>valeurs de contrôle</strong> : 82 755 et 82 620 D (annexe n° 1), 78 985,800 D (annexe n° 2), 1 890 000 et 2 210 000 D (annexe n° 4), 1 198 800 ; 577 500 ; 949 300 et − 199 200 D (annexe n° 5), 37 000 D (annexe n° 7), 22 000 D d’intérêts (annexe n° 8). Retrouve-les avant de passer à la suite.</p>
+</div>
+<div class="section-title">
+<p>PREMIÈRE PARTIE (5 points)</p>
+</div>
+<h2 id="exercice-n-1-gestion-des-stocks-entreprise-mega-sport-25-points">Exercice n° 1 : Gestion des stocks — entreprise « MEGA SPORT » — 2,5 points</h2>
+<p><strong>Données (annexe A).</strong> 18 000 ballons par an (1 500 par mois) · prix d’achat unitaire HTVA : 4,400 D · remise : 10 % · frais unitaires sur achats : 0,540 D · taux de possession : 12 % du stock moyen · coût de passation : 135 D · 360 jours.</p>
+<h3 id="coût-dachat-unitaire">1) Coût d’achat unitaire</h3>
+<p><span class="formule">Coût d’achat = prix d’achat × (1 − remise) + frais sur achats = 4,400 × 0,90 + 0,540 = 3,960 + 0,540</span></p>
+<div class="result-box">
+<p>Coût d’achat unitaire = 4,500 D</p>
+</div>
+<h3 id="annexe-n-1-et-nombre-optimal-de-commandes">2) Annexe n° 1 et nombre optimal de commandes</h3>
+<p>Coût d’achat annuel = 18 000 × 4,500 = 81 000 D. Possession = (quantité par commande × 4,500 / 2) × 12 % ; passation = N × 135.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;">Nombre annuel de commandes</th>
+<th style="text-align: right;">Quantité par commande</th>
+<th style="text-align: right;">Coût d’achat total annuel</th>
+<th style="text-align: right;">Coût de possession</th>
+<th style="text-align: right;">Coût de passation</th>
+<th style="text-align: right;">Coût de gestion des stocks</th>
+<th style="text-align: right;">Coût global d’approvisionnement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">4 500</td>
+<td style="text-align: right;"><strong>81 000</strong></td>
+<td style="text-align: right;"><strong>1 215,000</strong></td>
+<td style="text-align: right;">540</td>
+<td style="text-align: right;">1 755,000</td>
+<td style="text-align: right;">82 755,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: right;"><strong>3 000</strong></td>
+<td style="text-align: right;"><strong>81 000</strong></td>
+<td style="text-align: right;">810,000</td>
+<td style="text-align: right;"><strong>810</strong></td>
+<td style="text-align: right;"><strong>1 620,000</strong></td>
+<td style="text-align: right;">82 620,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">2 250</td>
+<td style="text-align: right;">81 000</td>
+<td style="text-align: right;"><strong>607,500</strong></td>
+<td style="text-align: right;"><strong>1 080</strong></td>
+<td style="text-align: right;"><strong>1 687,500</strong></td>
+<td style="text-align: right;"><strong>82 687,500</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Nombre optimal : 6 commandes de 3 000 ballons.</strong> C’est le coût global le plus faible (82 620 D), et à ce niveau le coût de possession est <strong>égal</strong> au coût de passation (810 D).</p>
+<div class="verification">
+<p><strong>Vérification par la formule de Wilson.</strong> N* = √(81 000 × 0,12 / (2 × 135)) = √36 = 6 ✓.</p>
+</div>
+<h3 id="offre-du-fournisseur-remise-de-15-pour-4-500-à-6-000-ballons">3) Offre du fournisseur : remise de 15 % pour 4 500 à 6 000 ballons</h3>
+<h4 id="a--nombre-de-commandes">a- Nombre de commandes</h4>
+<ul>
+<li>Commandes de 4 500 ballons : 18 000 / 4 500 = <strong>4 commandes</strong></li>
+<li>Commandes de 6 000 ballons : 18 000 / 6 000 = <strong>3 commandes</strong></li>
+</ul>
+<h4 id="b--nouveau-coût-dachat-unitaire">b- Nouveau coût d’achat unitaire</h4>
+<div class="result-box">
+<p>4,400 × 0,85 + 0,540 = 3,740 + 0,540 = 4,280 D</p>
+</div>
+<h3 id="annexe-n-2-coût-global-dapprovisionnement">4) Annexe n° 2 : coût global d’approvisionnement</h3>
+<p>Coût d’achat annuel = 18 000 × 4,280 = 77 040 D.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: right;">Quantité à commander</th>
+<th style="text-align: center;">Nombre annuel de commandes</th>
+<th style="text-align: right;">Coût d’achat annuel</th>
+<th style="text-align: right;">Coût de possession</th>
+<th style="text-align: right;">Coût de passation</th>
+<th style="text-align: right;">Coût global d’approvisionnement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">6 000</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>77 040</strong></td>
+<td style="text-align: right;"><strong>1 540,800</strong></td>
+<td style="text-align: right;"><strong>405</strong></td>
+<td style="text-align: right;">78 985,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4 500</td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: right;">77 040</td>
+<td style="text-align: right;"><strong>1 155,600</strong></td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>78 735,600</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Calcul (6 000) : possession = (6 000 × 4,280 / 2) × 12 % = 1 540,800 D ; passation = 3 × 135 = 405 D.</p>
+<h3 id="loffre-est-elle-opportune">5) L’offre est-elle opportune ?</h3>
+<p><strong>Oui.</strong> La meilleure solution est de commander <strong>4 500 ballons, 4 fois par an</strong> : coût global de 78 735,600 D, contre 82 620 D pour l’optimum actuel. L’entreprise <strong>économise 3 884,400 D</strong> par an.</p>
+<div class="piege">
+<p><strong>Piège.</strong> Comparer seulement les coûts de gestion des stocks (1 695,600 D contre 1 620 D) ferait refuser l’offre. Dès que le prix d’achat change, il faut comparer le <strong>coût global</strong>, achat compris.</p>
+</div>
+<h2 id="exercice-n-2-gestion-de-la-masse-salariale-entreprise-la-rose-25-points">Exercice n° 2 : Gestion de la masse salariale — entreprise « LA ROSE » — 2,5 points</h2>
+<p><strong>Données (annexe B).</strong> Objectif : une masse salariale en hausse de 10 % au plus. Promotions entre catégories, aucun départ, aucune augmentation de salaire.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: center;">Cadres</th>
+<th style="text-align: center;">Techniciens</th>
+<th style="text-align: center;">Ouvriers qualifiés</th>
+<th style="text-align: center;">Ouvriers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Effectif 2019</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr class="even">
+<td>Salaire brut moyen mensuel 2019</td>
+<td style="text-align: center;">2 000</td>
+<td style="text-align: center;">1 300</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: center;">700</td>
+</tr>
+<tr class="odd">
+<td>Effectif 2020</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">43</td>
+</tr>
+<tr class="even">
+<td>Salaire brut moyen mensuel 2020</td>
+<td style="text-align: center;">1 950</td>
+<td style="text-align: center;">1 300</td>
+<td style="text-align: center;">875</td>
+<td style="text-align: center;">660</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a--effectif-à-promouvoir">1) a- Effectif à promouvoir</h3>
+<p>Sans départ, une catégorie ne peut <strong>baisser</strong> que par promotion vers la catégorie supérieure :</p>
+<ul>
+<li>Techniciens : 15 → 12, donc <strong>3 techniciens promus cadres</strong> (cadres : 6 + 3 = 9 ✓).</li>
+<li>Ouvriers qualifiés : 25 → 30, soit + 5 : <strong>5 ouvriers promus ouvriers qualifiés</strong>.</li>
+</ul>
+<h3 id="b--nombre-douvriers-à-recruter">1) b- Nombre d’ouvriers à recruter</h3>
+<p><span class="formule">40 − 5 + R = 43 ⇒ R = 8 ouvriers à recruter</span></p>
+<div class="verification">
+<p><strong>Vérification.</strong> Effectif total : 86 en 2019 + 8 recrutés = 94 = 9 + 12 + 30 + 43 ✓ (les promotions ne changent pas le total).</p>
+</div>
+<h3 id="c--salaire-brut-moyen-mensuel-de-lensemble-des-salariés">1) c- Salaire brut moyen mensuel de l’ensemble des salariés</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Année</th>
+<th style="text-align: right;">Salaire mensuel global</th>
+<th style="text-align: center;">Effectif</th>
+<th style="text-align: right;"><strong>Salaire moyen mensuel</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2019</td>
+<td style="text-align: right;">6 × 2 000 + 15 × 1 300 + 25 × 900 + 40 × 700 = 82 000</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: right;"><strong>953,488 D</strong></td>
+</tr>
+<tr class="even">
+<td>2020</td>
+<td style="text-align: right;">9 × 1 950 + 12 × 1 300 + 30 × 875 + 43 × 660 = 87 780</td>
+<td style="text-align: center;">94</td>
+<td style="text-align: right;"><strong>933,830 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Le salaire moyen <strong>baisse d’environ 19,66 D</strong> par mois. <strong>Origine :</strong> les promus et les recrutés sont payés <strong>moins</strong> que les anciens de leur catégorie (moyenne des cadres 2 000 → 1 950 D ; des OQ 900 → 875 D ; des ouvriers 700 → 660 D) : c’est un <strong>effet de noria</strong> (les nouveaux entrent en bas de la grille).</p>
+<h3 id="masse-salariale-2020-et-taux-dévolution">2) Masse salariale 2020 et taux d’évolution</h3>
+<p>Taux des charges patronales = 16,57 % + 1 % + 1 % = 18,57 %.</p>
+<p><span class="formule">Masse salariale 2020 = 87 780 × 12 × 1,1857 = 1 248 968,952 D</span></p>
+<p><span class="formule">Taux d’évolution = (1 248 968,952 − 1 166 728,800) / 1 166 728,800 × 100 ≈ 7,05 %</span></p>
+<div class="verification">
+<p><strong>Vérification avec 2019.</strong> 82 000 × 12 × 1,1857 = 1 166 728,800 D, la valeur donnée ✓.</p>
+</div>
+<h3 id="lobjectif-est-il-atteint">3) L’objectif est-il atteint ?</h3>
+<p><strong>Oui</strong> : la masse salariale augmente de 7,05 %, en dessous du plafond de 10 %. L’entreprise a recruté 8 ouvriers tout en maîtrisant ses coûts salariaux, grâce aux salaires plus faibles des promus et des recrues.</p>
+<div class="section-title">
+<p>DEUXIÈME PARTIE (15 points) — Entreprise « COULEURS DE LA JOIE »</p>
+</div>
+<h2 id="dossier-n-1-analyse-de-lévolution-du-chiffre-daffaires-et-de-la-rentabilité-4-points">Dossier n° 1 : Analyse de l’évolution du chiffre d’affaires et de la rentabilité — 4 points</h2>
+<h3 id="a--annexe-n-3-colonne-2019">1) a- Annexe n° 3 : colonne 2019</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: center;">PEDEC 2019</th>
+<th style="text-align: center;">PEVIN 2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux d’évolution du CA de l’entreprise</td>
+<td style="text-align: center;"><strong>18,75 %</strong></td>
+<td style="text-align: center;"><strong>− 28,57 %</strong></td>
+</tr>
+<tr class="even">
+<td>Taux d’évolution du CA du secteur</td>
+<td style="text-align: center;">4,17 % (donné)</td>
+<td style="text-align: center;">− 8,57 % (donné)</td>
+</tr>
+<tr class="odd">
+<td>Part de marché</td>
+<td style="text-align: center;"><strong>22,80 %</strong></td>
+<td style="text-align: center;"><strong>12,50 %</strong></td>
+</tr>
+<tr class="even">
+<td>Détail : évolution du CA</td>
+<td style="text-align: center;">(2 850 000 − 2 400 000) / 2 400 000 = 18,75 %</td>
+<td style="text-align: center;">(1 250 000 − 1 750 000) / 1 750 000 = − 28,57 %</td>
+</tr>
+<tr class="odd">
+<td>Détail : part de marché</td>
+<td style="text-align: center;">2 850 000 / 12 500 000 = 22,80 %</td>
+<td style="text-align: center;">1 250 000 / 10 000 000 = 12,50 %</td>
+</tr>
+</tbody>
+</table></div>
+<div class="remarque">
+<p><strong>Remarque sur le sujet.</strong> Deux valeurs imprimées de l’annexe n° 3 ne sont pas cohérentes avec le tableau des données : part de marché PEDEC 2018 = 2 400 000 / 12 000 000 = <strong>20 %</strong> (et non 21,95 %) ; pour PEVIN, les taux du secteur imprimés (− 2,78 % et − 8,57 %) correspondent à un CA du secteur 2018 de 10 937 500 D, et non 10 900 000 D. Ces écarts ne changent pas les calculs de 2019 demandés.</p>
+</div>
+<h3 id="b--quantités-vendues-en-2019">1) b- Quantités vendues en 2019</h3>
+<ul>
+<li>PEDEC : 2 850 000 / 30 = <strong>95 000 seaux</strong></li>
+<li>PEVIN : 1 250 000 / 50 = <strong>25 000 seaux</strong></li>
+</ul>
+<h3 id="c--coût-variable-unitaire-et-global">1) c- Coût variable unitaire et global</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Gamme</th>
+<th style="text-align: right;">Coût variable unitaire</th>
+<th style="text-align: right;">Coût variable global</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PEDEC</td>
+<td style="text-align: right;">30 × 40 % = <strong>12 D</strong></td>
+<td style="text-align: right;">95 000 × 12 = <strong>1 140 000 D</strong></td>
+</tr>
+<tr class="even">
+<td>PEVIN</td>
+<td style="text-align: right;">50 × 60 % = <strong>30 D</strong></td>
+<td style="text-align: right;">25 000 × 30 = <strong>750 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="position-dans-le-cycle-de-vie">2) Position dans le cycle de vie</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Gamme</th>
+<th>Indices</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PEDEC</td>
+<td>CA en hausse (+ 44 %, + 33,33 %, + 18,75 %), plus vite que le secteur ; part de marché en progression (18 % → 20 % → 22,80 %) ; mais le rythme ralentit</td>
+<td><strong>Croissance</strong> (en fin de croissance, vers la maturité)</td>
+</tr>
+<tr class="even">
+<td>PEVIN</td>
+<td>CA en baisse de plus en plus forte (− 10 %, − 22,22 %, − 28,57 %), plus vite que le secteur ; part de marché en recul (20 % → 16 % → 12,50 %)</td>
+<td><strong>Déclin</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="annexe-n-4-résultats-différentiels-2019">3) Annexe n° 4 : résultats différentiels 2019</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">PEDEC</th>
+<th style="text-align: right;">PEVIN</th>
+<th style="text-align: right;">Activité globale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires</td>
+<td style="text-align: right;">2 850 000</td>
+<td style="text-align: right;">1 250 000</td>
+<td style="text-align: right;"><strong>4 100 000</strong></td>
+</tr>
+<tr class="even">
+<td>Coût variable</td>
+<td style="text-align: right;"><strong>1 140 000</strong></td>
+<td style="text-align: right;"><strong>750 000</strong></td>
+<td style="text-align: right;">1 890 000</td>
+</tr>
+<tr class="odd">
+<td>Marge sur coût variable</td>
+<td style="text-align: right;"><strong>1 710 000</strong></td>
+<td style="text-align: right;"><strong>500 000</strong></td>
+<td style="text-align: right;">2 210 000</td>
+</tr>
+<tr class="even">
+<td>Coût fixe</td>
+<td style="text-align: right;">900 000</td>
+<td style="text-align: right;">810 000</td>
+<td style="text-align: right;">1 710 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>810 000</strong></td>
+<td style="text-align: right;"><strong>− 310 000</strong></td>
+<td style="text-align: right;"><strong>500 000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Commentaire.</strong> L’entreprise est bénéficiaire (500 000 D) grâce à PEDEC (810 000 D, taux de MCV de 60 %). PEVIN est <strong>déficitaire</strong> (− 310 000 D) en coûts complets, mais sa <strong>MCV est positive</strong> (500 000 D) : elle couvre une partie des charges fixes. L’abandonner sans réduire les charges fixes ferait perdre ces 500 000 D de marge.</p>
+<h3 id="solutions-proposées">4) Solutions proposées</h3>
+<ul>
+<li><strong>Relancer PEVIN</strong> : promotion des ventes, publicité, amélioration du produit, ou baisse des coûts variables (taux de 60 %, trop élevé).</li>
+<li><strong>Développer PEDEC</strong>, en croissance : produire et vendre plus pour profiter de sa forte marge.</li>
+<li><strong>Réduire les charges fixes</strong> de PEVIN, ou abandonner la gamme si les charges fixes peuvent être réaffectées.</li>
+<li><strong>Lancer une nouvelle gamme</strong> pour remplacer le produit en déclin (dossier n° 3).</li>
+</ul>
+<h2 id="dossier-n-2-choix-dune-action-commerciale-4-points">Dossier n° 2 : Choix d’une action commerciale — 4 points</h2>
+<h3 id="solution-1-abandon-de-pevin">1) Solution 1 : abandon de PEVIN</h3>
+<p>Même structure de production : les charges fixes restent 1 710 000 D. PEDEC : 108 000 seaux à 30 D, coût variable 12 D.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires (108 000 × 30)</td>
+<td style="text-align: right;">3 240 000</td>
+</tr>
+<tr class="even">
+<td>− Coût variable (108 000 × 12)</td>
+<td style="text-align: right;">1 296 000</td>
+</tr>
+<tr class="odd">
+<td>= Marge sur coût variable</td>
+<td style="text-align: right;">1 944 000</td>
+</tr>
+<tr class="even">
+<td>− Coût fixe</td>
+<td style="text-align: right;">1 710 000</td>
+</tr>
+<tr class="odd">
+<td><strong>= Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>234 000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="solution-2-action-commerciale-sur-les-deux-gammes">2) Solution 2 : action commerciale sur les deux gammes</h3>
+<h4 id="a--coût-variable-de-pevin">a- Coût variable de PEVIN</h4>
+<p>Quantités à produire : 7 500 + 5 000 + 22 500 = <strong>35 000 seaux</strong> (les seaux offerts sont aussi produits et livrés). La livraison départ usine réduit les frais de distribution de 3 % du prix : 50 × 3 % = 1,500 D.</p>
+<div class="result-box">
+<p>Coût variable unitaire PEVIN = 30 − 1,500 = 28,500 D ; coût variable total = 35 000 × 28,500 = 997 500 D</p>
+</div>
+<h4 id="b--coût-fixe-total">b- Coût fixe total</h4>
+<p>Campagne publicitaire : 4 000 × 4 trimestres = 16 000 D.</p>
+<div class="result-box">
+<p>Coût fixe total = 1 710 000 + 16 000 = 1 726 000 D</p>
+</div>
+<h4 id="c--chiffre-daffaires-prévisionnel-de-pevin">c- Chiffre d’affaires prévisionnel de PEVIN</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Période</th>
+<th style="text-align: right;">Seaux livrés</th>
+<th style="text-align: right;">Seaux payés</th>
+<th style="text-align: right;">Chiffre d’affaires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1ᵉʳ mois (6 au prix de 4)</td>
+<td style="text-align: right;">7 500</td>
+<td style="text-align: right;">7 500 × 4/6 = 5 000</td>
+<td style="text-align: right;">250 000</td>
+</tr>
+<tr class="even">
+<td>2ᵉ mois (5 au prix de 4)</td>
+<td style="text-align: right;">5 000</td>
+<td style="text-align: right;">5 000 × 4/5 = 4 000</td>
+<td style="text-align: right;">200 000</td>
+</tr>
+<tr class="odd">
+<td>10 mois restants</td>
+<td style="text-align: right;">22 500</td>
+<td style="text-align: right;">22 500</td>
+<td style="text-align: right;">1 125 000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>35 000</strong></td>
+<td style="text-align: right;"><strong>31 500</strong></td>
+<td style="text-align: right;"><strong>1 575 000 D</strong> ✓</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="d--annexe-n-5-résultats-différentiels-prévisionnels-solution-2">d- Annexe n° 5 : résultats différentiels prévisionnels (solution 2)</h4>
+<p>PEDEC : coût variable unitaire = 12 − 30 × 3 % = 11,100 D, soit 108 000 × 11,100 = 1 198 800 D (imprimé ✓).</p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">PEDEC</th>
+<th style="text-align: right;">PEVIN</th>
+<th style="text-align: right;">Activité globale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d’affaires HTVA</td>
+<td style="text-align: right;"><strong>3 240 000</strong></td>
+<td style="text-align: right;">1 575 000</td>
+<td style="text-align: right;"><strong>4 815 000</strong></td>
+</tr>
+<tr class="even">
+<td>Coût variable</td>
+<td style="text-align: right;">1 198 800</td>
+<td style="text-align: right;"><strong>997 500</strong></td>
+<td style="text-align: right;"><strong>2 196 300</strong></td>
+</tr>
+<tr class="odd">
+<td>Marge sur coût variable</td>
+<td style="text-align: right;"><strong>2 041 200</strong></td>
+<td style="text-align: right;">577 500</td>
+<td style="text-align: right;"><strong>2 618 700</strong></td>
+</tr>
+<tr class="even">
+<td>Coût fixe</td>
+<td style="text-align: right;">949 300</td>
+<td style="text-align: right;"><strong>776 700</strong></td>
+<td style="text-align: right;"><strong>1 726 000</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>1 091 900</strong></td>
+<td style="text-align: right;">− 199 200</td>
+<td style="text-align: right;"><strong>892 700</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="remarque">
+<p><strong>Remarque.</strong> Le coût fixe de PEVIN se déduit par différence : 1 726 000 − 949 300 = 776 700 D. La valeur imprimée pour PEDEC (949 300 D) correspond à 55 % du coût fixe total (1 726 000 × 55 %) : le sujet applique la clé de 55 % à l’ensemble des charges fixes. Contrôle : 577 500 − 776 700 = − 199 200 D, la valeur imprimée ✓.</p>
+</div>
+<h4 id="e--impact-de-laction-commerciale-sur-pevin">e- Impact de l’action commerciale sur PEVIN</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>PEVIN</th>
+<th style="text-align: right;">2019</th>
+<th style="text-align: right;">Solution 2</th>
+<th style="text-align: right;">Variation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Marge sur coût variable</td>
+<td style="text-align: right;">500 000</td>
+<td style="text-align: right;">577 500</td>
+<td style="text-align: right;">+ 77 500</td>
+</tr>
+<tr class="even">
+<td>Résultat d’exploitation</td>
+<td style="text-align: right;">− 310 000</td>
+<td style="text-align: right;">− 199 200</td>
+<td style="text-align: right;"><strong>+ 110 800</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Commentaire.</strong> L’action commerciale <strong>améliore</strong> le résultat de PEVIN de 110 800 D : les ventes passent de 25 000 à 35 000 seaux et la MCV progresse. PEVIN reste <strong>déficitaire</strong> en coûts complets, mais sa contribution à la couverture des charges fixes augmente (577 500 D).</p>
+<h3 id="solution-conseillée">3) Solution conseillée</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Solution</th>
+<th style="text-align: right;">Résultat global</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Solution 1 : abandon de PEVIN</td>
+<td style="text-align: right;">234 000 D</td>
+</tr>
+<tr class="even">
+<td>Solution 2 : action commerciale</td>
+<td style="text-align: right;"><strong>892 700 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La solution 2 est à conseiller</strong> : elle donne un résultat global bien supérieur (+ 658 700 D). Abandonner PEVIN ferait perdre sa marge sur coût variable alors que les charges fixes resteraient les mêmes.</p>
+<h2 id="dossier-n-3-lancement-dune-nouvelle-gamme-de-peinture-enduit-35-points">Dossier n° 3 : Lancement d’une nouvelle gamme de peinture « Enduit » — 3,5 points</h2>
+<h3 id="canal-de-distribution">1) Canal de distribution</h3>
+<p>La gamme « Enduit » est vendue <strong>directement aux professionnels</strong> (peintres, entreprises de bâtiment), qui sont les utilisateurs du produit, sans intermédiaire : c’est un <strong>canal direct</strong>.</p>
+<h3 id="coût-de-revient-et-prix-de-vente-prévisionnels-dun-seau">2) Coût de revient et prix de vente prévisionnels d’un seau</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th style="text-align: right;">Variable</th>
+<th style="text-align: right;">Fixe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matières premières</td>
+<td style="text-align: right;">17,500</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td>Frais de fabrication (9 D dont 30 % fixes)</td>
+<td style="text-align: right;">6,300</td>
+<td style="text-align: right;">2,700</td>
+</tr>
+<tr class="odd">
+<td>Conditionnement</td>
+<td style="text-align: right;">4,500</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td>Frais de distribution (4 D dont 1 D fixe)</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">1,000</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>31,300</strong></td>
+<td style="text-align: right;"><strong>3,700</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>a- Coût variable = <strong>31,300 D</strong></li>
+<li>b- Coût fixe = <strong>3,700 D</strong> (soit 37 000 D pour 10 000 seaux)</li>
+<li>c- Coût de revient = 31,300 + 3,700 = <strong>35 D</strong></li>
+<li>d- Prix de vente = 35 × 1,20 = <strong>42 D HTVA</strong> (marge de 20 % du coût de revient)</li>
+</ul>
+<h3 id="a--annexe-n-6-prix-dacceptabilité">3) a- Annexe n° 6 : prix d’acceptabilité</h3>
+<p><span class="formule">Acheteurs potentiels = 500 − cumul « trop cher » − cumul « mauvaise qualité »</span></p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th style="text-align: right;">Prix TTC</th>
+<th style="text-align: right;">Prix HTVA (÷ 1,19)</th>
+<th style="text-align: right;">Cumul « trop cher »</th>
+<th style="text-align: right;">Cumul « mauvaise qualité »</th>
+<th style="text-align: right;">Acheteurs potentiels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">41,650</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">47,600</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">330</td>
+<td style="text-align: right;"><strong>90</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">51,170</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;"><strong>105</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">53,550</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;"><strong>70</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">57,120</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Prix d’acceptabilité = 51,170 D TTC, soit 51,170 / 1,19 = 43 D HTVA (105 acheteurs potentiels, le maximum)</p>
+</div>
+<h3 id="b--le-prix-dacceptabilité-assure-t-il-la-marge-souhaitée">3) b- Le prix d’acceptabilité assure-t-il la marge souhaitée ?</h3>
+<p>Marge = 43 − 35 = 8 D par seau, soit 8 / 35 = <strong>22,86 %</strong> du coût de revient ≥ 20 % : <strong>oui</strong>, la marge souhaitée est assurée.</p>
+<h3 id="a--annexe-n-7-résultats-différentiels-prévisionnels">4) a- Annexe n° 7 : résultats différentiels prévisionnels</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th style="text-align: right;">Niveau 1 : prix des concurrents</th>
+<th style="text-align: right;">Niveau 2 : prix psychologique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prix de vente HTVA</td>
+<td style="text-align: right;">45 D</td>
+<td style="text-align: right;">43 D</td>
+</tr>
+<tr class="even">
+<td>Quantité à vendre</td>
+<td style="text-align: right;">9 000 seaux</td>
+<td style="text-align: right;">10 000 seaux</td>
+</tr>
+<tr class="odd">
+<td>Chiffre d’affaires</td>
+<td style="text-align: right;">405 000 D</td>
+<td style="text-align: right;">430 000 D</td>
+</tr>
+<tr class="even">
+<td>Coût variable (31,300 D)</td>
+<td style="text-align: right;"><strong>281 700 D</strong></td>
+<td style="text-align: right;"><strong>313 000 D</strong></td>
+</tr>
+<tr class="odd">
+<td>Marge sur coût variable</td>
+<td style="text-align: right;"><strong>123 300 D</strong></td>
+<td style="text-align: right;"><strong>117 000 D</strong></td>
+</tr>
+<tr class="even">
+<td>Coût fixe</td>
+<td style="text-align: right;"><strong>37 000 D</strong></td>
+<td style="text-align: right;">37 000 D</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>86 300 D</strong></td>
+<td style="text-align: right;"><strong>80 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="b--niveau-de-prix-à-retenir">4) b- Niveau de prix à retenir</h3>
+<p>On retient le <strong>niveau 1 (prix des concurrents, 45 D HTVA)</strong> : malgré 1 000 seaux vendus en moins, il donne le meilleur résultat (86 300 D contre 80 000 D, soit + 6 300 D).</p>
+<div class="pourquoi">
+<p><strong>Pourquoi le prix plus élevé gagne-t-il ?</strong> Chaque seau vendu à 45 D rapporte une MCV de 13,700 D, contre 11,700 D à 43 D. Les 1 000 seaux perdus coûtent 11,700 × 1 000 = 11 700 D de marge, mais les 9 000 seaux restants gagnent 2 D chacun, soit 18 000 D : le solde est bien de + 6 300 D.</p>
+</div>
+<h2 id="dossier-n-4-amélioration-de-la-trésorerie-35-points">Dossier n° 4 : Amélioration de la trésorerie — 3,5 points</h2>
+<h3 id="a.-analyse-de-la-situation-financière-en-2019">A. Analyse de la situation financière en 2019</h3>
+<h4 id="bfr-tn-et-fdr">1) BFR, TN et FDR</h4>
+<ul>
+<li>Actifs courants hors trésorerie = 140 500 + 138 125 + 23 400 = 302 025 D</li>
+<li>Passifs courants hors trésorerie = 110 625 + 12 000 + 4 500 = 127 125 D</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BFR</td>
+<td>302 025 − 127 125</td>
+<td style="text-align: right;"><strong>174 900 D</strong></td>
+</tr>
+<tr class="even">
+<td>TN</td>
+<td>30 000 − 37 500</td>
+<td style="text-align: right;"><strong>− 7 500 D</strong></td>
+</tr>
+<tr class="odd">
+<td>FDR (= BFR + TN)</td>
+<td>174 900 − 7 500</td>
+<td style="text-align: right;"><strong>167 400 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="constat">2) Constat</h4>
+<p>Le FDR est positif (167 400 D) mais <strong>insuffisant</strong> : il ne finance que 95,71 % du BFR. Les 7 500 D manquants sont financés par des concours bancaires à court terme : la <strong>trésorerie nette est négative</strong>. L’entreprise ne respecte pas l’équilibre financier, dépend de sa banque et supporte des frais financiers.</p>
+<h4 id="solutions">3) Solutions</h4>
+<ul>
+<li><strong>Augmenter le FDR</strong> : augmentation du capital en numéraire, emprunt à moyen ou long terme, mise en réserve des bénéfices.</li>
+<li><strong>Réduire le BFR</strong> : réduire les stocks, raccourcir le crédit accordé aux clients, obtenir des délais plus longs des fournisseurs.</li>
+</ul>
+<h3 id="b.-situation-financière-prévisionnelle-en-2020">B. Situation financière prévisionnelle en 2020</h3>
+<h4 id="bfr-en-jours-et-en-valeur">1) BFR en jours et en valeur</h4>
+<p><span class="formule">BFR = (24 + 10 + 18 + 45 + 14) − (60 + 19) = 111 − 79 = 32 jours de CA HT</span></p>
+<div class="result-box">
+<p>BFR = 32 × 12 300 = 393 600 D</p>
+</div>
+<h4 id="fdr-nécessaire-et-augmentation">2) FDR nécessaire et augmentation</h4>
+<p><span class="formule">FDR nécessaire = BFR + TN minimale = (32 + 6) × 12 300 = 467 400 D</span></p>
+<div class="result-box">
+<p>Augmentation du FDR = 467 400 − 167 400 = 300 000 D</p>
+</div>
+<h4 id="a--montant-de-lemprunt-et-de-laugmentation-du-capital">3) a- Montant de l’emprunt et de l’augmentation du capital</h4>
+<ul>
+<li>Emprunt = 300 000 × 2/3 = <strong>200 000 D</strong> (contrôle : intérêts de l’année 1 = 200 000 × 11 % = 22 000 D, la valeur imprimée ✓)</li>
+<li>Augmentation du capital en numéraire = 300 000 × 1/3 = <strong>100 000 D</strong></li>
+</ul>
+<h4 id="b--annexe-n-8-décaissements-nets-actualisés-banque-x">3) b- Annexe n° 8 : décaissements nets actualisés (banque X)</h4>
+<p>Amortissement constant = 200 000 / 5 = 40 000 D ; économie d’impôt = 25 % des intérêts.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Amortissements</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">40 000</td>
+<td style="text-align: right;">40 000</td>
+</tr>
+<tr class="even">
+<td>(+) Intérêts</td>
+<td style="text-align: right;">22 000</td>
+<td style="text-align: right;">17 600</td>
+<td style="text-align: right;">13 200</td>
+<td style="text-align: right;">8 800</td>
+<td style="text-align: right;">4 400</td>
+</tr>
+<tr class="odd">
+<td>(−) Économie d’impôt (25 %)</td>
+<td style="text-align: right;">5 500</td>
+<td style="text-align: right;">4 400</td>
+<td style="text-align: right;">3 300</td>
+<td style="text-align: right;">2 200</td>
+<td style="text-align: right;">1 100</td>
+</tr>
+<tr class="even">
+<td><strong>Décaissements annuels nets</strong></td>
+<td style="text-align: right;"><strong>56 500</strong></td>
+<td style="text-align: right;"><strong>53 200</strong></td>
+<td style="text-align: right;"><strong>49 900</strong></td>
+<td style="text-align: right;"><strong>46 600</strong></td>
+<td style="text-align: right;"><strong>43 300</strong></td>
+</tr>
+<tr class="odd">
+<td>(×) Coefficient (12 %)</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="even">
+<td><strong>Décaissements nets actualisés</strong></td>
+<td style="text-align: right;"><strong>50 447</strong></td>
+<td style="text-align: right;"><strong>42 411</strong></td>
+<td style="text-align: right;"><strong>35 518</strong></td>
+<td style="text-align: right;"><strong>29 616</strong></td>
+<td style="text-align: right;"><strong>24 570</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Total des décaissements annuels nets actualisés = 182 562 D</p>
+</div>
+<div class="piege">
+<p><strong>Piège.</strong> L’annexe demande d’<strong>arrondir au dinar supérieur</strong> : 50 446,421 → 50 447 (et non 50 446). L’économie d’impôt ne porte que sur les <strong>intérêts</strong> (charge déductible), jamais sur le remboursement du capital.</p>
+</div>
+<h4 id="c--banque-à-retenir">3) c- Banque à retenir</h4>
+<p>Banque X : <strong>182 562 D</strong> ; banque Y : <strong>183 318 D</strong>. On retient la <strong>banque X</strong>, moins coûteuse de 756 D en valeur actuelle.</p>
+<div class="checklist">
+<ul>
+<li>Annexes n° 1 à 8 complétées et rendues avec la copie (nom et numéro d’inscription écrits).</li>
+<li>Les valeurs imprimées retrouvées : 82 755 ; 82 620 ; 78 985,800 ; 1 890 000 ; 2 210 000 ; 1 198 800 ; 577 500 ; − 199 200 ; 22 000.</li>
+<li>Le coût global (achat compris) utilisé pour juger l’offre de remise.</li>
+<li>Les seaux offerts comptés dans le coût variable, pas dans le chiffre d’affaires.</li>
+<li>Chaque question « Commentez / Justifiez / Quelle solution ? » terminée par une phrase de décision.</li>
+</ul>
+</div>
+
+<div class="footer">
+CORRIGÉ BY BACBYMED — Gestion 2020 (Contrôle) — document non officiel.<br>
+Tu as vu une erreur ? Signale-la dans l'application, on corrige vite.
+</div>
+</div>
+</body>
+</html>

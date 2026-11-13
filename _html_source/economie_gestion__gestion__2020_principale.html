@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORRIGÉ BY BACBYMED - Gestion Bac 2020 - Session Principale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; color: #222; background: #f4f4f4; padding: 20px; }
+.page { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px 50px; box-shadow: 0 0 15px rgba(0,0,0,.1); }
+h1 { text-align: center; font-size: 24px; letter-spacing: 5px; color: #1a3a6e; border-bottom: 3px double #1a3a6e; padding-bottom: 14px; margin-bottom: 10px; white-space: nowrap; }
+h2 { font-size: 19px; color: #1a3a6e; margin: 26px 0 12px; border-left: 5px solid #c0392b; padding-left: 12px; break-after: avoid; }
+h3 { font-size: 16px; color: #2c3e50; margin: 18px 0 8px; break-after: avoid; }
+h4 { font-size: 14.5px; color: #c0392b; margin: 14px 0 6px; break-after: avoid; }
+p { margin: 6px 0; font-size: 14px; }
+ul, ol { margin: 6px 0 6px 24px; font-size: 14px; }
+li { margin: 2px 0; }
+.header-info { text-align: center; font-size: 14px; color: #555; margin-bottom: 16px; }
+.header-info strong { color: #1a3a6e; }
+.table-wrap { overflow-x: auto; break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+table th { background: #1a3a6e; color: #fff; padding: 6px; text-align: center; }
+table td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table td:first-child { text-align: left; }
+table tr:nth-child(even) { background: #f9f9f9; }
+.disclaimer { background: #fff3cd; border: 1px solid #ffc107; padding: 12px; font-size: 12px; font-style: italic; margin: 18px 0; border-radius: 4px; }
+.disclaimer p { font-size: 12px; margin: 0; }
+.verification, .piege, .pourquoi, .justification, .methode, .remarque { padding: 10px 15px; margin: 12px 0; border-radius: 4px; break-inside: avoid; }
+.verification p, .piege p, .pourquoi p, .justification p, .methode p, .remarque p, .verification li, .piege li, .pourquoi li, .justification li, .methode li, .remarque li { font-size: 13px; }
+.verification { background: #d4edda; border-left: 5px solid #28a745; }
+.verification strong:first-child { color: #155724; }
+.piege { background: #f8d7da; border-left: 5px solid #dc3545; }
+.piege strong:first-child { color: #721c24; }
+.pourquoi { background: #d1ecf1; border-left: 5px solid #17a2b8; }
+.pourquoi strong:first-child { color: #0c5460; }
+.justification { background: #fdf6e3; border-left: 5px solid #f5a623; }
+.methode { background: #ede7f6; border-left: 5px solid #6f42c1; }
+.methode strong:first-child { color: #4a2a8a; }
+.remarque { background: #f2f2f2; border-left: 5px solid #888; }
+.katex { font-size: 1.05em; }
+.katex-display { margin: 8px 0; overflow-x: auto; overflow-y: hidden; }
+.figure { text-align: center; margin: 10px 0; break-inside: avoid; }
+.figure svg, .figure img { max-width: 100%; height: auto; }
+.vt td { min-width: 40px; }
+.formule { font-family: 'Courier New', monospace; background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.result-box { background: #e7f3ff; border: 2px solid #4a90e2; padding: 8px 10px; margin: 10px 0; border-radius: 6px; text-align: center; font-weight: bold; color: #1a3a6e; break-inside: avoid; }
+.result-box p { font-size: 14px; margin: 0; }
+.checklist { background: #fff; border: 2px solid #1a3a6e; padding: 12px 15px; margin: 18px 0; border-radius: 6px; break-inside: avoid; }
+.checklist ul { margin: 0; }
+.checklist li { list-style: none; padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 13px; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "☐ "; color: #c0392b; font-weight: bold; }
+.section-title { background: #1a3a6e; color: #fff; padding: 9px 15px; margin: 24px 0 12px; border-radius: 4px; font-size: 16px; break-after: avoid; }
+.section-title p { font-size: 16px; margin: 0; }
+.footer { text-align: center; font-size: 11px; color: #777; margin-top: 16px; padding-top: 8px; break-before: avoid; border-top: 1px solid #ddd; }
+.footer p { font-size: 11px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  .newpage { break-before: page; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>CORRIGÉ BY BACBYMED</h1>
+<div class="header-info">
+<strong>Gestion — Bac 2020 — Session Principale</strong><br>
+SECTION : ÉCONOMIE ET GESTION &nbsp;·&nbsp; DURÉE : 3 H 30 &nbsp;·&nbsp; COEFFICIENT : 3
+</div>
+<div class="table-wrap"><table>
+<tr><th>Épreuve</th><td>Gestion</td><th>Barème</th><td>20 points</td></tr>
+<tr><th>Session</th><td>Principale 2020</td><th>Structure</th><td>Partie 1 : 5 pts | Partie 2 : 15 pts</td></tr>
+</table></div>
+<div class="disclaimer">
+Document non officiel. Ce corrigé est rédigé par l'équipe <strong>BacByMed</strong> à titre pédagogique. Il ne s'agit ni du corrigé officiel du Ministère de l'Éducation, ni d'un barème officiel. En cas de divergence avec ton enseignant, c'est son explication qui fait foi.
+</div>
+
+<div class="section-title">
+<p>AVANT DE COMMENCER : barème suggéré et gestion du temps (3 h 30 = 210 min)</p>
+</div>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Thème</th>
+<th style="text-align: center;">Barème suggéré</th>
+<th style="text-align: center;">Temps conseillé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecture du sujet</td>
+<td>Repérer les annexes à rendre (n° 1 à 6)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10 min</td>
+</tr>
+<tr class="even">
+<td>Exercice n° 1</td>
+<td>Gestion des stocks (fiche de stock, CMUP)</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="odd">
+<td>Exercice n° 2</td>
+<td>Politique commerciale (représentants, publicité)</td>
+<td style="text-align: center;">2,5 pts</td>
+<td style="text-align: center;">20 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 1</td>
+<td>Choix du programme de production</td>
+<td style="text-align: center;">6 pts</td>
+<td style="text-align: center;">55 min</td>
+</tr>
+<tr class="odd">
+<td>Dossier n° 2</td>
+<td>Choix de l’unité de production et recrutement</td>
+<td style="text-align: center;">5 pts</td>
+<td style="text-align: center;">45 min</td>
+</tr>
+<tr class="even">
+<td>Dossier n° 3</td>
+<td>Financement de l’unité de production</td>
+<td style="text-align: center;">4 pts</td>
+<td style="text-align: center;">45 min</td>
+</tr>
+<tr class="odd">
+<td>Relecture</td>
+<td>Annexes complétées, unités, conclusions</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">15 min</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>20 pts</strong></td>
+<td style="text-align: center;"><strong>210 min</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="methode">
+<p><strong>Méthode.</strong> Les annexes donnent des <strong>valeurs de contrôle</strong> : 86 000 D et 80 unités (annexe n° 1), 10 880 D et 32 500 D (annexe n° 2), 102 D (annexe n° 3), 918 000 et 490 000 D (annexe n° 4), 71 500 D d’intérêts (annexe n° 5), VAN de l’unité n° 3 (3 032 284,865 D), écart de 3 520 heures. Retrouve-les avant de passer à la suite.</p>
+</div>
+<div class="section-title">
+<p>PREMIÈRE PARTIE (5 points)</p>
+</div>
+<h2 id="exercice-n-1-gestion-des-stocks-entreprise-electroplus-25-points">Exercice n° 1 : Gestion des stocks — entreprise « ELECTROPLUS » — 2,5 points</h2>
+<h3 id="procédé-de-valorisation-adopté">1) Procédé de valorisation adopté</h3>
+<p>Le 15/12, les 8 climatiseurs sortis sont valorisés à <strong>940 D</strong>, le coût du <strong>stock le plus ancien</strong> (stock initial), alors qu’un lot à 1 050 D est en stock ; il reste ensuite 2 unités à 940 D et 40 à 1 050 D.</p>
+<div class="result-box">
+<p>Procédé adopté : PEPS (premier entré, premier sorti)</p>
+</div>
+<h3 id="annexe-n-1-fiche-de-stock-complétée">2) Annexe n° 1 : fiche de stock complétée</h3>
+<p>Calculs préalables :</p>
+<ul>
+<li>Bon de réception n° 82 : quantité = 80 − 40 = <strong>40</strong> ; montant = 86 000 − 42 000 = <strong>44 000 D</strong> ; coût unitaire = 44 000 / 40 = <strong>1 100 D</strong>.</li>
+<li>Bon de livraison n° 122 : avant la sortie il y a 2 + 40 = 42 unités ; il en reste 18 le 23/12, donc <strong>24 unités sorties</strong> : d’abord les 2 à 940 D, puis 22 à 1 050 D.</li>
+</ul>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Libellé</th>
+<th style="text-align: center;">Entrées Q</th>
+<th style="text-align: right;">C.U</th>
+<th style="text-align: right;">M</th>
+<th style="text-align: center;">Sorties Q</th>
+<th style="text-align: right;">C.U</th>
+<th style="text-align: right;">M</th>
+<th style="text-align: center;">Existants Q</th>
+<th style="text-align: right;">C.U</th>
+<th style="text-align: right;">M</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01/12</td>
+<td>Stock initial</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: right;">940</td>
+<td style="text-align: right;">9 400</td>
+</tr>
+<tr class="even">
+<td>05/12</td>
+<td>BR n° 81</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: right;">1 050</td>
+<td style="text-align: right;">42 000</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;">10 / 40</td>
+<td style="text-align: right;">940 / 1 050</td>
+<td style="text-align: right;">9 400 / 42 000</td>
+</tr>
+<tr class="odd">
+<td>15/12</td>
+<td>BL n° 121</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">940</td>
+<td style="text-align: right;">7 520</td>
+<td style="text-align: center;">2 / 40</td>
+<td style="text-align: right;">940 / 1 050</td>
+<td style="text-align: right;">1 880 / 42 000</td>
+</tr>
+<tr class="even">
+<td>23/12</td>
+<td>BL n° 122</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;"><strong>2 / 22</strong></td>
+<td style="text-align: right;"><strong>940 / 1 050</strong></td>
+<td style="text-align: right;"><strong>1 880 / 23 100</strong></td>
+<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: right;"><strong>1 050</strong></td>
+<td style="text-align: right;"><strong>18 900</strong></td>
+</tr>
+<tr class="odd">
+<td>27/12</td>
+<td>BR n° 82</td>
+<td style="text-align: center;"><strong>40</strong></td>
+<td style="text-align: right;"><strong>1 100</strong></td>
+<td style="text-align: right;"><strong>44 000</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;"><strong>18 / 40</strong></td>
+<td style="text-align: right;"><strong>1 050 / 1 100</strong></td>
+<td style="text-align: right;"><strong>18 900 / 44 000</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>Totaux</strong></td>
+<td style="text-align: center;">80</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">86 000</td>
+<td style="text-align: center;"><strong>32</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>32 500</strong></td>
+<td style="text-align: center;"><strong>58</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>62 900</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification.</strong> Stock initial + entrées − sorties = stock final : 9 400 + 86 000 − 32 500 = 62 900 D ✓ ; 10 + 80 − 32 = 58 unités ✓. Le coût des ventes (32 500 D) est celui imprimé dans l’annexe n° 2 ✓.</p>
+</div>
+<h3 id="a--cmup-de-fin-de-période-et-valeur-des-sorties">3) a- CMUP de fin de période et valeur des sorties</h3>
+<p><span class="formule">CMUP = (stock initial + entrées) / (quantités) = (9 400 + 86 000) / (10 + 80) = 95 400 / 90</span></p>
+<div class="result-box">
+<p>CMUP = 1 060 D ; valeur des sorties = 32 × 1 060 = 33 920 D</p>
+</div>
+<h3 id="b--annexe-n-2-marge-commerciale">3) b- Annexe n° 2 : marge commerciale</h3>
+<p>Chiffre d’affaires = 32 × 1 400 = 44 800 D.</p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Procédé</th>
+<th style="text-align: right;">Chiffre d’affaires</th>
+<th style="text-align: right;">Coût d’achat des climatiseurs vendus</th>
+<th style="text-align: right;">Marge commerciale globale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CMUP de fin de période</td>
+<td style="text-align: right;">44 800</td>
+<td style="text-align: right;"><strong>33 920</strong></td>
+<td style="text-align: right;">10 880</td>
+</tr>
+<tr class="even">
+<td>Procédé adopté (PEPS)</td>
+<td style="text-align: right;"><strong>44 800</strong></td>
+<td style="text-align: right;">32 500</td>
+<td style="text-align: right;"><strong>12 300</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="c--lentreprise-a-t-elle-intérêt-à-adopter-le-cmup">3) c- L’entreprise a-t-elle intérêt à adopter le CMUP ?</h3>
+<p><strong>Non.</strong> Les coûts d’achat <strong>augmentent</strong> (940 → 1 050 → 1 100 D) : le PEPS sort d’abord les unités les moins chères, ce qui donne un coût des ventes plus faible et une marge plus élevée (12 300 D contre 10 880 D, soit 1 420 D de plus). Le CMUP, qui lisse les prix, réduirait la marge.</p>
+<div class="piege">
+<p><strong>Piège.</strong> Le CMUP <strong>de fin de période</strong> se calcule sur le stock initial <strong>et toutes les entrées du mois</strong> (90 unités), pas seulement sur les unités vendues.</p>
+</div>
+<h2 id="exercice-n-2-politique-commerciale-entreprise-bio-soin-25-points">Exercice n° 2 : Politique commerciale — entreprise « BIO SOIN » — 2,5 points</h2>
+<p><strong>Données.</strong> Lot de 6 flacons : coût de production 120 D, prix de vente 204 D HTVA · représentant 1 : 60 % des ventes, soit 2 100 lots · chaque représentant : 700 D par mois + 3 % de son CA · taux de marge bénéficiaire exigé : 20 % du CA · campagne publicitaire : au plus 120 000 D par an.</p>
+<h3 id="nombre-de-lots-à-vendre">1) Nombre de lots à vendre</h3>
+<div class="result-box">
+<p>Total = 2 100 / 60 % = 3 500 lots ; représentant 2 = 3 500 − 2 100 = 1 400 lots</p>
+</div>
+<h3 id="chiffre-daffaires-prévisionnel-htva">2) Chiffre d’affaires prévisionnel HTVA</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Représentant</th>
+<th style="text-align: right;">Lots</th>
+<th style="text-align: right;">Prix</th>
+<th style="text-align: right;">Chiffre d’affaires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Représentant 1</td>
+<td style="text-align: right;">2 100</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">428 400</td>
+</tr>
+<tr class="even">
+<td>Représentant 2</td>
+<td style="text-align: right;">1 400</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">285 600</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>3 500</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>714 000 D</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="coûts-du-nouveau-produit">3) Coûts du nouveau produit</h3>
+<h4 id="a--coût-de-revient-annuel">a- Coût de revient annuel</h4>
+<p>Le résultat doit représenter 20 % du CA, donc le coût de revient en représente 80 %.</p>
+<div class="result-box">
+<p>Coût de revient = 714 000 × 80 % = 571 200 D</p>
+</div>
+<h4 id="b--coût-de-distribution-annuel">b- Coût de distribution annuel</h4>
+<p>Coût de production = 3 500 × 120 = 420 000 D.</p>
+<div class="result-box">
+<p>Coût de distribution = 571 200 − 420 000 = 151 200 D</p>
+</div>
+<h4 id="c--salaire-annuel-de-chaque-représentant">c- Salaire annuel de chaque représentant</h4>
+<ul>
+<li>Représentant 1 : 700 × 12 + 3 % × 428 400 = 8 400 + 12 852 = <strong>21 252 D</strong></li>
+<li>Représentant 2 : 700 × 12 + 3 % × 285 600 = 8 400 + 8 568 = <strong>16 968 D</strong></li>
+</ul>
+<h4 id="d--montant-annuel-à-réserver-à-la-publicité">d- Montant annuel à réserver à la publicité</h4>
+<div class="result-box">
+<p>Publicité = 151 200 − (21 252 + 16 968) = 151 200 − 38 220 = 112 980 D</p>
+</div>
+<h3 id="la-campagne-est-elle-réalisable">4) La campagne est-elle réalisable ?</h3>
+<p><strong>Oui.</strong> Pour garantir 20 % de marge, l’entreprise peut consacrer <strong>112 980 D</strong> par an à la publicité, montant qui respecte le plafond de 120 000 D. Elle doit toutefois limiter son budget à 112 980 D : au-delà, le taux de marge passerait sous 20 %.</p>
+<div class="verification">
+<p><strong>Vérification.</strong> CA 714 000 − production 420 000 − salaires 38 220 − publicité 112 980 = 142 800 D = 20 % × 714 000 ✓.</p>
+</div>
+<div class="section-title">
+<p>DEUXIÈME PARTIE (15 points) — Entreprise « ART &amp; ARTISANAT »</p>
+</div>
+<h2 id="dossier-n-1-choix-du-programme-de-production-en-2019-6-points">Dossier n° 1 : Choix du programme de production en 2019 — 6 points</h2>
+<h3 id="heures-nécessaires-pour-satisfaire-les-commandes">1) Heures nécessaires pour satisfaire les commandes</h3>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Atelier</th>
+<th style="text-align: right;">Sacs à dos (18 000)</th>
+<th style="text-align: right;">Sacs à main (10 000)</th>
+<th style="text-align: right;">Heures nécessaires</th>
+<th style="text-align: right;">Capacité</th>
+<th>Constat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coupe et couture</td>
+<td style="text-align: right;">18 000 × 0,5 = 9 000</td>
+<td style="text-align: right;">10 000 × 0,4 = 4 000</td>
+<td style="text-align: right;"><strong>13 000 h</strong></td>
+<td style="text-align: right;">12 500 h</td>
+<td>manque 500 h</td>
+</tr>
+<tr class="even">
+<td>Finissage</td>
+<td style="text-align: right;">18 000 × 0,2 = 3 600</td>
+<td style="text-align: right;">10 000 × 0,33 = 3 300</td>
+<td style="text-align: right;"><strong>6 900 h</strong></td>
+<td style="text-align: right;">7 040 h</td>
+<td>suffisant</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Constat.</strong> L’atelier « Coupe et couture » est le <strong>goulot d’étranglement</strong> : sa capacité ne permet pas de satisfaire toutes les commandes. Il faut choisir les quantités à produire.</p>
+<h3 id="annexe-n-3-marges-sur-coût-variable">2) Annexe n° 3 : marges sur coût variable</h3>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Produit</th>
+<th style="text-align: right;">Prix de vente</th>
+<th style="text-align: right;">Coût variable</th>
+<th style="text-align: right;">MCV unitaire</th>
+<th style="text-align: right;">Temps Coupe</th>
+<th style="text-align: right;">MCV par heure machine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sac à dos</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">249</td>
+<td style="text-align: right;"><strong>51 D</strong> (1)</td>
+<td style="text-align: right;">0,50 h</td>
+<td style="text-align: right;">102 D</td>
+</tr>
+<tr class="even">
+<td>Sac à main</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">171</td>
+<td style="text-align: right;"><strong>49 D</strong></td>
+<td style="text-align: right;">0,40 h</td>
+<td style="text-align: right;"><strong>122,500 D</strong> (2)</td>
+</tr>
+</tbody>
+</table></div>
+<ol type="1">
+<li>300 − 249 = 51 D ; (2) 49 / 0,4 = 122,500 D.</li>
+</ol>
+<h3 id="selon-la-mcv-unitaire-par-produit-situation-1">3) Selon la MCV unitaire par produit (situation 1)</h3>
+<p><strong>a-</strong> Le sac à dos a la plus forte MCV unitaire (51 &gt; 49) : on le fabrique en premier, pour toute la commande, soit <strong>18 000 sacs à dos</strong> (9 000 h de Coupe).</p>
+<p><strong>b-</strong> Heures restantes : 12 500 − 9 000 = 3 500 h, d’où <strong>3 500 / 0,4 = 8 750 sacs à main</strong>.</p>
+<h3 id="selon-la-mcv-par-heure-machine-situation-2">4) Selon la MCV par heure machine (situation 2)</h3>
+<p><strong>a-</strong> Le sac à main rapporte le plus par heure de l’atelier goulot (122,500 &gt; 102) : on le fabrique en premier, soit <strong>10 000 sacs à main</strong> (4 000 h).</p>
+<p><strong>b-</strong> Heures restantes : 12 500 − 4 000 = 8 500 h, d’où <strong>8 500 / 0,5 = 17 000 sacs à dos</strong>.</p>
+<div class="verification">
+<p><strong>Contrôle de l’atelier Finissage.</strong> Situation 1 : 3 600 + 8 750 × 0,33 = 6 487,5 h ; situation 2 : 17 000 × 0,2 + 3 300 = 6 700 h. Les deux restent sous 7 040 h ✓.</p>
+</div>
+<h3 id="annexe-n-4-résultats-différentiels-2019">5) Annexe n° 4 : résultats différentiels 2019</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">S1 Sac à dos</th>
+<th style="text-align: right;">S1 Sac à main</th>
+<th style="text-align: right;">S2 Sac à dos</th>
+<th style="text-align: right;">S2 Sac à main</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quantité</td>
+<td style="text-align: right;">18 000</td>
+<td style="text-align: right;"><strong>8 750</strong></td>
+<td style="text-align: right;"><strong>17 000</strong></td>
+<td style="text-align: right;">10 000</td>
+</tr>
+<tr class="even">
+<td>MCV unitaire</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;"><strong>49</strong></td>
+<td style="text-align: right;"><strong>51</strong></td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr class="odd">
+<td>MCV totale</td>
+<td style="text-align: right;">918 000</td>
+<td style="text-align: right;"><strong>428 750</strong></td>
+<td style="text-align: right;"><strong>867 000</strong></td>
+<td style="text-align: right;">490 000</td>
+</tr>
+<tr class="even">
+<td>MCV globale</td>
+<td style="text-align: right;"><strong>1 346 750</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>1 357 000</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Coût fixe</td>
+<td style="text-align: right;">940 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">940 000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td><strong>Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>406 750</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>417 000</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="situation-retenue">6) Situation retenue</h3>
+<p><strong>La situation 2</strong> (classement selon la MCV par heure machine) donne le meilleur résultat : 417 000 D contre 406 750 D, soit <strong>+ 10 250 D</strong>.</p>
+<div class="pourquoi">
+<p><strong>Pourquoi la MCV par heure gagne ?</strong> Quand un atelier limite la production, la ressource rare est l’<strong>heure de cet atelier</strong>. Il faut donc privilégier le produit qui rapporte le plus <strong>par heure consommée</strong> dans cet atelier, pas celui qui rapporte le plus par unité.</p>
+</div>
+<h3 id="solutions-si-les-commandes-restent-les-mêmes">7) Solutions si les commandes restent les mêmes</h3>
+<ul>
+<li><strong>Augmenter la capacité</strong> de l’atelier « Coupe et couture » : heures supplémentaires, travail en équipes, nouvelles machines plus performantes (dossier n° 2).</li>
+<li><strong>Sous-traiter</strong> une partie de la coupe (500 heures manquent chaque année).</li>
+<li>Améliorer la <strong>productivité</strong> (organisation, formation) pour réduire le temps par article.</li>
+</ul>
+<h2 id="dossier-n-2-choix-de-la-nouvelle-structure-de-production-5-points">Dossier n° 2 : Choix de la nouvelle structure de production — 5 points</h2>
+<h3 id="a.-choix-de-lunité-de-production">A. Choix de l’unité de production</h3>
+<h4 id="a--unités-qui-répondent-aux-besoins-du-marché">1) a- Unités qui répondent aux besoins du marché</h4>
+<p>Besoins : 26 400 sacs à dos et 16 000 sacs à main.</p>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Unité</th>
+<th style="text-align: right;">Capacité sacs à dos</th>
+<th style="text-align: right;">Capacité sacs à main</th>
+<th style="text-align: center;">Répond aux besoins ?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>n° 1</td>
+<td style="text-align: right;">20 000</td>
+<td style="text-align: right;">13 000</td>
+<td style="text-align: center;"><strong>Non</strong> (20 000 &lt; 26 400)</td>
+</tr>
+<tr class="even">
+<td>n° 2</td>
+<td style="text-align: right;">27 000</td>
+<td style="text-align: right;">16 000</td>
+<td style="text-align: center;"><strong>Oui</strong></td>
+</tr>
+<tr class="odd">
+<td>n° 3</td>
+<td style="text-align: right;">26 400</td>
+<td style="text-align: right;">18 000</td>
+<td style="text-align: center;"><strong>Oui</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="b--mcv-et-résultat-prévisionnels">1) b- MCV et résultat prévisionnels</h4>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">Unité n° 2</th>
+<th style="text-align: right;">Unité n° 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MCV sacs à dos</td>
+<td style="text-align: right;">26 400 × (300 − 245) = 1 452 000</td>
+<td style="text-align: right;">26 400 × (300 − 244) = 1 478 400</td>
+</tr>
+<tr class="even">
+<td>MCV sacs à main</td>
+<td style="text-align: right;">16 000 × (220 − 168) = 832 000</td>
+<td style="text-align: right;">16 000 × (220 − 167) = 848 000</td>
+</tr>
+<tr class="odd">
+<td><strong>MCV globale</strong></td>
+<td style="text-align: right;"><strong>2 284 000</strong></td>
+<td style="text-align: right;"><strong>2 326 400</strong></td>
+</tr>
+<tr class="even">
+<td>Coût fixe (amortissement compris)</td>
+<td style="text-align: right;">990 000</td>
+<td style="text-align: right;">1 050 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultat d’exploitation</strong></td>
+<td style="text-align: right;"><strong>1 294 000</strong></td>
+<td style="text-align: right;"><strong>1 276 400</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="unité-la-plus-rentable">2) Unité la plus rentable</h4>
+<p><strong>L’unité n° 2</strong> : son résultat (1 294 000 D) est supérieur à celui de l’unité n° 3 (1 276 400 D), et les deux dépassent la rentabilité minimale de 1 200 000 D.</p>
+<h4 id="unité-n-2-caf-et-van">3) Unité n° 2 : CAF et VAN</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a- Résultat après impôt</td>
+<td>1 294 000 × (1 − 25 %)</td>
+<td style="text-align: right;"><strong>970 500</strong></td>
+</tr>
+<tr class="even">
+<td>b- Amortissement annuel</td>
+<td>1 200 000 / 5</td>
+<td style="text-align: right;"><strong>240 000</strong></td>
+</tr>
+<tr class="odd">
+<td>c- CAF annuelle</td>
+<td>970 500 + 240 000</td>
+<td style="text-align: right;"><strong>1 210 500</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="formule">d- VAN = 1 210 500 × 3,604776 − 1 200 000 = 4 363 581,348 − 1 200 000</span></p>
+<div class="result-box">
+<p>VAN de l’unité n° 2 = 3 163 581,348 D</p>
+</div>
+<div class="verification">
+<p><strong>Contrôle de la méthode avec l’unité n° 3.</strong> Résultat 1 276 400 × 0,75 + amortissement 300 000 = CAF 1 257 300 ; VAN = 1 257 300 × 3,604776 − 1 500 000 = 3 032 284,865 D, exactement la valeur donnée ✓.</p>
+</div>
+<h4 id="unité-à-retenir">4) Unité à retenir</h4>
+<p><strong>L’unité n° 2</strong> : VAN de 3 163 581,348 D, supérieure à celle de l’unité n° 3 (3 032 284,865 D), pour un investissement plus faible (1 200 000 D contre 1 500 000 D).</p>
+<h3 id="b.-recrutement">B. Recrutement</h3>
+<h4 id="heures-nécessaires-dans-latelier-finissage">1) Heures nécessaires dans l’atelier « Finissage »</h4>
+<p><span class="formule">26 400 × 0,2 + 16 000 × 0,33 = 5 280 + 5 280 = 10 560 heures</span></p>
+<h4 id="écart-sur-la-contrainte-main-dœuvre">2) Écart sur la contrainte « main-d’œuvre »</h4>
+<div class="result-box">
+<p>Écart = 10 560 − 7 040 = 3 520 heures par an ✓</p>
+</div>
+<h4 id="nombre-douvriers-à-recruter">3) Nombre d’ouvriers à recruter</h4>
+<p>Un ouvrier travaille 40 h × 44 semaines = 1 760 h par an.</p>
+<div class="result-box">
+<p>Ouvriers à recruter = 3 520 / 1 760 = 2 ouvriers</p>
+</div>
+<h2 id="dossier-n-3-financement-de-lunité-de-production-4-points">Dossier n° 3 : Financement de l’unité de production — 4 points</h2>
+<h3 id="indicateurs-de-léquilibre-financier">1) Indicateurs de l’équilibre financier</h3>
+<div class="table-wrap"><table>
+
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Calcul</th>
+<th style="text-align: right;">Montant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FDR</td>
+<td>Ressources stables − emplois stables = 4 500 000 − 3 525 000</td>
+<td style="text-align: right;"><strong>975 000</strong></td>
+</tr>
+<tr class="even">
+<td>BFR</td>
+<td>(Actifs courants − trésorerie de l’actif) − (passifs courants − trésorerie du passif) = 1 600 000 − 875 000</td>
+<td style="text-align: right;"><strong>725 000</strong></td>
+</tr>
+<tr class="odd">
+<td>TN</td>
+<td>Trésorerie de l’actif − trésorerie du passif = 250 000 − 0</td>
+<td style="text-align: right;"><strong>250 000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="verification">
+<p><strong>Vérification.</strong> FDR − BFR = 975 000 − 725 000 = 250 000 = TN ✓.</p>
+</div>
+<p><strong>Commentaire.</strong> Le FDR est positif et couvre entièrement le BFR ; l’excédent constitue une trésorerie nette positive de 250 000 D. L’entreprise est en <strong>équilibre financier</strong> et dispose même d’une trésorerie disponible qu’elle peut utiliser pour investir.</p>
+<h3 id="a--excédent-de-trésorerie-utilisable">2) a- Excédent de trésorerie utilisable</h3>
+<div class="result-box">
+<p>Excédent = 250 000 − 150 000 (liquidité à garder) = 100 000 D</p>
+</div>
+<h3 id="b--montant-à-financer-par-des-ressources-externes">2) b- Montant à financer par des ressources externes</h3>
+<p>Ressources internes : excédent de trésorerie 100 000 D + cession des anciennes machines 250 000 D.</p>
+<div class="result-box">
+<p>Ressources externes nécessaires = 1 200 000 − 100 000 − 250 000 = 850 000 D</p>
+</div>
+<h3 id="c--augmentation-du-capital">2) c- Augmentation du capital</h3>
+<p>Ressources propres actuelles = 55 % × 4 500 000 = 2 475 000 D. Après le financement, les ressources stables deviennent 4 500 000 + 850 000 = 5 350 000 D. Avec un ratio d’autonomie financière (ressources propres / ressources stables) de 50 % :</p>
+<p><span class="formule">Ressources propres nécessaires = 50 % × 5 350 000 = 2 675 000 D</span></p>
+<div class="result-box">
+<p>Augmentation du capital = 2 675 000 − 2 475 000 = 200 000 D</p>
+</div>
+<h3 id="a--montant-de-lemprunt">3) a- Montant de l’emprunt</h3>
+<div class="result-box">
+<p>Emprunt = 850 000 − 200 000 = 650 000 D</p>
+</div>
+<h3 id="b--taux-dintérêt">3) b- Taux d’intérêt</h3>
+<p><span class="formule">Taux = 71 500 / 650 000 = 11 %</span></p>
+<h3 id="c--annexe-n-5-tableau-de-remboursement">3) c- Annexe n° 5 : tableau de remboursement</h3>
+<p>Amortissement constant = 650 000 / 5 = 130 000 D.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;">Période</th>
+<th style="text-align: right;">Capital début</th>
+<th style="text-align: right;">Intérêts (11 %)</th>
+<th style="text-align: right;">Amortissements</th>
+<th style="text-align: right;">Annuités</th>
+<th style="text-align: right;">Capital fin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">650 000</td>
+<td style="text-align: right;">71 500</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">201 500</td>
+<td style="text-align: right;">520 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">520 000</td>
+<td style="text-align: right;">57 200</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">187 200</td>
+<td style="text-align: right;">390 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">390 000</td>
+<td style="text-align: right;">42 900</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">172 900</td>
+<td style="text-align: right;">260 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">260 000</td>
+<td style="text-align: right;">28 600</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">158 600</td>
+<td style="text-align: right;">130 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">14 300</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">144 300</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="annexe-n-6-flux-nets-de-trésorerie-actualisés">4) Annexe n° 6 : flux nets de trésorerie actualisés</h3>
+<p>Économie d’impôt sur l’amortissement du bien = 240 000 × 25 % = <strong>60 000 D</strong> par an ; sur les intérêts = 25 % des intérêts.</p>
+<div class="table-wrap"><table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th>Éléments</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût de l’investissement</td>
+<td style="text-align: right;">1 200 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Paiement des intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">71 500</td>
+<td style="text-align: right;">57 200</td>
+<td style="text-align: right;">42 900</td>
+<td style="text-align: right;">28 600</td>
+<td style="text-align: right;">14 300</td>
+</tr>
+<tr class="odd">
+<td>Remboursement du principal</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">130 000</td>
+<td style="text-align: right;">130 000</td>
+</tr>
+<tr class="even">
+<td><strong>Totaux des décaissements</strong></td>
+<td style="text-align: right;"><strong>1 200 000</strong></td>
+<td style="text-align: right;"><strong>201 500</strong></td>
+<td style="text-align: right;"><strong>187 200</strong></td>
+<td style="text-align: right;"><strong>172 900</strong></td>
+<td style="text-align: right;"><strong>158 600</strong></td>
+<td style="text-align: right;"><strong>144 300</strong></td>
+</tr>
+<tr class="odd">
+<td>Montant de l’emprunt</td>
+<td style="text-align: right;">650 000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Valeur résiduelle</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Économie d’impôt sur les amortissements</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">60 000</td>
+</tr>
+<tr class="even">
+<td>Économie d’impôt sur les intérêts</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">17 875</td>
+<td style="text-align: right;">14 300</td>
+<td style="text-align: right;">10 725</td>
+<td style="text-align: right;">7 150</td>
+<td style="text-align: right;">3 575</td>
+</tr>
+<tr class="odd">
+<td><strong>Totaux des encaissements</strong></td>
+<td style="text-align: right;"><strong>650 000</strong></td>
+<td style="text-align: right;"><strong>77 875</strong></td>
+<td style="text-align: right;"><strong>74 300</strong></td>
+<td style="text-align: right;"><strong>70 725</strong></td>
+<td style="text-align: right;"><strong>67 150</strong></td>
+<td style="text-align: right;"><strong>63 575</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets</strong></td>
+<td style="text-align: right;"><strong>− 550 000</strong></td>
+<td style="text-align: right;"><strong>− 123 625</strong></td>
+<td style="text-align: right;"><strong>− 112 900</strong></td>
+<td style="text-align: right;"><strong>− 102 175</strong></td>
+<td style="text-align: right;"><strong>− 91 450</strong></td>
+<td style="text-align: right;"><strong>− 80 725</strong></td>
+</tr>
+<tr class="odd">
+<td>Coefficient (12 %)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0,892857</td>
+<td style="text-align: right;">0,797194</td>
+<td style="text-align: right;">0,711780</td>
+<td style="text-align: right;">0,635518</td>
+<td style="text-align: right;">0,567427</td>
+</tr>
+<tr class="even">
+<td><strong>Flux nets actualisés</strong></td>
+<td style="text-align: right;"><strong>− 550 000</strong></td>
+<td style="text-align: right;"><strong>− 110 379</strong></td>
+<td style="text-align: right;"><strong>− 90 003</strong></td>
+<td style="text-align: right;"><strong>− 72 726</strong></td>
+<td style="text-align: right;"><strong>− 58 118</strong></td>
+<td style="text-align: right;"><strong>− 45 805</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="result-box">
+<p>Coût net de financement = 927 031 D</p>
+</div>
+<div class="remarque">
+<p><strong>Remarque sur l’arrondi.</strong> Les flux sont arrondis au dinar inférieur <strong>en valeur absolue</strong> (123 625 × 0,892857 = 110 379,447 → 110 379). Si l’on arrondit les nombres négatifs vers le bas (− 110 380…), on obtient 927 036 D : l’écart de 5 D ne change pas la décision.</p>
+</div>
+<h3 id="décision">5) Décision</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th style="text-align: center;">Exigence</th>
+<th style="text-align: center;">Valeur obtenue</th>
+<th style="text-align: center;">Respecté ?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VAN de l’unité n° 2</td>
+<td style="text-align: center;">&gt; 2 500 000 D</td>
+<td style="text-align: center;">3 163 581,348 D</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td>Coût net de financement</td>
+<td style="text-align: center;">≤ 1 000 000 D</td>
+<td style="text-align: center;">927 031 D</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Les deux conditions sont respectées : l’entreprise doit acquérir l’unité de production n° 2</strong> avec ce plan de financement (trésorerie, cession, augmentation du capital de 200 000 D et emprunt de 650 000 D à 11 %).</p>
+<div class="checklist">
+<ul>
+<li>Annexes n° 1 à 6 complétées et rendues avec la copie (nom et numéro d’inscription écrits).</li>
+<li>Les valeurs imprimées retrouvées : 32 500 ; 10 880 ; 102 ; 918 000 ; 490 000 ; 71 500 ; VAN de l’unité n° 3.</li>
+<li>La MCV par heure de l’atelier goulot utilisée pour classer les produits.</li>
+<li>La VAN calculée avec la CAF (résultat après impôt + amortissement).</li>
+<li>Chaque question « Justifiez / Quelle décision ? » terminée par une phrase de décision.</li>
+</ul>
+</div>
+
+<div class="footer">
+CORRIGÉ BY BACBYMED — Gestion 2020 (Principale) — document non officiel.<br>
+Tu as vu une erreur ? Signale-la dans l'application, on corrige vite.
+</div>
+</div>
+</body>
+</html>
